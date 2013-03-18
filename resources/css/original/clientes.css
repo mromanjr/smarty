@@ -1,0 +1,161 @@
+/* Folha de estilos para a página de clientes */
+
+#guia {
+	position: relative;
+	clear: both;
+	width: 580px;
+	height: auto;
+}
+
+#guia .side-by-side {
+	position: relative;
+	clear: both;
+	width: auto;
+	height: auto;
+}
+
+#guia .side-by-side .azul-pq {
+	background: #FFF url('../images/bg/azul_pq.jpg') no-repeat top left;
+	
+	position: relative;
+	float: right;
+	width: 285px;
+	height: 125px;
+	
+	margin: 18px 0 10px 0;
+}
+
+#guia > .side-by-side > .azul-pq {
+	width: 265px;
+	height: auto;
+	min-height: 85px;
+}
+
+#guia .side-by-side .verde-pq {
+	background: #FFF url('../images/bg/verde_pq.jpg') no-repeat top left;
+	
+	position: relative;
+	float: left;
+	width: 285px;
+	height: 125px;
+	
+	margin: 18px 0 10px 0;
+}
+
+#guia > .side-by-side > .verde-pq {
+	width: 265px;
+	height: auto;
+	min-height: 85px;
+}
+
+#guia .cinza {
+	background: #FFF url('../images/bg/cinza.jpg') no-repeat top left;
+	
+	position: relative;
+	clear: both;
+	width: auto;
+	height: 125px;
+	
+	margin-top: 10px;
+}
+
+#guia > .cinza {
+	height: auto;
+	min-height: 85px;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.azul-pq,
+.verde-pq,
+.cinza {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #000;
+	
+	padding: 46px 10px 5px 10px;
+}
+
+.azul-pq h2,
+.verde-pq h2,
+.cinza h2 {
+	font: bold 16px Tahoma, Verdana, Arial, serif;
+
+	position: absolute;
+	width: auto;
+	height: auto;
+	
+	top: 8px;
+	left: 10px;
+	
+	margin: 0;
+}
+
+.azul-pq h2 span,
+.verde-pq h2 span,
+.cinza h2 span {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #777;
+	
+	position: relative;
+	display: block;
+	width: auto;
+	height: auto;
+}
+
+.azul-pq h2		{ color: #069; }
+.verde-pq h2	{ color: #7DA112; }
+.cinza h2		{ color: #888; }
+
+/*-----------------------------------------------------------------------------*/
+
+#selecao-tipo-pessoa {
+	position: relative;
+	width: 360px;
+	height: 48px;
+}
+
+.form > #selecao-tipo-pessoa {
+	top: 0;
+	left: 50%;
+	
+	margin: 0 0 0 -180px;
+}
+
+.tipo-pessoa {
+	font: bold 14px Tahoma, Verdana, Arial, serif;
+	color: #036;
+	text-decoration: none;
+	text-align: left;
+	line-height: 48px;
+	background-color: #FFF;
+	background-repeat: no-repeat;
+	background-position: center left;
+	
+	position: relative;
+	display: block;
+	float: left;
+	width: 170px;
+	height: 48px;
+	
+	padding: 0;
+	margin: 0 3px;
+}
+
+.tipo-pessoa:hover,
+.tipo-pessoa.selected {
+	color: #7DA112;
+	text-decoration: underline;
+}
+
+.tipo-pessoa span {
+	position: relative;
+	width: auto;
+	height: auto;
+	
+	padding: 0 0 0 52px;
+}
+
+.tipo-fis { background-image: url('../images/icones/pessoa_fisica.jpg'); }
+.tipo-jur { background-image: url('../images/icones/pessoa_juridica.jpg'); }
+
+/*-----------------------------------------------------------------------------*/

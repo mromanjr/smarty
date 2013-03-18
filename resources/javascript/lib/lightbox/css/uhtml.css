@@ -1,0 +1,171 @@
+/**
+ * UHTML - User HTML (Texto gerado pelo usuário via editor).
+ * 	Esta folha de estilos visa normalizar e padronizar a formatação do HTML
+ *	gerado pelo usuário no editor vigente.
+ */
+
+/** Corpo do UHTML. */
+.uhtml {
+	font: normal 12px Arial, Verdana, sans-serif;
+	color: #000;
+	
+	position: relative;
+	overflow: hidden;
+	clear: both;
+	width: auto;
+	height: 1%;
+	
+	padding: 30px 0 0 0;
+	margin: 0px 0 15px 0;
+}
+
+.uhtml[class] {
+	height: auto;
+}
+
+/** Estrutura. */
+.uhtml p {
+	margin: 0 5px 0 0;
+}
+
+.uhtml h1,
+.uhtml h2,
+.uhtml h3,
+.uhtml h4,
+.uhtml h5,
+.uhtml h6 {
+	clear: both;
+}
+
+/** Visuais. */
+.uhtml b,
+.uhtml strong {
+	font-weight: bold !important;
+}
+
+.uhtml em,
+.uhtml i {
+	font-style: italic !important;
+}
+
+.uhtml u {
+	text-decoration: underline !important;
+}
+
+.uhtml a {
+	color: #00C;
+}
+
+.uhtml a:hover {
+	color: #C00;
+}
+
+.uhtml center {
+	text-align: center !important;
+}
+
+.uhtml img {
+	position: relative;
+	margin: 2px;
+}
+
+.uhtml img .borda {
+	position: relative;
+	margin: 2px;
+	border: solid 1px #d3d3d3;
+	border-spacing: 2px 2px;
+}
+
+
+
+/** Organização. */
+.uhtml ul,
+.uhtml ol {
+	padding: 0 0 0 40px;
+	margin: 12px 0;
+}
+
+.uhtml li {
+	padding: 0;
+	margin: 0;
+}
+
+.uhtml ol li {
+	list-style: decimal outside;
+}
+
+.uhtml ul li {
+	list-style: disc outside;
+}
+
+.uhtml blockquote {
+	color: #444;
+	background-color: #FAFAFA;
+	border: 1px solid #DDD;
+	border-left-width: 5px;
+	
+	display: block;
+	padding: 10px;
+	margin: 12px 0 12px 40px;
+}
+
+.uhtml hr {
+	color: #CCC;
+	background-color: #CCC;
+	border: 1px solid #CCC;
+	
+	overflow: hidden;
+	display: block;
+	height: 1px;
+	
+	padding: 0;
+	margin: 12px 0;
+}
+
+/** Tabela. */
+.uhtml table {
+	border-collapse: collapse;
+	border-spacing: 0;
+/*	border-top: 1px solid #BBB;
+	border-right-style: none;
+	border-bottom-style: none;*/
+	border:0;
+	
+	padding: 0;
+	margin: 10px 0;
+}
+
+.uhtml th,
+.uhtml td {
+	text-align: left !important;
+	border-top-style: none;
+/*	border-right: 1px solid #BBB;
+	border-bottom: 1px solid #BBB;
+	border-left-style: none;*/
+	border:0;
+	
+	padding: 4px;
+}
+
+.uhtml td .borda {
+	position: relative;
+	margin: 0;
+	border: solid 1px #d3d3d3;
+}
+.uhtml th {
+	font-weight: bold !important;
+	color: #444 !important;
+	background-color: #FAFAFA;
+	border-bottom-width: 2px;
+}
+
+/** Extras. */
+.uhtml pre {
+	font: normal 12px 'Courier New', serif;
+	color: #888;
+}
+
+.uhtml address { /**/ }
+.uhtml div { /**/ }
+
+/*-----------------------------------------------------------------------------*/

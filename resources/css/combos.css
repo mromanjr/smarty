@@ -1,0 +1,78 @@
+/* 
+    Document   : combos
+    Created on : 28/11/2012, 08:30:56
+    Author     : Rodolfo
+*/
+
+.box-combo{
+	float:left;
+	margin-left: 15px;
+	width: 282px;
+}
+
+.combo-descricao{
+	background-color: #F5F5F5;
+    color: #3B5876;
+    font: bold 12px Arial,Helvetica,sans-serif;
+    margin-top: 20px;
+    padding: 10px 0 5px 10px;
+}
+
+.combo-informacoes{
+	float:left;
+	padding-left: 5px;
+}
+
+.combo-observacao{
+	font: bold 12px Arial,Helvetica,sans-serif;
+	color: #464646;
+	padding: 10px 0 10px 0;
+}
+
+.combo-preco{
+	font: bold 12px Arial,Helvetica,sans-serif;
+	color: darkorange;
+}
+
+.combo-economize{
+	font: normal 11px Arial,Helvetica,sans-serif;
+	color: #777;
+}
+
+.combo-imagem{
+	float:left;
+	margin: 20px 0 0 0;
+	width: auto;
+	height: 175px;
+}
+
+.img-plus{
+	float:left;
+	margin: 70px 20px;
+}
+
+.button-combo{
+	margin: 30px 0 0 20px;
+	float: left;
+	text-decoration:none; text-align:center; 
+	padding: 5px 3px; 
+	width: 100px;
+	cursor: pointer;
+	border:solid 1px #720000; 
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px; 
+	border-radius: 10px; 
+	font:12px Arial, Helvetica, sans-serif; 
+	font-weight:bold; 
+	color:#ffffff; 
+	background-color:#c73b3b; 
+	background-image: -moz-linear-gradient(top, #c73b3b 0%, #a51919 100%); 
+	background-image: -webkit-linear-gradient(top, #c73b3b 0%, #a51919 100%); 
+	background-image: -o-linear-gradient(top, #c73b3b 0%, #a51919 100%); 
+	background-image: -ms-linear-gradient(top, #c73b3b 0% ,#a51919 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a51919', endColorstr='#a51919',GradientType=0 ); 
+	background-image: linear-gradient(top, #c73b3b 0% ,#a51919 100%);   
+	-webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+	-moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+	box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
+}

@@ -1,0 +1,171 @@
+/* Pesquisa */
+
+#subtopo {
+	position: absolute;
+	width: 100%;
+	height: 49px;
+	
+	top: 90px;
+	left: 0;
+}
+
+#subtopo #tit-pesquisa {
+	background: transparent url('../images/tit_pesquisa.jpg') no-repeat top left;
+	
+	position: absolute;
+	width: 58px;
+	height: 12px;
+	
+	top: 8px;
+	right: 442px;
+}
+
+#subtopo #tit-marcas {
+	background: transparent url('../images/tit_marcas.jpg') no-repeat top left;
+	
+	position: absolute;
+	width: 48px;
+	height: 10px;
+	
+	top: 8px;
+	right: 134px;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+#subtopo #pesquisa {
+	background: transparent url('../images/pesquisa.jpg') no-repeat top left;
+	
+	position: absolute;
+	width: 282px;
+	height: 21px;
+	
+	top: 20px;
+	right: 222px;
+}
+
+#pesquisa form input {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #BBB;
+	background-color: transparent;
+	border: 0px solid #000;
+	
+	position: relative;
+	float: left;
+	width: 238px;
+	height: 19px;
+	
+	padding-top: 4px;
+	margin-left: 9px;
+}
+
+#pesquisa form input.ativo {
+	font-weight: bold;
+	color: #888 !important;
+}
+
+#pesquisa a {
+	position: relative;
+	float: right;
+	width: 28px;
+	height: 21px;
+	
+	top: 0;
+	right: 0;
+	
+	z-index: 10;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/* Marcas */
+
+#subtopo #marcas {
+	background: transparent url('../images/marcas.jpg') no-repeat top left;
+	
+	position: absolute;
+	width: 174px;
+	height: 21px;
+	
+	top: 20px;
+	right: 12px;
+}
+
+#marcas .texto-marca {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #BBB;
+	background-color: transparent;
+	border: 0px solid #000;
+	
+	position: relative;
+	float: left;
+	width: auto;
+	height: auto;
+	
+	padding-top: 4px;
+	margin-left: 4px;
+}
+
+#marcas > .texto-marca {
+	margin-left: 8px;
+}
+
+#marcas a {
+	position: relative;
+	float: right;
+	width: 28px;
+	height: 21px;
+	
+	top: 0px;
+	right: 0px;
+	
+	z-index: 10;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+#user-login {
+	font: bold 11px Tahoma, serif;
+	color: #506585;
+	
+	position: absolute;
+	overflow: hidden;
+	width: auto;
+	height: 22px;
+	
+	top: 5px;
+	right: 8px;
+	
+	padding-top: 4px;
+	
+	z-index: 2;
+}
+
+#user-login a {
+	font: normal 9px Verdana;
+	color: #056585;
+	text-decoration: none;
+}
+
+#user-login a:hover {
+	color: #C00;
+}
+
+#user-login a img {
+	margin: 0 2px -2px 8px;
+}
+
+#user-login-sombra {
+	background-color: #FFF;
+	
+	position: absolute;
+	width: auto;
+	height: 22px;
+	
+	top: 5px;
+	right: 5px;
+	
+	z-index: 1;
+}
+
+/*-----------------------------------------------------------------------------*/

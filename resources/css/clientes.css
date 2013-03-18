@@ -1,0 +1,169 @@
+/* Folha de estilos para a página de clientes */
+
+#guia {
+	position: relative;
+	clear: both;
+	/*width: 580px;*/
+	height: auto;
+
+}
+
+#guia .side-by-side {
+	position: relative;
+	clear: both;
+	width: auto;
+	height: auto;
+}
+
+#guia .side-by-side .azul-pq {
+	background: #FFF url('../images/bg/azul_pq.jpg') no-repeat top left;
+	
+	position: relative;
+	float: right;
+	width: 285px;
+	height: 125px;
+	
+	margin: 18px 0 10px 0;
+}
+
+#guia > .side-by-side > .azul-pq {
+    float: left;
+    height: auto;
+    margin-left: 100px;
+    min-height: 85px;
+    width: 265px;
+}
+
+#guia .side-by-side .verde-pq {
+	background: #FFF url('../images/bg/verde_pq.jpg') no-repeat top left;
+	
+	position: relative;
+	float: left;
+	width: 285px;
+	height: 125px;
+	
+	margin: 18px 0 10px 0;
+}
+
+#guia > .side-by-side > .verde-pq {
+	width: 265px;
+	min-height: 140px;
+    margin: 18px -90px 0 136px;
+}
+
+#guia .cinza {
+	background: #FFF url('../images/bg/laranja.jpg') no-repeat top left;
+	
+	position: relative;
+	clear: both;
+	width: auto;
+	height: 125px;
+	
+	margin-top: 10px;
+}
+
+#guia > .cinza {
+	height: auto;
+	min-height: 85px;
+    width: 789px;
+    margin: 0 0 0 23px;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.azul-pq,
+.verde-pq,
+.cinza {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #000;
+	background-color: #fff;
+    margin: 0 20px;
+    padding: 10px 25px 35px;
+    
+    box-shadow: 0 4px 10px -1px rgba(200, 200, 200, 0.7);
+    -moz-box-shadow: 0 4px 10px -1px rgba(200, 200, 200, 0.7);
+    -webkit-box-shadow: 0 4px 10px -1px rgba(200, 200, 200, 0.7);
+     
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+}
+
+.azul-pq h2,
+.verde-pq h2,
+.cinza h2 {
+	font: bold 16px Tahoma, Verdana, Arial, serif;
+	width: auto;
+	height: auto;
+	margin: 0;
+}
+
+.azul-pq h2 span,
+.verde-pq h2 span,
+.cinza h2 span {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #777;
+	
+	position: relative;
+	display: block;
+	width: auto;
+	height: auto;
+}
+
+.azul-pq h2		{ color: #555; }
+.verde-pq h2	{ color: #555; }
+.cinza h2		{ color: #555; }
+
+/*-----------------------------------------------------------------------------*/
+
+#selecao-tipo-pessoa {
+	position: relative;
+	width: 360px;
+	height: 48px;
+}
+
+.form > #selecao-tipo-pessoa {
+	top: 0;
+	left: 50%;
+	
+	margin: 0 0 0 -180px;
+}
+
+.tipo-pessoa {
+	font: bold 14px Tahoma, Verdana, Arial, serif;
+	color: #036;
+	text-decoration: none;
+	text-align: left;
+	line-height: 48px;
+	background-color: #FFF;
+	background-repeat: no-repeat;
+	background-position: center left;
+	
+	position: relative;
+	display: block;
+	float: left;
+	width: 170px;
+	height: 48px;
+	
+	padding: 0;
+	margin: 0 3px;
+}
+
+.tipo-pessoa:hover,
+.tipo-pessoa.selected {
+	color: #7DA112;
+	
+}
+
+.tipo-pessoa span {
+	position: relative;
+	width: auto;
+	height: auto;
+	
+	padding: 0 0 0 52px;
+}
+
+.tipo-fis { background-image: url('../images/icones/pessoa_fisica.jpg'); }
+.tipo-jur { background-image: url('../images/icones/pessoa_juridica.jpg'); }
+
+/*-----------------------------------------------------------------------------*/

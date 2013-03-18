@@ -1,0 +1,197 @@
+/* Folha de estilos para a área que exibe as compras do cliente */
+
+.compra {
+	background-color: #FFF;
+	border-bottom: 2px solid #EEE;
+	
+	position: relative;
+	overflow: hidden;
+	width: 820px;
+	height: auto;
+	
+	top: 0;
+	left: 40%;
+	
+	padding: 4px 4px 15px 4px;
+	margin: 0 0 0 -310px;
+}
+
+.pedido {
+	background: transparent url('../images/bg/num_pedido.jpg') no-repeat top left;
+	
+	position: relative;
+	float: left;
+	width: 160px;
+	height: 93px;
+	
+	padding: 5px 0 0 0;
+	margin: 86px 0 0 0;
+}
+
+.itens {
+	position: relative;
+	float: left;
+	width: 740px;
+	height: auto;
+	
+	padding: 0 5px 0 5px;
+	margin: 0 0 0 5px;
+}
+
+.compra > .itens {
+	width: 640px;
+	margin: 0;
+}
+
+.clear {
+	font-size: 0;
+	line-height: 0;
+	
+	position: relative;
+	overflow: hidden;
+	clear: left;
+	width: auto;
+	height: 0;
+	
+	margin: 0 0 10px 0;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.pedido .descr_num {
+	font: bold 12px Tahoma, Verdana, Arial, serif;
+	color: gray;
+	text-align: center;
+	margin-top:5px;
+	display: block;
+}
+
+.pedido .numero {
+	font: bold 25px Tahoma, Verdana, Arial, serif;
+	color: #C2A01A;
+	text-align: center;
+	display: block;
+	margin: 5px 0 3px 0;
+}
+
+.pedido .info,
+.itens .info {
+	font: bold 12px Tahoma, Verdana, Arial, serif;
+	color: #666;
+	text-align: center;
+	margin-top:10px;
+	display: block;
+}
+
+.itens .info {
+	text-align: left !important;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.itens h3 {
+	font: bold 15px Tahoma, Verdana, Arial, serif;
+	color: #333;
+	
+	margin: 0 0 8px 0;
+}
+
+.itens table {
+	width: 540px;
+	height: auto;
+	border: 1px solid #DDD;
+	border-top-style: none;
+
+	margin: 10px 0;
+}
+
+.itens td {
+	font: normal 13px Tahoma, Verdana, Arial, serif;
+	color: #000;
+	border: 1px solid #DDD;
+	border-right-style: none;
+	border-left-style: none;
+
+	padding: 3px;
+}
+
+.itens td.col-index {
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	background-color: #A09D9D;
+
+	width: 30px;
+}
+
+.itens td.col-qtd {
+	text-align: center;
+	width: 30px;
+}
+.itens td.col-valor {
+	text-align: right;
+	width: 90px;
+    color: #000;
+    font-weight: bold;
+}
+.itens td.col-ttvalor {
+	text-align: right;
+	width: 80px;
+    color: #000;
+    font-weight: bold;
+}
+.itens td.col-total {
+	text-align: left;
+	width: 80px;
+    border-right: solid 1px #c0c0c0;
+    color: #000;
+    font-weight: bold;
+}
+.itens td.col-ttgeral {
+	text-align: left;
+	width: 80px;
+    border-right: solid 1px #c0c0c0;
+    color: #000;
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+.itens td.col-ttvlgeral {
+	text-align: right;
+	width: 80px;
+    border-right: solid 1px #c0c0c0;
+    background-color: #f5f5f5;
+    color: #000;
+    font-weight: bold;
+}
+.itens td.col-produto {
+	width: 500px;
+}
+
+.itens a {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #00F;
+}
+
+.itens a:hover {
+	color: #F00;
+}
+
+.page-title{
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    color: #015ABB;
+    font: bold 20px Arial,Helvetica,sans-serif;
+    height: 25px;
+    padding: 10px 0 10px 0;
+    width: 95%;
+}
+.page-title .desc{
+    font: bold 20px Arial,Helvetica,sans-serif;
+    position:absolute;
+    color:#015ABB;
+    margin-top:10px;
+}
+
+/*-----------------------------------------------------------------------------*/
+

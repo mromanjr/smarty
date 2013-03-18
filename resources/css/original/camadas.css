@@ -1,0 +1,109 @@
+/* Folha de estilos para camadas (menus suspensos, p.e.) */
+
+/*-----------------------------------------------------------------------------*/
+@import url('carrinho.css');
+@import url('dialog.css');
+/*-----------------------------------------------------------------------------*/
+
+.select-box {
+	font: normal 12px Tahoma, Verdana, Arial, serif;
+	color: #666;
+	background-color: #FFF;
+	border: 1px solid #E7E7E7;
+	
+	position: relative;
+	width: 250px;
+	height: auto;
+}
+
+.select-box:hover {
+	border: 1px solid #A9CDE7;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.dropdown {
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	
+	position: absolute;
+	display: none;
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 166px;
+	height: 122px;
+	
+	top: 132px;
+	right: 12px;
+	
+	z-index: 100;
+}
+
+.dropdown-shadow {
+	background-color: #CCC;
+	
+	position: absolute;
+	display: none;
+	overflow: hidden;
+	width: 166px;
+	height: 122px;
+	
+	top: 135px;
+	right: 9px;
+		
+	z-index: 99;
+}
+
+#outer-container > .dropdown-shadow {
+	top: 137px;
+}
+
+.dropdown ul {
+	list-style: none;
+	
+	padding: 0px;
+	margin: 0px;
+}
+
+.dropdown ul li {
+	line-height: 13px;
+}
+
+.dropdown ul li a {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #069;
+	text-decoration: none;
+	background-color: #FFF;
+	
+	position: relative;
+	display: block;
+	overflow: hidden;
+	width: auto;
+	height: 17px;
+	
+	padding: 2px 3px;
+}
+
+.dropdown ul li > a {
+	height: auto;
+}
+
+.dropdown ul li a:hover {
+	color: #4F650B;
+	background-color: #F0F7E8;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+#sombra {
+	background-color: #000;
+	
+	position: absolute;
+	display: none;
+	width: 1px;
+	height: 1px;
+	
+	z-index: 9999;
+}
+
+/*-----------------------------------------------------------------------------*/

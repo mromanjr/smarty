@@ -1,0 +1,111 @@
+/* Departamentos */
+
+#departamentos {
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	
+	position: relative;
+	width: 178px;
+	height: auto;
+	
+	top: 0;
+	left: 50%;
+	
+	padding: 0;
+	margin: 0 0 0 -89px;
+	
+	z-index: 2;
+}
+
+#sombra-departamentos {
+	background-color: #CCC;
+	
+	position: absolute;
+	overflow: hidden;
+	width: 178px;
+	height: 1px;
+	
+	top: 3px;
+	left: 6px;
+	
+	z-index: 1;
+}
+
+#departamentos ul,
+#departamentos ul li {
+	list-style-type: none;
+	
+	padding: 0;
+	margin: 0;
+}
+
+#departamentos ul li {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #999;
+	line-height: 13px;
+	border-top: 1px solid #E9E9E9;
+	
+	position: relative;
+	width: auto;
+	height: auto;
+	
+	padding: 2px 4px 4px 3px;
+	margin: 0;
+	
+	cursor: pointer;
+}
+
+#departamentos ul li:hover,
+#departamentos ul li.selecionado {
+	background-color: #F0F7E8;
+}
+
+#departamentos ul li a {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #069;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+#departamentos ul li a.principal {
+	font-weight: bold !important;
+	color: #4F650B !important;
+	
+	display: block;
+}
+
+#departamentos ul li a:hover,
+#departamentos ul li a.principal:hover {
+	text-decoration: underline !important;
+}
+
+#departamentos ul li.selecionado {
+	border-bottom: 1px solid #9C9;
+}
+
+#departamentos ul li.selecionado a,
+#departamentos ul li.selecionado a.principal {
+	font-size: 12px !important;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+#departamentos ul li.titulo {
+	background: #FFF url('../images/tit_departamentos.jpg') no-repeat top left;
+	border-style: none !important;
+	
+	position: relative;
+	width: auto;
+	height: 20px;
+	
+	padding: 0 !important;
+	margin: 0 !important;
+	
+	cursor: default !important;
+}
+
+#departamentos ul li.titulo:hover {
+	background: #FFF url('../images/tit_departamentos.jpg') no-repeat top left !important;
+}
+
+/*-----------------------------------------------------------------------------*/

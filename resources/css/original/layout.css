@@ -1,0 +1,164 @@
+/* Folha de estilos principal para o site do Zelão Motos */
+
+#container {
+	background-color: #FFF;
+	border: 1px solid #EEE;
+	border-top-width: 0px;
+	
+	position: relative;
+	overflow: hidden;
+	width: 778px;
+	height: auto;
+	
+	top: 0;
+	left: 50%;
+	
+	margin: 0 0 0 -390px;
+}
+
+.north, .south {
+	position: relative;
+	overflow: hidden;
+	clear: both;
+	width: auto;
+	height: auto;
+}
+
+.west, .center {
+	position: relative;
+	float: left;
+	width: auto;
+	height: auto;
+}
+
+.nested-container {
+	position: relative;
+	width: auto;
+	height: auto;
+	
+	padding: 0;
+	margin: 0;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+#topo {
+	background: transparent url('../images/bg_topo.jpg') repeat-x top left;
+	height: 140px;
+}
+
+#rodape {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #999;
+	text-align: center;
+	background-color: #FAFAFA;
+	border-top: 1px solid #EEE;
+	
+	padding: 2px 0;
+	margin: 2px;
+}
+
+#main-west {
+	width: 186px;
+	margin: 3px 0 6px 0;
+}
+
+#main-center {
+	width: 586px;
+	
+	padding: 0;
+	margin: 4px 1px 6px 1px;
+}
+
+#container > #main-center {
+	margin-right: 3px;
+	margin-left: 3px;
+}
+
+.nested-container .center {
+	float: none;
+	clear: both;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+#logo {
+	background: transparent url('../images/logo.jpg') no-repeat top left;
+	
+	position: absolute;
+	display: block;
+	width: 192px;
+	height: 140px;
+	
+	top: 0;
+	left: 4px;
+	
+	z-index: 10;
+}
+
+.efeito-topo-1,
+.efeito-topo-2,
+.efeito-subtopo-1,
+.efeito-subtopo-2,
+.efeito-subtopo-3 {
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: top left;
+	
+	position: absolute;
+	top: 0;
+}
+
+.efeito-topo-1 {
+	background-image: url('../images/efeito_topo_1.jpg');
+	
+	width: 321px;
+	height: 88px;
+	right: 202px;
+}
+
+.efeito-topo-2 {
+	background-image: url('../images/efeito_topo_2.jpg');
+	
+	width: 188px;
+	height: 88px;
+	right: -5px;
+}
+
+.efeito-subtopo-1 {
+	background-image: url('../images/efeito_subtopo_1.jpg');
+	
+	width: 94px;
+	height: 49px;
+	right: 452px;
+}
+
+.efeito-subtopo-2 {
+	background-image: url('../images/efeito_subtopo_2.jpg');
+	
+	width: 55px;
+	height: 49px;
+	right: 200px;
+}
+
+.efeito-subtopo-3 {
+	background-image: url('../images/efeito_subtopo_3.jpg');
+	
+	width: 162px;
+	height: 49px;
+	right: 0;
+}
+
+/* --------------------------------------------------------------------------- */
+
+#rodape a {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #999;
+	text-decoration: none;
+}
+
+#rodape a:hover {
+	color: #000;
+}
+
+/* --------------------------------------------------------------------------- */

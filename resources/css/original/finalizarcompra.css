@@ -1,0 +1,82 @@
+/* Folha de estilos da página de finalização da compra */
+
+#content .tabela-carrinho {
+	margin-bottom: 22px !important;
+}
+
+#lnk-alterar {
+	text-align: center;
+	background-color: #F5F5F5;
+	border: 1px solid #EEE;
+	
+	position: relative;
+	display: block;
+	width: 260px;
+	height: auto;
+	
+	top: 0;
+	left: 50%;
+	
+	padding: 7px;
+	margin: 0 0 22px -130px;
+}
+
+.formapagto {
+	background-color: #FFF;
+	border: 1px solid #EEE;
+	
+	position: relative;
+	overflow: hidden;
+	width: auto;
+	height: 28px;
+	
+	padding: 0;
+	margin: 5px;
+}
+
+.formapagto input {
+	text-align: center;
+	
+	position: absolute;
+	width: 30px;
+	height: auto;
+	
+	top: 3px;
+	left: 0;
+}
+
+.formapagto .descricao {
+	font-size: 12px;
+	
+	position: relative;
+	width: auto;
+	height: auto;
+	
+	padding: 5px 5px 5px 0;
+	margin: 0 0 0 30px;
+}
+
+.formapagto .descricao h3 {
+	font: bold 12px Tahoma, Verdana, Arial, serif;
+	color: #036;
+	
+	margin: 0 0 8px 0;
+}
+
+.formapagto .descricao h3 img {
+	float: left;
+	margin: -3px 5px 0 0;
+}
+
+.formapagto-selecionada {
+	background-color: #FFC;
+	border: 1px solid #FFD324;
+}
+
+#txt-formapagto-selecionada {
+	font: bold 12px Tahoma, Verdana, Arial, serif;
+	color: #000;
+	
+	display: block;
+	margin-bottom: 3px;
+}

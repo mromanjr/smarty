@@ -1,0 +1,411 @@
+.destaque, .widget {
+    z-index: 0;
+}
+.destaque .esquerda, .foto.esquerda, .widget .esquerda {
+    float: left;
+    margin-left: 0;
+}
+.destaque .direita, .widget .direita {
+    float: right;
+    margin-right: 0;
+}
+.destaque .foto, .widget .foto {
+    position: relative;
+}
+.destaque .foto img, .widget .foto img {
+    display: block;
+}
+span.canto-caixa-ce, span.canto-caixa-cd, span.canto-caixa-re, span.canto-caixa-rd {
+    height: 2px;
+    position: absolute;
+    width: 2px;
+}
+span.canto-caixa-ce, .widget span.canto-caixa-ce {
+    background: url("/media/common/img/estrutura/box/canto-caixa-arredondado.png") no-repeat scroll 0 0 transparent;
+    left: 0;
+    top: 0;
+}
+.widget span.canto-caixa-ce {
+    left: -1px;
+    top: 0;
+}
+span.canto-caixa-cd, .widget span.canto-caixa-cd {
+    background: url("/media/common/img/estrutura/box/canto-caixa-arredondado.png") no-repeat scroll -2px 0 transparent;
+    right: 0;
+    top: 0;
+}
+.widget span.canto-caixa-cd {
+    right: -1px;
+    top: 0;
+}
+.destaque-urgente span.canto-caixa-cd {
+    background: url("/media/common/img/estrutura/box/canto-foto-arredondado.png") no-repeat scroll -4px 0 transparent;
+    right: 0;
+    top: 0;
+}
+span.canto-caixa-re, .widget span.canto-caixa-re {
+    background: url("/media/common/img/estrutura/box/canto-caixa-arredondado.png") no-repeat scroll 0 -2px transparent;
+    bottom: 0;
+    left: 0;
+}
+.widget span.canto-caixa-re {
+    bottom: -1px;
+    left: -1px;
+}
+.destaque-urgente span.canto-caixa-re {
+    background: url("/media/common/img/estrutura/box/canto-foto-arredondado.png") no-repeat scroll 0 -4px transparent;
+    bottom: 0;
+    left: 0;
+}
+span.canto-caixa-rd, .widget span.canto-caixa-rd {
+    background: url("/media/common/img/estrutura/box/canto-caixa-arredondado.png") no-repeat scroll -2px -2px transparent;
+    bottom: 0;
+    right: 0;
+}
+.widget span.canto-caixa-rd {
+    bottom: -1px;
+    right: -1px;
+}
+.destaque-urgente span.canto-caixa-rd {
+    background: url("/media/common/img/estrutura/box/canto-foto-arredondado.png") no-repeat scroll -4px -4px transparent;
+    bottom: 0;
+    right: 0;
+}
+.destaque .foto span, .widget .foto span {
+    display: block;
+    height: 3px;
+    position: absolute;
+    width: 3px;
+}
+.destaque .foto span.canto-ce, .widget .foto span.canto-ce {
+    background: url("/media/common/img/estrutura/box/canto-foto-arredondado.png") no-repeat scroll 0 0 transparent;
+    left: 0;
+    top: 0;
+}
+.destaque .foto span.canto-cd, .widget .foto span.canto-cd {
+    background: url("/media/common/img/estrutura/box/canto-foto-arredondado.png") no-repeat scroll -3px 0 transparent;
+    right: 0;
+    top: 0;
+}
+.destaque .foto span.canto-re, .widget .foto span.canto-re {
+    background: url("/media/common/img/estrutura/box/canto-foto-arredondado.png") no-repeat scroll 0 -3px transparent;
+    bottom: 0;
+    left: 0;
+}
+.destaque .foto span.canto-rd, .widget .foto span.canto-rd {
+    background: url("/media/common/img/estrutura/box/canto-foto-arredondado.png") no-repeat scroll -3px -3px transparent;
+    bottom: 0;
+    right: 0;
+}
+.destaque .foto, .widget .foto {
+    margin-bottom: 0.83em;
+}
+
+.widget {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #DDDDDD #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    position: relative;
+}
+.widget p, .widget strong {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.widget .chamada strong a {
+    font-size: 1.5em;
+    letter-spacing: -0.03em;
+}
+.widget .chamada-principal {
+    border-top: 1px solid #DDDDDD;
+    padding: 5px;
+}
+.widget .chamada-secundaria .foto {
+    margin-right: 0.83em;
+}
+.widget .chamada-rodape a {
+    font-size: 1em;
+    font-weight: bold;
+}
+.widget .chamada-rodape a.rodape-titulo {
+    display: block;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: -0.03em;
+}
+.widget .chamada-rodape, .widget .chamada-secundaria li {
+    border-top: 1px solid #DDDDDD;
+    clear: both;
+    overflow: hidden;
+    padding: 9px 12px 10px;
+}
+.widget .chamada-secundaria ul {
+    border: 1px solid red;
+}
+.widget .chamada-secundaria li {
+    border: 1px solid blue;
+}
+.widget .comercial-e1 {
+    float: right;
+    margin: 1px;
+    width: 60px;
+}
+.widget .foto {
+    margin-bottom: 1px;
+}
+.widget .ant span, .widget .prox span {
+    background: none repeat scroll 0 0 #CCCCCC;
+    display: block;
+    height: 65%;
+    margin: 5px 0 0 5px;
+    overflow: hidden;
+    position: relative;
+    text-indent: -9999px;
+    width: 70%;
+    z-index: -1;
+}
+.widget .ant {
+    background: url("/media/common/img/botoes-simbolos.png") no-repeat scroll 3px -310px transparent;
+    display: block;
+    height: 24px;
+    width: 24px;
+}
+.widget .ant:hover {
+    background: url("/media/common/img/botoes-simbolos.png") no-repeat scroll -23px -310px transparent;
+}
+.widget .ant:active {
+    background: url("/media/common/img/botoes-simbolos.png") no-repeat scroll -50px -311px transparent;
+}
+.widget .prox {
+    background: url("/media/common/img/botoes-simbolos.png") no-repeat scroll 3px -134px transparent;
+    display: block;
+    height: 24px;
+    width: 24px;
+}
+.widget .prox:hover {
+    background: url("/media/common/img/botoes-simbolos.png") no-repeat scroll -23px -134px transparent;
+}
+.widget .prox:active {
+    background: url("/media/common/img/botoes-simbolos.png") no-repeat scroll -50px -135px transparent;
+}
+.widget .nav .navegacao-pagina {
+    color: #D4D4D4;
+    font-size: 1.92em;
+    margin: 0 2px;
+}
+.widget .nav .activeSlide {
+    color: #666666;
+}
+
+
+
+.widget-titulo {
+    border-top: 2px solid #A1A1A1;
+    overflow: hidden;
+}
+.widget-titulo strong {
+    color: #333333;
+    float: left;
+    font-size: 1.333em;
+    margin-bottom: 0;
+    padding: 10px 0 11px 12px;
+    width: 70%;
+}
+.widget-titulo strong a {
+    color: #333333;
+}
+.widget-titulo strong a:hover {
+    color: #333333;
+}
+
+.glb-hl-style-noticia .widget-titulo {
+    border-top-color: #A50006;
+}
+
+.widget-shopping .widget-titulo {
+    border-bottom: 1px solid #DDDDDD;
+    height: 3em;
+    letter-spacing: -0.02em;
+}
+
+.destaque-variedades .widget {
+    margin-bottom: 12px;
+}
+
+.box-widget-terceiro .widget {
+    margin-bottom: 0;
+}
+
+#rct{
+    position:relative;
+    width: 228px;
+    height:190px;
+    font-family:font-family:Arial,sans-serif;
+}
+#rct a{
+    color:#FF9601;
+}
+#rct a:hover{
+    text-decoration:underline;
+}
+#rct .widget-titulo{
+    position:relative;
+    border-bottom:1px solid #DDD;
+    border-top-color:#FF9601;
+    overflow:visible;
+    height:37px;
+}
+#rct .widget-titulo a.title{
+    font-size:17px;
+    font-weight:bold;
+}
+.widget-shopping .widget-titulo {
+    border-bottom: 1px solid #DDDDDD;
+    height: 3em;
+    letter-spacing: -0.02em;
+}
+#rct #rct-search-link{
+    position:absolute;
+    display:block;
+    right:0;
+    bottom:0;
+    top:0;
+    width:74px;
+    background:url('../images/sprite.png') no-repeat 60px 3px;
+    line-height:39px;
+    padding-left:19px;
+    color:#999;
+    font-size:13px;
+    cursor:pointer;
+}
+#rct #rct-search-link:hover{
+    background-position:60px -31px;
+    color:#333;
+}
+#rct #rct-search-link:active{
+    background-position:60px -31px;
+    color:#333;
+}
+#rct #rct-search-link.close{
+    background-position:53px -261px;
+    background-color:#FFF;
+    bottom:-1px;
+    border-left:1px solid #DDD;
+    width:69px;
+}
+#rct #rct-search-link.close:hover{
+    background-position:53px -301px;
+}
+#rct-categories{
+    position:absolute;
+    display:block;
+    margin: 8px 0 0 3px;
+    /*text-transform:lowercase;*/
+}
+#rct-categories .category{
+    /*background: url("../images/icons_v2.jpg") no-repeat scroll 0 0 #FFFFFF;*/
+    display: none;
+    position: absolute;
+    width: 228px;
+}
+* html #rct-categories .category{
+    top:1px
+}
+#rct-categories h3{
+    font-size:12px;
+    font-weight:bold;
+}
+#rct-categories h3 a{
+    color:#990000;
+}
+#rct-categories h3 a:hover{
+    color:#FF9601;
+}
+#rct-categories ul{
+    margin-left:3px;
+}
+#rct-categories ul li{
+    background:url('../images/sprite.png') no-repeat 0 -65px;
+    margin-bottom:5px;
+    padding-left:10px;
+}
+#rct-categories li#rct-aves{
+    background-position:right;
+    height: 132px;
+}
+#rct-categories .category img{
+    position:absolute;
+    margin-left: -3px;
+}
+#rct-controls{
+    position:absolute;
+    bottom:5px;
+    left:163px;
+    width:60px;
+    margin:0;
+}
+#rct-controls .prev,#rct-controls .next{
+    float:left;
+    display:block;
+    background:url('../images/sprite.png') no-repeat;
+    cursor:pointer;
+    height:30px;
+    overflow:hidden;
+    text-indent:-9999px;
+    bottom:45px;
+    width:30px;
+    z-index:5;
+}
+#rct-controls .prev{
+    background-position:0 -80px;
+    left:5px;
+}
+#rct-controls .next{
+    background-position:0 -110px;
+    right:5px;
+}
+#rct-controls .prev:hover{
+    background-position:0 -140px;
+}
+#rct-controls .next:hover{
+    background-position:0 -170px;
+}
+#rct-controls .prev.active{
+    background-position:0 -200px;
+}
+#rct-controls .next.active{
+    background-position:0 -230px;
+}
+#rct-controls .prev:focus,.next:focus{
+    outline:0;
+}
+#rct-search{
+    position:absolute;
+    display:none;
+    bottom:0;top:85px;
+    left:10px;
+    right:10px;
+    text-align:center;
+}
+
+.hidden-left{
+    position:absolute;
+    top: 6px;
+    left:-100px;
+    color:#888;
+    font-size:12px;
+    width:220px;
+}
+.hidden-top{
+    position:absolute;
+    top:-90px;
+    margin: 0px 0px 0px 3px;
+    text-decoration:none;
+    font-weight:bold;
+}

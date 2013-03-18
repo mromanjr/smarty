@@ -1,0 +1,146 @@
+/* Folha de estilos para a área que exibe as compras do cliente */
+
+.compra {
+	background-color: #FFF;
+	border-bottom: 2px solid #EEE;
+	
+	position: relative;
+	overflow: hidden;
+	width: 480px;
+	height: auto;
+	
+	top: 0;
+	left: 50%;
+	
+	padding: 4px 4px 15px 4px;
+	margin: 0 0 0 -240px;
+}
+
+.pedido {
+	background: transparent url('../images/bg/num_pedido.jpg') no-repeat top left;
+	
+	position: relative;
+	float: left;
+	width: 160px;
+	height: 93px;
+	
+	padding: 5px;
+	margin: 0;
+}
+
+.itens {
+	position: relative;
+	float: left;
+	width: 305px;
+	height: auto;
+	
+	padding: 0 5px 0 5px;
+	margin: 0 0 0 5px;
+}
+
+.compra > .itens {
+	width: 290px;
+	margin: 0;
+}
+
+.clear {
+	font-size: 0;
+	line-height: 0;
+	
+	position: relative;
+	overflow: hidden;
+	clear: left;
+	width: auto;
+	height: 0;
+	
+	margin: 0 0 10px 0;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.pedido .descr_num {
+	font: normal 10px Tahoma, Verdana, Arial, serif;
+	color: #999;
+	text-align: center;
+	
+	display: block;
+}
+
+.pedido .numero {
+	font: bold 20px Tahoma, Verdana, Arial, serif;
+	color: #069;
+	text-align: center;
+	
+	display: block;
+	margin-bottom: 3px;
+}
+
+.pedido .info,
+.itens .info {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #666;
+	text-align: center;
+	
+	display: block;
+}
+
+.itens .info {
+	text-align: left !important;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.itens h3 {
+	font: bold 13px Tahoma, Verdana, Arial, serif;
+	color: #333;
+	
+	margin: 0 0 8px 0;
+}
+
+.itens table {
+	width: 280px;
+	height: auto;
+	border: 1px solid #DDD;
+	border-top-style: none;
+	
+	margin: 10px 0;
+}
+
+.itens td {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #000;
+	border: 1px solid #DDD;
+	border-right-style: none;
+	border-left-style: none;
+	
+	padding: 3px;
+}
+
+.itens td.col-index {
+	font-weight: bold;
+	color: #036;
+	text-align: center;
+	background-color: #ECF1F4;
+	
+	width: 30px;
+}
+
+.itens td.col-qtd {
+	text-align: center;
+	width: 30px;
+}
+
+.itens td.col-produto {
+	width: 240px;
+}
+
+.itens a {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #00F;
+}
+
+.itens a:hover {
+	color: #F00;
+}
+
+/*-----------------------------------------------------------------------------*/

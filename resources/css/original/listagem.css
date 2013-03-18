@@ -1,0 +1,354 @@
+/* Folha de estilos para a página inicial do site */
+
+/*-----------------------------------------------------------------------------*/
+
+/* Listagem normal (3 colunas pequenas) */
+
+#listagem-3 {
+	position: static; /* IE6 hack */
+	width: auto;
+	height: auto;
+	
+	padding: 0 3px;
+}
+
+#listagem-3 .clear {
+	font-size: 0;
+	line-height: 0;
+	
+	position: relative;
+	overflow: hidden;
+	clear: left;
+	width: auto;
+	height: 0;
+	
+	margin: 1px 0;
+}
+
+#listagem-3 > .clear {
+	margin: 2px 0;
+}
+
+#listagem-3 .item {
+	position: relative;
+	float: left;
+	width: 140px;
+	height: auto;
+	
+	margin: 0 3px 15px 3px;
+}
+
+#listagem-3 .item div.imagem,
+#listagem-3 .item div.imagem-indisponivel {
+	text-align: center;
+	border: 1px solid #EEE;
+	
+	position: relative;
+	width: 80px;
+	height: 60px;
+	
+	top: 0;
+	left: 50%;
+	
+	padding: 2px 0;
+	margin: 0 0 2px -40px;
+}
+
+#listagem-3 .item div.imagem-indisponivel {
+	background: transparent url('../images/noimage_pq.gif') no-repeat center center;
+}
+
+#listagem-3 .item div.imagem img,
+#listagem-3 .item div.imagem-indisponivel img {
+	margin: 0 2px;
+}
+
+#listagem-3 .item div.imagem a,
+#listagem-3 .item div.imagem-indisponivel a {
+	position: relative;
+	display: block;
+	width: 76px;
+	height: 56px;
+}
+
+#listagem-3 .item div.info {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #000;
+	text-align: center;
+	
+	position: relative;
+	width: auto;
+	height: auto;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/* Listagem de produtos (2 colunas grandes) */
+
+#listagem-2 {
+	position: static; /* IE6 hack */
+	width: auto;
+	height: auto;
+	
+	padding: 0 3px;
+}
+
+#listagem-2 .clear {
+	font-size: 0;
+	line-height: 0;
+	
+	position: relative;
+	overflow: hidden;
+	clear: left;
+	width: auto;
+	height: 0;
+	
+	margin: 1px 0;
+}
+
+#listagem-2 > .clear {
+	margin: 2px 0;
+}
+
+#listagem-2 .item {
+	position: relative;
+	float: left;
+	width: 282px;
+	height: auto;
+	
+	margin: 0 2px 18px 2px;
+}
+
+#listagem-2 .item div.imagem,
+#listagem-2 .item div.imagem-indisponivel {
+	text-align: center;
+	border: 1px solid #EEE;
+	
+	position: relative;
+	float: left;
+	width: 80px;
+	height: 60px;
+	
+	top: 0;
+	left: 0;
+	
+	padding: 2px 0;
+	margin: 0 6px 0 0;
+}
+
+#listagem-2 .item div.imagem-indisponivel {
+	background: transparent url('../images/noimage_pq.gif') no-repeat center center;
+}
+
+#listagem-2 .item div.imagem img,
+#listagem-2 .item div.imagem-indisponivel img {
+	margin: 0 2px;
+}
+
+#listagem-2 .item div.imagem a,
+#listagem-2 .item div.imagem-indisponivel a {
+	position: relative;
+	display: block;
+	width: 76px;
+	height: 56px;
+}
+
+#listagem-2 .item div.info {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #000;
+	text-align: left;
+	
+	position: relative;
+	float: left;
+	width: 190px;
+	height: auto;
+}
+
+#listagem-2 .item > div.info {
+	width: 192px;
+}
+
+#listagem-2 .item a.mais-detalhes {
+	background: transparent url('../images/icones/detalhes.gif') no-repeat top left;
+	
+	position: absolute;
+	width: 70px;
+	height: 19px;
+	
+	top: 68px;
+	left: 5px;
+}
+
+#listagem-2 .item > a.mais-detalhes {
+	left: 6px;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/* Listagem de produtos (1 coluna, para pesquisa) */
+
+#listagem-1 {
+	position: static; /* IE6 hack */
+	width: auto;
+	height: auto;
+	
+	padding: 0 3px;
+}
+
+#listagem-1 .separator {
+	font-size: 0;
+	line-height: 0;
+	background-color: #EEE;
+	
+	position: relative;
+	overflow: hidden;
+	clear: left;
+	width: auto;
+	height: 1px;
+	
+	margin: 16px 0 12px 0;
+}
+
+#listagem-1 > .separator {
+	margin: 12px 0;
+}
+
+#listagem-1 .item {
+	position: relative;
+	width: auto;
+	height: 62px;
+	
+	padding: 3px 120px 0 90px;
+	margin: 0 2px;
+}
+
+#listagem-1 .item div.imagem,
+#listagem-1 .item div.imagem-indisponivel {
+	text-align: center;
+	border: 1px solid #EEE;
+	
+	position: absolute;
+	width: 80px;
+	height: 60px;
+	
+	top: 0;
+	left: 0;
+	
+	padding: 2px 0;
+	margin: 0 6px 0 0;
+}
+
+#listagem-1 .item div.imagem-indisponivel {
+	background: transparent url('../images/noimage_pq.gif') no-repeat center center;
+}
+
+#listagem-1 .item div.imagem a,
+#listagem-1 .item div.imagem-indisponivel a {
+	position: relative;
+	display: block;
+	width: 76px;
+	height: 56px;
+}
+
+#listagem-1 .item div.info {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #000;
+	text-align: left;
+	
+	position: relative;
+	width: auto;
+	height: auto;
+}
+
+#listagem-1 div.vejamais {
+	color: #888;
+	margin-top: 3px;
+}
+
+#listagem-1 div.vejamais a {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #888;
+}
+
+#listagem-1 div.vejamais a:hover {
+	color: #C00;
+}
+
+#listagem-1 a.comprar {
+	font: bold 12px Tahoma, Verdana, Arial, serif;
+	color: #000;
+	text-align: center;
+	text-decoration: none;
+	
+	position: absolute;
+	width: 105px;
+	height: auto;
+	
+	top: 5px;
+	right: 0;
+}
+
+#listagem-1 a.comprar img {
+	display: block;
+	margin: 2px 0 0 0;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+#listagem-3 a,
+#listagem-2 a {
+	font-weight: bold !important;
+}
+
+#listagem-1 a.std {
+	font-weight: bold !important;
+	font-size: 12px !important;
+}
+
+div.item span.valor-de			{ color: #BBB; }
+div.item span.valor-por			{ color: #C00; }
+div.item span.valor-economize	{ color: #7DA112; }
+div.item span.valor-parcelas	{ color: #069; }
+
+/*-----------------------------------------------------------------------------*/
+
+div.paginacao {
+	text-align: center;
+	
+	position: relative;
+	overflow: hidden;
+	width: 500px;
+	height: auto;
+	
+	top: 0;
+	left: 50%;
+	
+	padding: 7px;
+	margin: 0 0 0 -250px;
+}
+
+div.paginacao a {
+	font: normal 10px Tahoma, Verdana, Arial, serif;
+	color: #069;
+	text-decoration: none;
+	border: 1px solid #DDD;
+	
+	position: relative;
+	width: auto;
+	height: auto;
+	
+	padding: 2px 5px;
+	margin: 0 2px;
+}
+
+div.paginacao a:hover {
+	background-color: #FAFAFA;
+	border: 1px solid #069;
+}
+
+div.paginacao a.selecionada {
+	font-weight: bold;
+	border: 2px solid #069;
+}
+
+/*-----------------------------------------------------------------------------*/

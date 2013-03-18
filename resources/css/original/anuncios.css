@@ -1,0 +1,38 @@
+/* Anúncios */
+
+.banner-destaque,
+.anuncios {
+	font: normal 9px Verdana, serif;
+	color: #999;
+	text-align: center;
+}
+
+.banner-destaque {
+	position: relative;
+	width: auto;
+	height: 66px;
+	
+	padding: 0;
+	margin: 0 0 8px 0;
+}
+
+.anuncios {
+	vertical-align: top;
+	background-color: #FFF;
+	
+	position: absolute;
+	width: 130px;
+	height: auto;
+	
+	top: 0;
+	right: 0;
+	
+	padding: 0px;
+	margin: 0;
+	
+	z-index: 1;
+}
+
+.anuncios #frameAnuncios {
+	margin-top: 2px;
+}

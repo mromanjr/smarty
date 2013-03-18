@@ -1,0 +1,2022 @@
+/* Folha de estilos para a tabela dos itens do carrinho */
+
+.tabela-carrinho {
+	border: 1px solid #DDD;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+
+	width: 100%;
+	height: auto;
+
+	margin: 0;
+}
+
+.tabela-carrinho thead th {
+	font: bold 11px Tahoma, Verdana, Arial, serif;
+	color: #015ABB;
+	text-align: left;
+	background: #ECF1F4 url('../images/bg/janela_titulo.jpg') repeat-x bottom left;
+	/*border: 1px solid #A9BBBF;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;*/
+
+	padding: 3px;
+}
+
+.tabela-carrinho tbody td {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #000;
+	text-align: left;
+	background-color: #fff;
+    border-bottom: solid 1px #e5e5e5; 
+	/*border: 1px solid #DDD;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;*/
+
+	padding: 5px 3px;
+}
+
+.tabela-carrinho tbody .titulo{
+	color: #AC647F;
+    background-color: #F3EEFB;
+    font-weight:bold;
+}
+
+.tabela-carrinho tbody td span.ajuda {
+	font: normal 9px Verdana, Arial, serif !important;
+	color: #000;
+}
+
+th.destaque,
+td.destaque {
+	font: normal 12px  Tahoma, Verdana, Arial, serif !important;
+	color: #033 !important;
+	background: #FFF url('../images/bg/field.gif') repeat-x 0 -1px;
+}
+
+.tabela-carrinho td.numero {
+	font: bold 16px Tahoma, Verdana, Arial, serif;
+	color: #666;
+	text-align: center;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.tabela-carrinho td a {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #333;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.tabela-carrinho td a:hover {
+	text-decoration: underline;
+}
+
+span.ajuda a {
+	font: normal 9px Verdana, Arial, serif !important;
+	color: #777 !important;
+	background-color: #FFF !important;
+	text-decoration: underline !important;
+}
+
+span.ajuda a:hover {
+	color: #000 !important;
+	background-color: #FFF !important;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.tabela-carrinho input.field,
+.tabela-carrinho select.field {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #000;
+	border: 1px solid #CCC;
+
+	position: relative;
+	width: 140px;
+	height: auto;
+
+	padding: 2px 3px;
+}
+
+.tabela-carrinho select.field {
+	padding: 0;
+}
+
+.tabela-carrinho input.field:hover,
+.tabela-carrinho select.field:hover {
+	border: 1px solid #7F9DB9;
+}
+
+.tabela-carrinho .botao {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #555;
+	background-color: #F0F0F0;
+	border: 1px solid #C0C0C0;
+
+	width: 100px;
+}
+.hide{
+    display: none;
+}
+
+/*-----------------------------------------------------------------------------*/
+.shoppingCartContent {
+    padding: 15px 0;
+}
+.checkout {
+    background: url("/locales/global/img/bg_carrinho_internas.png") no-repeat scroll 0 0 transparent;
+    padding: 8px 10px;
+    width: 922px;
+}
+.checkie {
+    border: medium none !important;
+}
+.btnsShoppingCart {
+    display: inline;
+    float: right;
+    margin-bottom: 10px;
+}
+.btnsShoppingCart .btBuyMore, .btnsShoppingCart .btCheckout {
+    display: inline;
+    float: left;
+    margin-left: 18px;
+}
+.btnsShoppingCart .btBuyMore a, .btnsShoppingCart .btCheckout a {
+    display: block;
+    height: 27px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+.btnsShoppingCart .btBuyMore a {
+    background: url("/locales/pt-BR/img/bt_comprar_mais.png") no-repeat scroll 0 0 transparent;
+    width: 163px;
+}
+.btnsShoppingCart .btCheckout a {
+    background: url("/locales/pt-BR/img/bt_concluir_compra.png") no-repeat scroll 0 0 transparent;
+    width: 192px;
+}
+.btClearCart {
+    background: url("/locales/pt-BR/img/bt_limpar_carrinho.png") no-repeat scroll 0 0 transparent;
+    display: inline;
+    float: left;
+    height: 20px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 115px;
+}
+.boxInfoFreeShipping {
+    background: url("/locales/global/img/bg_info_frete_carrinho.png") no-repeat scroll 0 0 transparent;
+    height: 51px;
+    margin: 10px 0;
+    overflow: hidden;
+    padding: 9px 0 0 84px;
+}
+.boxInfoFreeShipping h3 {
+    background: url("/locales/pt-BR/img/tit_frete_gratis_carrinho.png") no-repeat scroll 0 0 transparent;
+    height: 25px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 388px;
+}
+.boxInfoFreeShipping p {
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-top: 1px;
+    overflow: hidden;
+}
+.boxInfoFreeShipping p strong {
+    color: #FFCB5C;
+}
+.boxInfoFreeShipping p strong a {
+    color: #FFCB5C;
+    text-decoration: underline;
+}
+.boxInfoFreeShipping p strong a:hover {
+    text-decoration: none;
+}
+.tableShoppingCart {
+    margin: 5px 0;
+    width: 100%;
+}
+.tableShoppingCart .cb {
+    margin-top: 15px;
+}
+thead th {
+    /*background: url("../images/bg/bg_line.png") no-repeat scroll -20px 0 transparent;*/
+    background: url("../images/bg/detalhes.jpg") repeat-x scroll 0 0 transparent;
+    height: 27px;
+    /*width:0px;*/
+}
+thead .product {
+    background-position: 0 0;
+}
+thead th strong {
+    display: block;
+    height: 11px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+thead .product strong {
+    background: url("/locales/pt-BR/img/tit_produto_carrinho.png") no-repeat scroll 0 0 transparent;
+    margin: 0 25px;
+    width: 50px;
+}
+thead .quantity strong {
+    background: url("/locales/pt-BR/img/tit_quantidade_carrinho.png") no-repeat scroll 0 0 transparent;
+    width: 74px;
+}
+thead .gift strong {
+    background: url("/locales/pt-BR/img/tit_presente_carrinho.png") no-repeat scroll 0 0 transparent;
+    height: 13px;
+    width: 96px;
+}
+thead .unitPrice strong {
+    background: url("/locales/pt-BR/img/tit_preco_carrinho.png") no-repeat scroll 0 0 transparent;
+    height: 13px;
+    width: 92px;
+}
+thead .total strong {
+    background: url("/locales/pt-BR/img/tit_total_carrinho.png") no-repeat scroll 0 0 transparent;
+    width: 32px;
+}
+.tableShoppingCart tbody td {
+    border-bottom: 1px solid #E3E3DD;
+    padding: 10px 0;
+    text-align: center;
+}
+.tableShoppingCart tbody .noSpace {
+    border-bottom: medium none;
+    padding: 0;
+}
+.tableShoppingCart tbody .product {
+    border-left: 1px solid #E3E3DD;
+    text-align: left;
+}
+tbody .product img {
+    display: inline;
+    float: left;
+    margin: 0 10px;
+    position: absolute;
+}
+tbody .product p {
+    color: #404040;
+    overflow: hidden;
+}
+tbody .product .leftSpace {
+    margin-left: 10px;
+    overflow: hidden;
+}
+tbody .product p strong {
+    color: #02314C;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+tbody .product p span {
+    color: #BABABA;
+    display: block;
+    margin-bottom: 5px;
+}
+tbody .product p .btWishlist {
+    background: url("/locales/pt-BR/img/bt_add_lista_desejos.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 15px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 132px;
+}
+tbody .product p a {
+    color: #02314C;
+    text-decoration: underline;
+    margin-left: 80px;
+}
+tbody .product p a:hover {
+    text-decoration: none;
+}
+tbody .product .btCompartilheFacebook {
+    background: url("/locales/global/img/bt_compartilhar_facebook.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 25px;
+    margin: 5px 0 0 10px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 121px;
+}
+tbody .quantity {
+}
+tbody .quantity .showQuantity {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 65px;
+}
+tbody .quantity .showQuantity .fldProductQuantity {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #AAADB2 #DCDFE6 #DCDFE6;
+    border-right: 1px solid #DCDFE6;
+    border-style: solid;
+    border-width: 1px;
+    color: #000000;
+    display: inline;
+    float: left;
+    font-size: 17px;
+    margin-top: 4px;
+    text-align: center;
+    width: 32px;
+}
+tbody .quantity .showQuantity a {
+    display: inline;
+    float: right;
+    height: 12px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 19px;
+}
+tbody .quantity .showQuantity .btMoreOne {
+    background: url("/locales/global/img/bt_mais.png") no-repeat scroll 0 0 transparent;
+}
+tbody .quantity .showQuantity .btLessOne {
+    background: url("/locales/global/img/bt_menos.png") no-repeat scroll 0 0 transparent;
+    margin-top: 5px;
+}
+tbody .gift {
+}
+tbody .gift .forGift {
+    background: url("/locales/global/img/ico_presente.png") no-repeat scroll 20px 0 transparent;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 60px;
+}
+tbody .gift .forGift .fldForGift {
+    display: inline;
+    float: left;
+    margin: 7px 15px 0 5px;
+}
+tbody .gift .forGift .lblForGift {
+    display: inline;
+    float: left;
+    font-size: 11px;
+    margin: 10px 0 0 4px;
+}
+tbody .unitPrice span {
+    color: #828282;
+    display: block;
+}
+tbody .total {
+    border-right: 1px solid #E3E3DD;
+}
+tfoot td {
+    background-color: #F5F4F5;
+    border-bottom: 1px solid #E3E3DD;
+    padding: 10px 0;
+    text-align: center;
+}
+tfoot .highlight {
+    background-color: #F4F5DF;
+}
+tfoot .first {
+    border-left: 1px solid #E3E3DD;
+    padding-left: 10px;
+    text-align: left;
+}
+tfoot .first p {
+    display: inline;
+    float: left;
+    margin-right: 10px;
+}
+tfoot .first label {
+    display: inline;
+    float: left;
+    margin-right: 5px;
+}
+tfoot .first input {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #AAADB2 #DCDFE6 #DCDFE6;
+    border-right: 1px solid #DCDFE6;
+    border-style: solid;
+    border-width: 1px;
+    display: inline;
+    /*float: left;*/
+    margin-right: 10px;
+    padding: 1px 0;
+    position: relative;
+    top: -1px;
+    width: 80px;
+}
+tfoot .first .fldCoupon {
+    width: 180px;
+}
+tfoot .first .btCalculateShipping {
+    background: url("../images/botoes/bt_calcula_frete.jpg") no-repeat scroll 0 0 transparent;
+    display: inline;
+    /*float: left;*/
+    height: 22px;
+    overflow: hidden;
+    position: relative;
+    text-indent: -9999px;
+    top: 0px;
+    width: 120px;
+}
+tfoot .first .btCalculateCoupon {
+    background: url("../images/botoes/bt_calcular_cupom.jpg") no-repeat scroll 0 0 transparent;
+    display: inline;
+    float: left;
+    height: 22px;
+    overflow: hidden;
+    position: relative;
+    text-indent: -9999px;
+    top: -2px;
+    width: 230px;
+}
+tfoot .first .detail {
+    color: #6F6C49;
+    font-size: 11px;
+}
+tfoot .rowVale {
+}
+tfoot .rowVale td {
+    background: none repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    height: 40px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+tfoot .rowVale .first {
+    background: url("/locales/global/img/bg_vale_presente.png") no-repeat scroll 0 0 transparent;
+    color: #164312;
+    padding-left: 55px;
+}
+tfoot .rowVale .info {
+    background: url("/locales/global/img/bg_vale_presente.png") no-repeat scroll -610px 0 transparent;
+}
+tfoot .rowVale .last {
+    background: url("/locales/global/img/bg_vale_presente.png") no-repeat scroll right 0 transparent;
+}
+tfoot .bdLft {
+    border-left: 1px solid #E3E3DD;
+}
+tfoot .info {
+    border-right: 1px solid #E3E3DD;
+    padding-right: 10px;
+    text-align: right;
+}
+tfoot .last {
+    border-right: 1px solid #E3E3DD;
+    color: #5E5E5E;
+    font-size: 11px;
+    padding-right: 15px;
+    text-align: right;
+}
+tfoot .bolder {
+    font-size: 13px;
+    font-weight: bold;
+}
+tfoot .coupon {
+    border-right: 1px solid #E3E3DD;
+    padding-right: 10px;
+}
+tfoot .coupon strong {
+    display: inline;
+    float: right;
+}
+tfoot .coupon p {
+    color: #6F6C49;
+    display: inline;
+    float: left;
+    font-size: 11px;
+    height: 29px;
+    margin: 0 0 0 15px;
+    padding: 2px 0 0 35px;
+    width: 155px;
+}
+tfoot .coupon span {
+    text-decoration: underline;
+}
+tfoot .coupon.error {
+    background-color: #FFFCDC;
+}
+tfoot .coupon.error p {
+    background: url("/locales/global/img/ico_cupom_error.png") no-repeat scroll 0 0 transparent;
+}
+tfoot .coupon.valid {
+    background-color: #E0E4C7;
+}
+tfoot .coupon.valid p {
+    background: url("/locales/global/img/ico_cupom_valid.png") no-repeat scroll 0 0 transparent;
+}
+.tblBuyTogether {
+    border: 1px solid #006ACD;
+    width: 100%;
+}
+.tblBuyTogether .product {
+    width: 42%;
+}
+.tblBuyTogether .quantity {
+    width: 15%;
+}
+.tblBuyTogether .gift {
+    width: 15%;
+}
+.tblBuyTogether .unitPrice {
+    width: 15%;
+}
+.tblBuyTogether .total {
+    width: 13%;
+}
+.tblBuyTogether .icoBuyTogether {
+    background: url("/locales/pt-BR/img/selo_comprando_junto.png") no-repeat scroll center center transparent;
+    height: 115px;
+    overflow: hidden;
+    width: 100%;
+}
+.tblBuyTogether .priceBuyTogetherTop {
+    height: 65px;
+    padding-top: 55px;
+}
+.tblBuyTogether .priceBuyTogetherBottom {
+    color: #006ACD;
+    font-weight: bold;
+    height: 65px;
+    padding-top: 55px;
+}
+.tblBuyTogetherFull {
+    border: 1px solid #C7A82D;
+    width: 100%;
+}
+.tblBuyTogetherFull .product {
+    width: 42%;
+}
+.tblBuyTogetherFull .quantity {
+    width: 15%;
+}
+.tblBuyTogetherFull .gift {
+    width: 15%;
+}
+.tblBuyTogetherFull .unitPrice {
+    width: 15%;
+}
+.tblBuyTogetherFull .total {
+    width: 13%;
+}
+.tblBuyTogetherFull .icoBuyTogether {
+    background: url("/locales/pt-BR/img/selo_comprando_junto_full.png") no-repeat scroll center center transparent;
+    height: 115px;
+    overflow: hidden;
+    width: 100%;
+}
+.tblBuyTogetherFull .priceBuyTogetherTop {
+    height: 65px;
+    padding-top: 55px;
+}
+.tblBuyTogetherFull .priceBuyTogetherBottom {
+    color: #006ACD;
+    font-weight: bold;
+    height: 65px;
+    padding-top: 55px;
+}
+.tblCustomization {
+    width: 100%;
+}
+.tblCustomization .product {
+    width: 42%;
+}
+.tblCustomization .product .icoCustomization {
+    margin: 0 10px 0 70px;
+}
+.tblCustomization .product p .titCustomization {
+    color: #000000;
+    display: inline;
+    float: left;
+    font-size: 13px;
+    margin: 0 5px 0 0;
+}
+.tblCustomization .quantity {
+    width: 15%;
+}
+.tblCustomization .gift {
+    width: 15%;
+}
+.tblCustomization .unitPrice {
+    width: 15%;
+}
+.tblCustomization .total {
+    width: 13%;
+}
+.tblCustomization .icoAndRemoveCustomization {
+    display: inline;
+    float: left;
+    margin: 0 0 0 20px;
+    width: 79px;
+}
+.tblCustomization .icoAndRemoveCustomization img {
+    margin: 0 0 10px;
+}
+.tblCustomization .icoAndRemoveCustomization a {
+    color: #02314C;
+    font-size: 11px;
+    text-decoration: underline;
+}
+.tblCustomization .infoCustomizationHolder {
+    display: inline;
+    float: left;
+    margin: 0 0 0 5px;
+}
+.tblCustomization .infoCustomizationHolder p {
+    display: block;
+}
+.tblCustomization .infoCustomizationHolder .infoCustomization {
+    display: inline;
+    float: left;
+    height: 125px;
+}
+.tblCustomization .infoCustomizationHolder .left {
+    background: url("/locales/global/img/img_local_persona_chutesq.png") no-repeat scroll 103px 25px transparent;
+    border-right: 1px solid #E3E3DD;
+    margin-right: 7px;
+    padding-right: 7px;
+}
+.tblCustomization .infoCustomizationHolder .right {
+    background: url("/locales/global/img/img_local_persona_chutdir.png") no-repeat scroll 88px 25px transparent;
+}
+.tblCustomization .infoCustomizationHolder .infoCustomization strong {
+    color: #000000;
+    display: inline;
+    float: left;
+    margin: 0;
+}
+.tblCustomization .infoCustomizationHolder .infoCustomization span {
+    color: #000000;
+    display: inline;
+    float: left;
+    font-size: 11px;
+    height: 104px;
+    margin-top: 2px;
+    width: 98px;
+}
+.tblCustomization .infoCustomizationHolder .left .taRight, .tblCustomization .infoCustomizationHolder .left .taLeft {
+    background: url("/locales/global/img/img_esq_persona_chuteira.png") no-repeat scroll 34px 31px transparent;
+}
+.tblCustomization .infoCustomizationHolder .left .taRight {
+    text-align: right;
+}
+.tblCustomization .infoCustomizationHolder .left .taLeft {
+    background-position: 13px -95px;
+    text-align: left;
+}
+.tblCustomization .infoCustomizationHolder .right .taRight, .tblCustomization .infoCustomizationHolder .right .taLeft {
+    background: url("/locales/global/img/img_dir_persona_chuteira.png") no-repeat scroll 38px 31px transparent;
+}
+.tblCustomization .infoCustomizationHolder .right .taRight {
+    text-align: right;
+}
+.tblCustomization .infoCustomizationHolder .right .taLeft {
+    background-position: 20px -95px;
+    text-align: left;
+}
+.tblCustomization .infoCustomizationHolder img {
+    float: inherit;
+}
+.tblCustomization .infoCustomizationHolder .cb {
+    margin: 0 !important;
+}
+.tblCustomization .infoCustomizationHolder .infoCustomization .off {
+    background: none repeat scroll 0 0 transparent;
+    visibility: hidden;
+}
+.tblCustomization .infoCustomizationHolder .infoCustomization .plusSimbol {
+    color: #000000;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: -1px;
+    text-align: center;
+    width: 15px;
+}
+.tblCustomization .infoCustomizationHolder .infoCustomization span img {
+    margin: 0;
+}
+.tblCustomization .infoCustomizationHolder .infoCustomization .taRight img {
+    display: inline;
+    float: right;
+}
+tbody .product .imgPersonaChutPgto {
+    margin: -10px 30px 0 25px;
+}
+tbody .product .personaDetail {
+    margin-left: 10px;
+    overflow: hidden;
+}
+tbody .product .personaDetail span {
+    color: #000000;
+    display: inline;
+    float: left;
+    font-weight: bold;
+}
+.boxAmex {
+    background: url("/locales/global/img/bg_info_amex_carrinho.png") no-repeat scroll 0 0 transparent;
+    height: 40px;
+    margin: 10px 0;
+    overflow: hidden;
+    padding: 8px 0 0 50px;
+    text-indent: -9999px;
+    width: 890px;
+}
+.boxAmex p {
+    background: url("/locales/pt-BR/img/txt_box_amex.gif") no-repeat scroll 0 0 transparent;
+    height: 33px;
+    width: 631px;
+}
+.boxEmptyCart {
+    margin: 10px 0;
+    overflow: hidden;
+}
+.boxEmptyCart .left {
+    display: inline;
+    float: left;
+    width: 460px;
+}
+.boxEmptyCart .right {
+    overflow: hidden;
+}
+.boxEmptyCart .left h3, .boxEmptyCart .right h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    overflow: hidden;
+}
+.boxEmptyCart .left p, .boxEmptyCart .right p {
+    color: #010100;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.boxEmptyCart .left .btBackToStore {
+    background: url("/locales/pt-BR/img/bt_voltar_loja.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 27px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 212px;
+}
+.titleHolder {
+    display: inline;
+    float: left;
+    margin: 5px 0 20px;
+    padding: 0 7px;
+}
+.titleHolder .titleShopCart {
+    height: 24px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+.titleHolder .identification {
+    background: url("/locales/pt-BR/img/tit_identificacao.png") no-repeat scroll 0 0 transparent;
+    width: 210px;
+}
+.titleHolder .myRegister {
+    background: url("/locales/pt-BR/img/tit_meu_cadastro.png") no-repeat scroll 0 0 transparent;
+    width: 228px;
+}
+.titleHolder .deliveryAddress {
+    background: url("/locales/pt-BR/img/tit_carrinho_end_entrega.png") no-repeat scroll 0 0 transparent;
+    width: 346px;
+}
+.titleHolder .deliveryOptions {
+    background: url("/locales/pt-BR/img/tit_opcoes_entrega.png") no-repeat scroll 0 0 transparent;
+    width: 317px;
+}
+.titleHolder .confirmationPayment {
+    background: url("/locales/pt-BR/img/tit_confirmacao_pagamento.png") no-repeat scroll 0 0 transparent;
+    width: 439px;
+}
+.titleHolder .confirmation {
+    background: url("/locales/pt-BR/img/tit_confirmacao.png") no-repeat scroll 0 0 transparent;
+    width: 532px;
+}
+.titleHolder .paymentType {
+    background: url("/locales/pt-BR/img/tit_formas_pagamento.png") no-repeat scroll 0 0 transparent;
+    height: 33px;
+    width: 353px;
+}
+.titleHolder .titGiftCard {
+    background: url("/locales/global/img/tit_giftcard.png") no-repeat scroll 0 0 transparent;
+    height: 21px;
+    width: 322px;
+}
+.titleHolder p {
+    color: #4D4D4D;
+}
+.imgSertisign {
+    display: inline;
+    float: right;
+    margin-right: 7px;
+}
+.identificationBoxHolder {
+    overflow: hidden;
+}
+.identificationBoxHolder .identificationBox {
+    background-color: #F2F2F2;
+    display: inline;
+    float: left;
+    height: auto !important;
+    min-height: 180px;
+    padding: 10px 0 20px 10px;
+    width: 445px;
+}
+.identificationBoxHolder .first {
+    margin-right: 11px;
+}
+.identificationBox input.error, .identificationBox select.error {
+    background-color: #FBF8C4;
+    border: 1px solid #A5ACB2;
+    padding: 3px 1px !important;
+}
+.identificationBox .alertError {
+    margin: 0 10px 10px 0;
+}
+.identificationBox label.error {
+    width: auto !important;
+}
+.identificationBoxHolder .identificationBox h2 {
+    height: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+.identificationBoxHolder .identificationBox .titNotRegistered {
+    background: url("/locales/pt-BR/img/tit_nao_cadastrado.png") no-repeat scroll 0 0 transparent;
+}
+.identificationBoxHolder .identificationBox .titRegistered {
+    background: url("/locales/pt-BR/img/tit_ja_cadastrado.png") no-repeat scroll 0 0 transparent;
+}
+.identificationBoxHolder .identificationBox label {
+    color: #4D4D4D;
+    display: inline;
+    float: left;
+    font-weight: bold;
+    margin: 5px 0 0;
+    padding: 0 10px;
+    width: 115px;
+}
+.identificationBoxHolder .identificationBox .fldIdentification {
+    display: inline;
+    float: left;
+    margin-bottom: 10px;
+    padding: 2px 0;
+    width: 215px;
+}
+.identificationBoxHolder .identificationBox .cep {
+    width: 77px;
+}
+.identificationBoxHolder .identificationBox p {
+    color: #4D4D4D;
+}
+.identificationBoxHolder .identificationBox p a {
+    color: #4D4D4D;
+    text-decoration: underline;
+}
+.identificationBoxHolder .identificationBox p a:hover {
+    text-decoration: none;
+}
+.identificationBoxHolder .identificationBox .autoLogin {
+    font-size: 12px;
+}
+.identificationBoxHolder .identificationBox .autoLogin input {
+    display: inline;
+    float: left;
+    margin-right: 5px;
+}
+.identificationBoxHolder .identificationBox .autoLogin label {
+    color: #4D4D4D;
+    display: inline;
+    float: left;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+.identificationBoxHolder .identificationBox .btContinue {
+    background: url("/locales/pt-BR/img/bt_continuar_carrinho.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    cursor: pointer;
+    height: 27px;
+    margin: 5px 0 0;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 132px;
+}
+.alertError {
+    background-color: #FBF8C4;
+    border: 1px solid #CBC790;
+    margin: 0 7px;
+    overflow: hidden;
+    padding: 10px;
+}
+.alertError p strong {
+    background: url("/locales/pt-BR/img/tit_alert_cadastro_corrija_campos.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 20px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 513px;
+}
+.alertError p b {
+    color: #676438;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.alertError p strong.peq {
+    background: url("/locales/pt-BR/img/tit_alert_peq.png") no-repeat scroll 0 0 transparent;
+    height: 16px;
+    width: 412px;
+}
+.alertError ul {
+    overflow: hidden;
+}
+.alertError ul li {
+    margin-bottom: 3px;
+    overflow: hidden;
+}
+.alertError ul li label {
+    color: #4D4D4D;
+}
+.alertError ul li label strong {
+    color: #4D4D4D;
+}
+.deliveryAdress .alertError {
+    background-color: #FBF8C4;
+    border: 1px solid #CBC790;
+    margin: 0 0 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+.deliveryAdress .alertError ul {
+}
+.deliveryAdress .alertError ul li {
+    border: medium none;
+    margin: 0;
+    padding: 0;
+}
+.deliveryAdress .txtNewAdress {
+    overflow: hidden;
+}
+.deliveryAdress .txtNewAdress a {
+    background: url("/locales/pt-BR/img/bt_cadastrar_novo_endereco.png") no-repeat scroll 0 0 transparent;
+    height: 27px;
+    width: 275px;
+}
+.register {
+    margin: 0 7px;
+    overflow: hidden;
+}
+.register li {
+    margin: 0 5px;
+    overflow: hidden;
+    padding: 5px;
+}
+.register .focus {
+    background-color: #EEEDDB;
+    border: 1px solid #CCCAB3;
+    padding: 4px;
+}
+.register .de {
+    display: none;
+}
+.register .tit {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color -moz-use-text-color #C9C9C9;
+    border-style: none none solid;
+    border-width: medium medium 1px;
+    height: 15px;
+    margin: 15px 0 5px;
+    overflow: hidden;
+    padding: 0 0 7px;
+    text-indent: -9999px;
+}
+.register .dataAccess {
+    background: url("/locales/pt-BR/img/tit_cadastro_dados_acesso.png") no-repeat scroll 12px 0 #FFFFFF;
+}
+.register .registerType {
+    background: url("/locales/pt-BR/img/tit_cadastro_tipo_cadastro.png") no-repeat scroll 12px 0 #FFFFFF;
+}
+.register .personal {
+    background: url("/locales/pt-BR/img/tit_cadastro_dados_pessoais.png") no-repeat scroll 12px 0 #FFFFFF;
+}
+.register .address {
+    background: url("/locales/pt-BR/img/tit_cadastro_seu_endereco.png") no-repeat scroll 12px 0 #FFFFFF;
+}
+.register .companyData {
+    background: url("/locales/pt-BR/img/tit_cadastro_dados_empresa.png") no-repeat scroll 12px 0 #FFFFFF;
+}
+.register li .focusBlur {
+    display: inline;
+    float: left;
+}
+.register li label {
+    color: #4D4D4D;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.register li .lblOptional {
+    display: inline;
+    float: left;
+}
+.register li .pfpj {
+    display: inline;
+    float: left;
+    margin: 0 20px 0 10px;
+}
+.register li span {
+    color: #999999;
+    display: inline;
+    float: left;
+    font-size: 11px;
+    margin: 5px 0 0 10px;
+}
+.register li .optional {
+    display: inline;
+    float: right;
+    margin: 0;
+}
+.register li input, .register li select {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #AAADB2 #E3E3EB #E3E3EB;
+    border-right: 1px solid #E3E3EB;
+    border-style: solid;
+    border-width: 1px;
+    color: #4D4D4D;
+    display: inline;
+    float: left;
+    padding: 2px;
+}
+.register li .size1 {
+    width: 440px;
+}
+.register li .size2 {
+    width: 180px;
+}
+.register li .size2 {
+    width: 180px;
+}
+.register li div.size2 {
+    width: 186px;
+}
+.register li select.size2 {
+    width: 186px;
+}
+.register li .size3 {
+    width: 210px;
+}
+.register li .size3sel {
+    width: 210px;
+}
+.register li select.size3 {
+    width: 216px;
+}
+.register li .size4 {
+    width: 112px !important;
+}
+.register li select.size4 {
+    width: 118px;
+}
+.register li .size5 {
+    width: 367px;
+}
+.register li .size6 {
+    width: 273px;
+}
+.register li .size7 {
+    width: 495px;
+}
+.register li .size8 {
+    width: 33px !important;
+}
+.register li .phone {
+    margin: 0 10px !important;
+    width: 104px !important;
+}
+.register li .size9 {
+    width: 166px;
+}
+.register li .size10 {
+    width: 429px;
+}
+.register li .sizePhone {
+    width: 281px;
+}
+.register li .sizeCel {
+    width: 161px;
+}
+.register li .size11 {
+    width: 167px;
+}
+.register li .include {
+    display: inline;
+    float: left;
+    margin-right: 10px;
+}
+.register li .include .lstCheckBox {
+    border: 1px solid #CFCFCF;
+    overflow: hidden;
+    padding: 10px;
+    width: 390px;
+}
+.register li div.sizeX {
+    width: 413px;
+}
+.register li .include .lstCheckBox li {
+    display: inline;
+    float: left;
+    margin: 0 0 7px;
+    padding: 0;
+    width: 130px;
+}
+.register li .include .lstCheckBox label {
+    display: inline;
+    float: left;
+    font-weight: normal;
+    margin-left: 5px;
+}
+.register li .include .news {
+    padding: 10px 0 8px 10px;
+}
+.register li .include .news li {
+    margin: 0;
+    width: auto;
+}
+.register li .btSubmitRegister {
+    background: url("/locales/pt-BR/img/bt_continuar.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    cursor: pointer;
+    display: inline;
+    float: left;
+    height: 27px;
+    margin: 10px 0;
+    padding: 0;
+    width: 132px;
+}
+.register li .btSaveAdress {
+    background: url("/locales/pt-BR/img/bt_salvar_end.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    cursor: pointer;
+    display: inline;
+    float: left;
+    height: 26px;
+    margin: 10px 0;
+    padding: 0;
+    width: 169px;
+}
+.registerPage {
+}
+.registerPage li {
+}
+.registerPage li div .flds {
+    display: inline;
+    float: left;
+}
+.registerPage li div .flds input, .registerPage li div .flds select {
+    margin: 0;
+    overflow: hidden;
+    padding: 2px 0;
+    width: 100%;
+}
+.registerPage li div .flds .cblb {
+    clear: both;
+}
+.registerPage li div .flds label {
+    display: inline;
+    float: left;
+}
+.registerPage li div .flds span {
+    display: none;
+    float: right;
+    margin: 2px 0 0;
+}
+.registerPage li .lblFlwRqt {
+    display: inline;
+    float: left;
+    font-weight: normal;
+    margin: 22px 0 0;
+    width: 430px;
+}
+.registerPage li .lblFlwRqt input {
+    border: medium none;
+    margin: 0 7px 0 0;
+}
+.registerPage li div label.error {
+    display: inline;
+    float: left;
+    font-weight: normal;
+    margin: 6px 0 0 10px;
+}
+.registerPage li div label.error .border {
+    background: url("/locales/global/img/bg_box_validation_error.png") no-repeat scroll 0 0 transparent;
+    display: inline;
+    float: left;
+    height: 34px;
+    margin: 0;
+    width: 13px;
+}
+.registerPage li div label.error .txt {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("/locales/global/img/ico_validation_error.png") no-repeat scroll 0 4px #FFE795;
+    border-color: #DABF44 #DABF44 #DABF44 -moz-use-text-color;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px medium;
+    color: #764600;
+    display: inline;
+    float: left;
+    font-size: 13px;
+    height: 24px;
+    margin: 0;
+    padding: 8px 10px 0 30px;
+}
+#adressTips {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #FFFFFF;
+    border-color: -moz-use-text-color #E3E3EB #E3E3EB;
+    border-right: 1px solid #E3E3EB;
+    border-style: none solid solid;
+    border-width: medium 1px 1px;
+    display: none;
+    padding: 5px 0;
+    position: absolute;
+    width: 214px;
+    z-index: 99999;
+}
+#adressTips ul li {
+    color: #000000;
+    padding: 2px 5px;
+}
+input.error, select.error {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #FBF8C4;
+    border-color: #A7A889 #DFDDB6 #DFDDB6;
+    border-right: 1px solid #DFDDB6;
+    border-style: none solid solid;
+    border-width: medium 1px 1px;
+}
+.tableDelivery {
+    width: 100%;
+}
+.tableDelivery td {
+    background-color: #F2F2F2;
+    border-bottom: 10px solid #FFFFFF;
+    padding: 10px;
+    vertical-align: top;
+    width: 51%;
+}
+.tableDelivery .first {
+    border-right: 10px solid #FFFFFF;
+    width: 49%;
+}
+.tblConfirmation .first, .tblConfirmation td {
+    width: 33%;
+}
+.tableDelivery .blank {
+    background-color: #FFFFFF;
+}
+.tableDelivery .titLst {
+    height: 20px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+.tableDelivery .buyerData {
+    background: url("/locales/pt-BR/img/tit_dados_comprador.png") no-repeat scroll 0 0 transparent;
+}
+.tableDelivery .deliveryAddress2 {
+    background: url("/locales/pt-BR/img/tit_end_entrega.png") no-repeat scroll 0 0 transparent;
+}
+.tableDelivery .newAdress {
+    background: url("/locales/pt-BR/img/tit_cadastrar_novo_endereco.png") no-repeat scroll 0 0 transparent;
+}
+.tableDelivery .registeredAddress {
+    background: url("/locales/pt-BR/img/tit_enderecos_cadastrados.png") no-repeat scroll 0 0 transparent;
+}
+.tableDelivery .paymentType {
+    background: url("/locales/pt-BR/img/tit_forma_pagamento.png") no-repeat scroll 0 0 transparent;
+}
+.tableDelivery .requestNumber {
+    background: url("/locales/pt-BR/img/tit_numero_pedido.png") no-repeat scroll 0 0 transparent;
+}
+.tableDelivery .deliveryAdress {
+    overflow: hidden;
+}
+.tableDelivery .deliveryAdress li {
+    border-top: 1px solid #A1A1A1;
+    margin: 0;
+    overflow: hidden;
+    padding: 10px 0 0;
+    width: auto;
+}
+.tableDelivery .deliveryAdress .first {
+    border: medium none;
+    padding: 0;
+}
+.tableDelivery .deliveryAdress li p {
+    color: #000000;
+}
+.tableDelivery .threeCol .deliveryAdress li p {
+    width: 270px;
+}
+.tableDelivery .deliveryAdress li p strong {
+    font-size: 16px;
+}
+.tableDelivery .deliveryAdress li p .normal {
+    font-size: 13px;
+}
+.tableDelivery .deliveryAdress li p .reqNum {
+    color: #008A03;
+    font-size: 20px;
+}
+.tableDelivery .deliveryAdress li p span {
+    font-weight: bold;
+}
+.tableDelivery .lstAdressRegistered li {
+    font-size: 11px;
+    margin: 10px 0 0 !important;
+}
+.tableDelivery .lstAdressRegistered li strong {
+    font-size: 13px !important;
+}
+.tableDelivery .deliveryAdress a {
+    display: inline;
+    float: left;
+    margin: 14px 10px 0 0;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+.tableDelivery .deliveryAdress .btChangeAdress {
+    background: url("/locales/pt-BR/img/bt_alterar_endereco.png") no-repeat scroll 0 0 transparent;
+    height: 19px;
+    width: 128px;
+}
+.tableDelivery .deliveryAdress .btDelete {
+    background: url("/locales/pt-BR/img/bt_excluir.png") no-repeat scroll 0 0 transparent;
+    height: 20px;
+    width: 63px;
+}
+.tableDelivery .deliveryAdress .btChange {
+    background: url("/locales/pt-BR/img/bt_alterar.png") no-repeat scroll 0 0 transparent;
+    height: 20px;
+    width: 64px;
+}
+.tableDelivery .deliveryAdress .btDeliverAddress {
+    background: url("/locales/pt-BR/img/bt_entregar_neste_end.png") no-repeat scroll 0 0 transparent;
+    height: 27px;
+    margin-top: 10px;
+    width: 272px;
+}
+.tableDelivery .lstAdressRegistered .btDeliverAddress {
+    background: url("/locales/pt-BR/img/bt_entregar_neste_end_sml.png") no-repeat scroll 0 0 transparent;
+    height: 20px;
+    margin-top: 14px;
+    width: 179px;
+}
+.tableDelivery .deliveryAdress .btPrintIt {
+    background: url("/locales/pt-BR/img/bt_imprimir_boleto.png") no-repeat scroll 0 0 transparent;
+    height: 26px;
+    margin-top: 10px;
+    width: 153px;
+}
+.tableDelivery .deliveryAdress .register {
+    margin: 0;
+}
+.tableDelivery .deliveryAdress .register li {
+    border: medium none;
+    margin: 0;
+    padding: 5px;
+    width: auto;
+}
+.tableDelivery .deliveryAdress .register .focus {
+    background-color: #EEEDDB;
+    border: 1px solid #CCCAB3 !important;
+    padding: 4px !important;
+}
+.tableDelivery .deliveryAdress .register li .btSubmitNewRegister {
+    background: url("/locales/pt-BR/img/bt_cadastrar_novo_end.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    cursor: pointer;
+    display: inline;
+    float: left;
+    height: 26px;
+    margin: 10px 0;
+    padding: 0;
+    width: 207px;
+}
+.tableDelivery .deliveryAdress .register li label.error {
+    display: none !important;
+}
+.tblConfirmation tr td {
+    border: medium none !important;
+}
+.tblConfirmation tr .first .deliveryAdress {
+    border-right: 1px solid #CDCEC7;
+    padding: 5px 0;
+}
+.tblConfirmation .deliveryAdress li p span {
+    color: #003D68;
+    font-weight: bold;
+}
+.tblConfirmation .deliveryAdress li .etc {
+    display: inline;
+    float: left;
+    margin-top: 6px;
+    width: 360px;
+}
+.tblConfirmation .threeCol td {
+    background: none repeat scroll 0 0 transparent;
+}
+.tblConfirmation .threeCol td .deliveryAdress {
+    background: none repeat scroll 0 0 transparent;
+    border-right: medium none;
+    padding: 0;
+}
+.tblConfirmation .threeCol li p span {
+    color: #000000;
+    font-weight: bold;
+}
+.deliveryOptionsBox {
+    background-color: #F2F2F2;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+.deliveryOptionsBox h2 {
+    height: 21px;
+    margin-bottom: 3px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+.deliveryOptionsBox .deliveryTypeService {
+    background: url("/locales/pt-BR/img/tit_tipo_servico_entrega.png") no-repeat scroll 0 0 transparent;
+}
+.deliveryOptionsBox .deliveryType {
+    background: url("/locales/pt-BR/img/tit_forma_entrega.png") no-repeat scroll 0 0 transparent;
+}
+.deliveryOptionsBox .optionForGift {
+    background: url("/locales/pt-BR/img/tit_opcao_presente.png") no-repeat scroll 0 0 transparent;
+}
+.deliveryOptionsBox .deliveryOptionsLst {
+    overflow: hidden;
+}
+.deliveryOptionsBox .deliveryOptionsLst li {
+    margin-top: 5px;
+    overflow: hidden;
+    padding-left: 10px;
+}
+.deliveryOptionsBox .deliveryOptionsLst input {
+    display: inline;
+    float: left;
+    margin: 0 7px 0 0;
+}
+.deliveryOptionsBox .deliveryOptionsLst label {
+    display: block;
+    overflow: hidden;
+}
+.deliveryOptionsBox .deliveryOptionsLst label.error {
+    display: none;
+    font-weight: bold;
+}
+.btBack {
+    background: url("/locales/pt-BR/img/bt_voltar.png") no-repeat scroll 0 0 transparent;
+    display: inline;
+    float: left;
+    height: 26px;
+    margin: 10px 20px 0 0;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 100px;
+}
+.btContinueDeliveryType {
+    background: url("/locales/pt-BR/img/bt_continuar.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    cursor: pointer;
+    display: inline;
+    float: left;
+    height: 27px;
+    margin-top: 9px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 132px;
+}
+.btChangeRequest {
+    background: url("/locales/pt-BR/img/bt_alterar_pedido.png") no-repeat scroll 0 0 transparent;
+    display: inline;
+    float: right;
+    height: 19px;
+    margin: 10px 0;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 107px;
+}
+.lstChoicePaymentType {
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 99;
+}
+.lstChoicePaymentType li {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("/locales/global/img/bg_lstchoicepayment.png") repeat-x scroll 0 bottom #FFFFFF;
+    border-color: #CCCCCC #CCCCCC -moz-use-text-color;
+    border-style: solid solid none;
+    border-width: 2px 2px medium;
+    display: inline;
+    float: left;
+    margin-right: 10px;
+    padding: 12px;
+}
+.lstChoicePaymentType .on {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+.lstChoicePaymentType li input {
+    display: inline;
+    float: left;
+    margin: 10px 7px 0 0;
+}
+.lstPaymentType {
+    border-bottom: 1px solid #4D4D4D;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+.lstPaymentType li {
+    display: inline;
+    float: left;
+    margin-right: 30px;
+}
+.lstPaymentType li a {
+    display: block;
+    height: 35px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+.lstPaymentType li .btCreditCard {
+    background: url("/locales/pt-BR/img/ico_cartao_credito.png") no-repeat scroll 0 1px transparent;
+    width: 218px;
+}
+.lstPaymentType li .btBoleto {
+    background: url("/locales/pt-BR/img/ico_boleto_bancario.png") no-repeat scroll 0 3px transparent;
+    width: 192px;
+}
+.lstPaymentType li .btDebit {
+    background: url("/locales/pt-BR/img/ico_debito_conta.png") no-repeat scroll 0 0 transparent;
+    width: 251px;
+}
+.paymentBoxHolder {
+    border-bottom: 1px solid #4D4D4D;
+    margin: 10px 7px;
+    overflow: hidden;
+    padding: 10px 10px 25px;
+}
+.paymentBoxHolder .title {
+    background: url("/locales/global/img/ico_tit_pagamento.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    font-size: 19px;
+    font-weight: bold;
+    height: 32px;
+    padding: 5px 0 0 55px;
+}
+.paymentBoxHolder .titBoleto {
+    background-position: 0 -37px;
+}
+.paymentBoxHolder .titBank {
+    background-position: 0 -72px;
+}
+.paymentBoxHolder .selectFlag {
+    display: block;
+    margin: 10px 0;
+}
+.contentPaymentType {
+    border: 2px solid #CCCCCC;
+    margin-top: -2px;
+    overflow: hidden;
+    padding: 13px;
+    position: relative;
+    z-index: 1;
+}
+.cont2Cards {
+    display: inline;
+    float: left;
+    width: 630px;
+}
+.contentPaymentType .lstSplit {
+    border: 1px solid #CCCCCC;
+    display: inline;
+    float: left;
+    margin-right: 10px;
+    padding: 4px 3px;
+    width: 192px;
+}
+.contentPaymentType .lstSplit .firstCardValue {
+    overflow: hidden;
+    padding: 0 0 30px 5px;
+}
+.contentPaymentType .lstSplit .firstCardValue input {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #AAADB2 #E2E2EC #E2E2EC;
+    border-right: 1px solid #E2E2EC;
+    border-style: solid;
+    border-width: 1px;
+    margin: 10px 0;
+    width: 180px;
+}
+.contentPaymentType .lstSplit .firstCardValue a {
+    background: url("/locales/global/img/bt_definir_valor.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 19px;
+    margin: 0 0 5px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 85px;
+}
+.contentPaymentType .lstSplit #btResetValue {
+    background: url("/locales/pt-BR/img/bt_redefinir_valor.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 20px;
+    margin: 10px 0 5px;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 112px;
+}
+.contentPaymentType ul {
+    overflow: hidden;
+}
+.contentPaymentType .lstSplit li {
+    overflow: hidden;
+    padding: 3px;
+}
+.contentPaymentType .lstSplit .color {
+    background-color: #F5F5F5;
+}
+.contentPaymentType .lstSplit li strong {
+    color: #000000;
+    display: block;
+    margin: 2px 0 5px;
+}
+.contentPaymentType .lstSplit li input {
+    display: inline;
+    float: left;
+}
+.contentPaymentType .lstSplit li label {
+    color: #000000;
+    display: inline;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.contentPaymentType .lstSplit li label span {
+    font-size: 11px;
+    font-weight: normal;
+}
+.contentCreditCard {
+    overflow: hidden;
+}
+.contentCreditCard .fldWrapper {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.contentCreditCard label, .contentCreditCard input {
+    display: block;
+}
+.contentCreditCard input {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #AAADB2 #E2E2EC #E2E2EC;
+    border-right: 1px solid #E2E2EC;
+    border-style: solid;
+    border-width: 1px;
+    width: 250px;
+}
+.contentCreditCard .stDate {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #AAADB2 #E2E2EC #E2E2EC;
+    border-right: 1px solid #E2E2EC;
+    border-style: solid;
+    border-width: 1px;
+    clear: inherit;
+    display: inline;
+    float: left;
+    margin-right: 10px;
+    width: 60px;
+}
+.contentCreditCard label {
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+.contentCreditCard label span {
+    font-weight: normal;
+}
+.contentCreditCard a {
+    color: #00629B;
+    display: inline;
+    float: left;
+}
+.contentCreditCard .imgSecCode {
+    display: inline;
+    float: left;
+    margin: -18px 0 0 7px;
+}
+.contentCreditCard .alertError {
+    display: none;
+    margin: 10px 0 0;
+}
+.contentCreditCard .alertError ul li label {
+    font-weight: normal;
+}
+.boxTwoCreditCard .alertError {
+    display: none;
+}
+.contentPaymentType .alertError {
+    display: none;
+    margin: 10px 0 0;
+}
+.txtCardData {
+    background: url("/locales/global/img/img_preencher_2cartoes.png") no-repeat scroll 5px 0 transparent;
+    font-size: 17px;
+    height: 172px;
+    overflow: hidden;
+    padding-top: 6px;
+}
+.txtCardData .cardNumber {
+    color: #FFFFFF;
+    display: inline;
+    float: left;
+    font-size: 39px;
+    margin: 0 27px 0 23px;
+}
+.toolTipCodSeg {
+    background: url("/locales/global/img/bg_tooltip_cod_seg.png") no-repeat scroll 0 0 transparent;
+    display: none;
+    float: left;
+    height: 92px;
+    margin-top: -7px;
+    width: 355px;
+}
+.toolTipCodSeg img {
+    display: inline;
+    float: left;
+    margin: 16px 5px 0 9px;
+}
+.toolTipCodSeg p {
+    margin: 16px 0 0 !important;
+}
+.boxTwoCreditCard {
+    overflow: hidden;
+}
+.boxTwoCreditCard .reportData {
+    color: #02314C;
+    font-size: 14px;
+    height: 19px;
+    margin-top: 15px;
+    overflow: hidden;
+    padding: 4px 0 0 32px;
+}
+.boxTwoCreditCard .reportData .number {
+    display: none;
+}
+.boxTwoCreditCard .card1 {
+    background: url("/locales/global/img/ico_cartao_um.png") no-repeat scroll 0 0 transparent;
+}
+.boxTwoCreditCard .card2 {
+    background: url("/locales/global/img/ico_cartao_dois.png") no-repeat scroll 0 0 transparent;
+}
+.boxTwoCreditCard .warning {
+    display: inline;
+    float: left;
+    margin-top: -5px;
+    width: 595px;
+}
+.paymentBoxHolder .btCheckoutCreditCard, .paymentBoxHolder .btCheckoutTwoCreditCard, .paymentBoxHolder .btCheckoutBoleto, .paymentBoxHolder .btCheckoutbankTransfer {
+    border: medium none;
+    cursor: pointer;
+    display: inline;
+    float: right;
+    height: 47px;
+    margin-top: 7px;
+    width: 218px;
+}
+.paymentBoxHolder .btCheckoutCreditCard {
+    background: url("/locales/pt-BR/img/bt_cartao_credito.png") no-repeat scroll 0 0 transparent;
+}
+.paymentBoxHolder .btCheckoutTwoCreditCard {
+    background: url("/locales/pt-BR/img/bt_dois_cartoes.png") no-repeat scroll 0 0 transparent;
+}
+.paymentBoxHolder .btCheckoutBoleto {
+    background: url("/locales/pt-BR/img/bt_boleto_bancario.png") no-repeat scroll 0 0 transparent;
+}
+.paymentBoxHolder .btCheckoutbankTransfer {
+    background: url("/locales/pt-BR/img/bt_transferencia_bancaria.png") no-repeat scroll 0 0 transparent;
+    width: 268px;
+}
+.paymentBoxHolder p {
+    color: #000000;
+    margin: 5px 0;
+}
+.paymentBoxHolder .txtValueAlert {
+    display: inline;
+    float: left;
+}
+.paymentBoxHolder .txtBoleto strong {
+    color: #CF1313;
+    font-size: 15px;
+}
+.paymentBoxHolder .txtBoleto .dePor {
+    color: #000000;
+    font-size: 13px;
+}
+.paymentBoxHolder .txtBoleto .finalPrice {
+    color: #000000;
+    font-size: 15px;
+}
+.paymentBoxHolder p span {
+    background: url("/locales/global/img/ico_alert_pagamento.png") no-repeat scroll 10px 4px #FBF8C4;
+    border: 1px solid #CECA93;
+    color: #676438;
+    display: block;
+    font-size: 11px;
+    margin-top: 5px;
+    padding: 5px 5px 5px 55px;
+}
+.paymentBoxHolder .detail {
+    color: #4D4D4D;
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.paymentBoxHolder .detail a {
+    color: #4D4D4D;
+    text-decoration: underline;
+}
+.paymentBoxHolder .detail a:hover {
+    text-decoration: none;
+}
+.paymentBoxHolder .txtIndent {
+    margin: 0 0 0 19px;
+}
+.paymentBoxHolder .txtIndent a {
+    color: #02314C;
+    text-decoration: underline;
+}
+.paymentBoxHolder .txtIndent a:hover {
+    text-decoration: none;
+}
+.paymentBoxHolder .txtAdvisorBoleto {
+    border: 1px solid #D2D2D2;
+    margin: 10px 0;
+    overflow: hidden;
+    padding: 15px;
+}
+.btRequestProgress, .btBackStore {
+    display: inline;
+    float: right;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+.btRequestProgress {
+    background: url("/locales/pt-BR/img/bt_acompanhamento_pedido.png") no-repeat scroll 0 0 transparent;
+    height: 19px;
+    margin: 7px 10px 0 0;
+    width: 197px;
+}
+.btBackStore {
+    background: url("/locales/pt-BR/img/bt_voltar_loja.png") no-repeat scroll 0 0 transparent;
+    height: 27px;
+    width: 212px;
+}
+.alertGiftCard a {
+    display: inline;
+    float: left;
+    height: 26px;
+    margin-top: 10px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+.alertGiftCard .btBuyMore {
+    background: url("/locales/global/img/bt_comprar_mais.png") no-repeat scroll 0 0 transparent;
+    width: 162px;
+}
+.alertGiftCard .btCheckout {
+    background: url("/locales/global/img/bt_concluir_compra.png") no-repeat scroll 0 0 transparent;
+    display: inline;
+    float: right;
+    width: 190px;
+}
+
+#resumoCarrinho {
+    background-color: #F2F5F7;
+    border: 1px solid #E3E3DD;
+    border-radius: 2px 2px 10px 10px;
+    display: none;
+    float: right;
+    height: auto;
+    left: -320px;
+    margin: -49px 0 0 100%;
+    padding: 10px 20px;
+    position: absolute;
+    width: 250px;
+    z-index: 130;
+    
+    -moz-box-shadow: 2px 2px 2px #3D3D3D;
+    -webkit-box-shadow: 2px 2px 2px #3D3D3D;
+    box-shadow: 2px 2px 2px #3D3D3D;
+}
+
+#resumoCarrinho ul{
+    margin: 0px;
+}
+
+#resumoCarrinho li{
+    list-style-type: none;
+}
+
+.carrinho-hover{
+    height: 60px;
+    margin-top: 135px;
+    width: 185px;
+}
+
+.resumo-itens{
+    text-align:right; 
+    color:#8B4774; 
+    font-weight:bold; 
+    border-bottom:1px solid #aaa; 
+    padding-right:78px; 
+    width: 130px;
+}
+
+.sub-total{
+    /*float:right; 
+    background-color:#E3E3DD;*/ 
+    margin: 5px 0 7px 10px; 
+    color: #023CAA;  
+    font-weight: bold;
+    text-align: right;
+}
+
+.continuar-comprando{
+    font: bold 16px Arial,Helvetica,sans-serif;
+    border: 1px solid #7e4570; 
+    font-weight: bold; 
+    color:#fff; 
+    padding: 15px 10px 15px 10px; 
+    cursor:pointer; 
+    float:right; 
+    margin-top: 135px; 
+    background-color: #7e4570; 
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    behavior:url(border-radius.htc); /*Para IE*/
+}

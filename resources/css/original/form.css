@@ -1,0 +1,233 @@
+/* Folha de estilos para formulários */
+
+.form {
+	text-align: center;
+	
+	position: relative;
+	width: auto;
+	height: auto;
+}
+
+.field-top,
+.field-left {
+	position: relative;
+	width: auto;
+	height: auto;
+	
+	margin: 0;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.field-top label,
+.field-left label {
+	font: bold 11px Tahoma, Verdana, Arial, serif;
+	color: #666;
+	
+	position: relative;
+	display: block;
+	height: auto;
+}
+
+.field-top label {
+	text-align: left;
+	
+	clear: both;
+	width: auto;
+	
+	padding: 2px 0 1px 0;
+}
+
+.field-left label {
+	text-align: right;
+	
+	float: left;
+	clear: left;
+	width: 100px;
+	
+	padding: 3px;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.field-top .element,
+.field-left .element {
+	font: normal 10px Tahoma, Verdana, Arial, serif;
+	color: #666;
+	text-align: left;
+	
+	position: relative;
+	padding-left: 100px;
+}
+
+.field-left > .element {
+	padding-left: 105px;
+}
+
+.field-top .element {
+	padding-left: 0;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.clear,
+.separator {
+	font-size: 0;
+	line-height: 0;
+	
+	position: relative;
+	overflow: hidden;
+	clear: left;
+	width: auto;
+	height: 0;
+	
+	margin: 1px 0;
+}
+
+.form > .clear {
+	margin: 2px 0;
+}
+
+.separator {
+	background-color: #EEE;
+	
+	height: 1px !important;
+	margin: 12px 0 !important;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.title {
+	text-align: left;
+	border-bottom: 2px solid #036;
+	
+	position: relative;
+	clear: left;
+	width: auto;
+	height: auto;
+	
+	margin: 25px 0 21px 0;
+}
+
+.title span {
+	font: bold 14px Tahoma, Verdana, Arial, serif;
+	color: #036;
+	background-color: #FFF;
+	
+	position: absolute;
+	width: auto;
+	height: auto;
+	
+	top: -12px;
+	left: 7px;
+	
+	padding: 3px 5px;
+	margin: 0;
+}
+
+.greenTheme, 
+.greenTheme span {
+	color: #7DA112;
+	border-bottom-color: #7DA112;
+}
+
+.message {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #999;
+	
+	position: relative;
+	width: auto;
+	height: auto;
+	
+	margin: 3px 0;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.form input,
+.form textarea,
+.form select,
+.form button {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #000;
+	border: 1px solid #CCC;
+}
+
+.form input:hover,
+.form textarea:hover,
+.form select:hover,
+.form button:hover,
+.form input:focus,
+.form textarea:focus,
+.form select:focus,
+.form button:focus {
+	border: 1px solid #7F9DB9;
+}
+
+.form input,
+.form textarea {
+	padding: 2px 3px;
+}
+
+.form input {
+	height: 19px;
+}
+
+.form > input,
+.element > input {
+	height: auto;
+}
+
+.form input.checkbox,
+.form input.radio {
+	border-style: none;
+	
+	padding: 0;
+	margin: -3px 0 -2px 0;
+}
+
+.form > input.checkbox, 
+.element > input.checkbox,
+.form div > input.checkbox {
+	margin: -3px 1px -4px 0px;
+}
+
+.form > input.radio,
+.element > input.radio,
+.form div > input.radio {
+	margin: 4px 3px -3px 0;
+}
+
+.form button,
+.form input.botao {
+	color: #666;
+	background-color: #FFF;
+	
+	padding: 1px 5px 2px 5px;
+	margin: 0 1px;
+	
+	cursor: pointer;
+}
+
+.form button:hover,
+.form input.botao:hover {
+	color: #036;
+	background-color: #ECF1F4;
+	border: 1px solid #A9BBBF;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.centerForm { position: relative; left: 50%; }
+
+.form .fontColor999 { color: #999; }
+.form .fontWeightNormal { font-weight: normal; }
+
+.form .alignLeft { text-align: left !important; }
+.form .alignRight { text-align: right !important; }
+.form .alignCenter { text-align: center !important; }
+
+.form .displayBlock { display: block; }
+.form .displayNone { display: none; }
+
+/*-----------------------------------------------------------------------------*/

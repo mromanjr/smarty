@@ -1,0 +1,365 @@
+/* Folha de estilos para a página de produtos */
+
+#slideshow {
+	position: relative;
+	float: left;
+	width: 320px;
+	height: auto;
+	
+	margin-top: 4px;
+}
+
+#info {
+	font: normal 12px Tahoma, Verdana, Arial, serif;
+	color: #000;
+	
+	position: relative;
+	overflow: hidden;
+	float: left;
+	width: 248px;
+	height: auto;
+	
+	margin: 4px 0px 0px 6px;
+}
+
+#content > #info {
+	width: 245px;
+	margin: 4px 0px 0px 14px;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+#slideshow #foto-principal {
+	text-align: center;
+	border: 1px solid #F7F7F7;
+	background: #FFF url('../images/icones/loading.gif') no-repeat center center;
+
+	position: relative;
+	overflow: hidden;
+	width: 326px;
+	height: 240px;
+	
+	padding: 2px 0px;
+}
+
+#slideshow #foto-principal.imagem-indisponivel {
+	background: #FFF url('../images/noimage.gif') no-repeat center center;
+}
+
+#slideshow #thumbs {
+	position: relative;
+	width: 264px;
+	height: 66px;
+	
+	top: 0px;
+	left: 50%;
+	
+	margin: 5px 0px 0px -132px;
+}
+
+#thumbs a.foto {
+	text-align: center;
+	border: 1px solid #EEE;
+	
+	position: relative;
+	float: left;
+	width: 80px;
+	height: 60px;
+	
+	padding: 2px 0px;
+	margin: 0px 3px;
+}
+
+#thumbs > a.foto {
+	overflow: hidden;
+}
+
+#thumbs a.foto:hover {
+	border: 1px solid #7DA112;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+#info h1.nome-produto {
+	font: bold 18px Tahoma, Verdana, Arial, serif;
+	color: #000;
+	text-align: left;
+	
+	margin: 0px 0px 12px 0px;
+}
+
+#info h1.nome-produto span.marca {
+	font-size: 15px;
+	color: #999;
+	
+	position: relative;
+	display: block;
+}
+
+#info h1.nome-produto span.ano {
+	font-weight: normal;
+	font-size: 18px;
+	color: #AAA;
+}
+
+.valores {
+	font: normal 12px Tahoma, Verdana, Arial, serif;
+	color: #777;
+	text-align: left;
+	line-height: 150%;
+	background-color: #F8F8F8;
+	border: 1px solid #F0F0F0;
+	
+	position: relative;
+	width: auto;
+	height: auto;
+	
+	padding: 8px 6px;
+	margin: 12px 0;
+	-moz-border-radius: 8px;
+    border-radius: 8px;
+    behavior:url(border-radius.htc); /*Para IE*/
+}
+
+span.valor-de {
+	color: #BBB;
+}
+
+span.valor-por {
+	color: #069;
+}
+
+span.valor-economize {
+	color: #7DA112;
+}
+
+span.valor-parcelas {
+	font-weight: bold ;
+	font-size: 14px;
+	color: #7DA112;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+#mais-informacoes {
+	position: relative;
+	clear: both;
+	width: 580px;
+	height: auto;
+}
+
+#mais-informacoes .info-ecommerce {
+	position: relative;
+	clear: both;
+	width: auto;
+	height: auto;
+}
+
+#mais-informacoes .info-ecommerce .opcao {
+	background: #FFF url('../images/bg/azul_pq.jpg') no-repeat top left;
+	
+	position: relative;
+	float: right;
+	width: 285px;
+	height: 125px;
+	
+	margin: 18px 0 10px 0;
+}
+
+#mais-informacoes > .info-ecommerce > .opcao {
+	width: 265px;
+	height: auto;
+	min-height: 85px;
+}
+
+#mais-informacoes .info-ecommerce .formas-pagto {
+	background: #FFF url('../images/bg/verde_pq.jpg') no-repeat top left;
+	
+	position: relative;
+	float: left;
+	width: 285px;
+	height: 125px;
+	
+	margin: 18px 0 10px 0;
+}
+
+#mais-informacoes > .info-ecommerce > .formas-pagto {
+	width: 265px;
+	height: auto;
+	min-height: 85px;
+}
+
+#mais-informacoes .detalhes-produto {
+	background: #FFF url('../images/bg/laranja.jpg') no-repeat top left;
+	
+	position: relative;
+	clear: both;
+	width: auto;
+	height: 125px;
+	
+	margin-top: 10px;
+}
+
+#mais-informacoes > .detalhes-produto {
+	height: auto;
+	min-height: 85px;
+}
+
+#mais-informacoes .relacionados {
+	background: #FFF url('../images/bg/cinza.jpg') no-repeat top left;
+	
+	position: relative;
+	clear: both;
+	width: auto;
+	height: 125px;
+	
+	margin-top: 10px;
+}
+
+#mais-informacoes > .relacionados {
+	height: auto;
+	min-height: 85px;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.opcao,
+.formas-pagto,
+.detalhes-produto,
+.relacionados {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #000;
+	
+	padding: 46px 10px 5px 10px;
+}
+
+.opcao h2,
+.formas-pagto h2,
+.detalhes-produto h2,
+.relacionados h2 {
+	font: bold 16px Tahoma, Verdana, Arial, serif;
+
+	position: absolute;
+	width: auto;
+	height: auto;
+	
+	top: 8px;
+	left: 10px;
+	
+	margin: 0;
+}
+
+.opcao h2 span,
+.formas-pagto h2 span,
+.detalhes-produto h2 span,
+.relacionados h2 span {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #777;
+	
+	position: relative;
+	display: block;
+	width: auto;
+	height: auto;
+}
+
+.opcao h2				{ color: #069; }
+.formas-pagto h2		{ color: #7DA112; }
+.relacionados h2		{ color: #888; }
+.detalhes-produto h2	{ color: #B67454; }
+
+/*-----------------------------------------------------------------------------*/
+
+.subtitulo {
+	border-bottom: 1px solid #DDD;
+}
+
+.subtitulo span {
+	font: bold 11px Tahoma, Verdana, Arial, serif;
+	color: #888;
+	background-color: #FFF;
+	
+	position: relative;
+	bottom: -5px;
+	left: 10px;
+	
+	padding: 0 3px;
+}
+
+.detalhes {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #000;
+	
+	margin: 0 18px;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.relac {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #888;
+	
+	position: relative;
+	clear: both;
+	width: 410px;
+	height: auto;
+	
+	margin: 0px 6px 6px 0px;
+}
+
+.relac div.imagem,
+.relac div.imagem-indisponivel {
+	text-align: center;
+	border: 1px solid #EEE;
+	
+	position: relative;
+	float: left;
+	width: 80px;
+	height: 60px;
+	
+	top: 0px;
+	left: 0px;
+	
+	padding: 2px 0px;
+	margin: 0px 6px 6px 0px;
+}
+
+.relac div.imagem-indisponivel {
+	background: transparent url('../images/noimage_pq.gif') no-repeat center center;
+}
+
+.relac div.imagem img,
+.relac div.imagem-indisponivel img {
+	margin: 0px 2px;
+}
+
+.relac div.imagem a,
+.relac div.imagem-indisponivel a {
+	position: relative;
+	display: block;
+	width: 76px;
+	height: 56px;
+}
+
+.relac span.valor-de,
+.relac span.valor-por,
+.relac span.valor-economize,
+.relac span.valor-parcelas {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+}
+
+.relac span.valor-por {
+	color: #069;
+}
+
+.relac span.valor-parcelas {
+	font-size: 12px;
+	color: #7DA112;
+}
+
+.relac .bt-comprar {
+	position: absolute;
+	top: 16px;
+	right: -110px;
+}
+
+/*-----------------------------------------------------------------------------*/

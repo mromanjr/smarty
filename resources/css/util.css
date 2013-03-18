@@ -1,0 +1,34 @@
+/* Utilitários */
+
+.alignLeft		{ text-align: left !important; }
+.alignRight		{ text-align: right !important; }
+.alignCenter	{ text-align: center !important; padding-bottom: 30px;}
+
+.displayNone	{ display: none !important; }
+.displayBlock	{ display: block !important; }
+
+.fontWeightNormal	{ font-weight: normal !important; }
+.fontWeightBold		{ font-weight: bold !important; }
+.fontSize12			{ font-size: 12px !important; }
+
+.verticalAlignTop		{ vertical-align: top !important; }
+.verticalAlignBottom	{ vertical-align: bottom !important; }
+.verticalAlignMiddle	{ vertical-align: middle !important; }
+
+.marginRight-1	{ margin-right: 132px !important; }
+
+.noBorder { border-style: none !important; }
+
+div.hr {
+	background-color: #EEE;
+	
+	position: relative;
+	overflow: hidden;
+	width: 540px;
+	height: 1px;
+	
+	top: 0;
+	left: 50%;
+	
+	margin: 16px 0 12px -270px;
+}

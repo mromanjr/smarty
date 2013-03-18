@@ -1,0 +1,118 @@
+/* Menu principal */
+
+#nav #menu{
+	background: transparente;
+	position: absolute;
+	width: 760px;
+	height: 28px;
+	top: 0;
+	left: 20px;
+}
+
+#nav #menu ul {
+	list-style: none;
+	
+	padding: 0;
+	margin: 8px 0 0 auto;
+	float: left;
+	
+	display: inline;
+	line-height: 16px;
+}
+
+#nav #menu ul li {
+	
+	position: relative;
+	overflow: hidden;
+	float: left;
+	height: auto;
+	valign: middle;
+	padding-right: 5px;
+	margin: 0 7px;
+	display: inline;
+}
+
+#nav #menu ul li a {
+	
+	position: relative;
+	overflow: hidden;
+	font: bold 11px Arial, Verdana, sans-serif;
+	color: #666;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: auto;
+	display: inline;
+}
+
+#nav #menu ul li a:hover,
+#nav #menu ul li a.selected {
+	color: #000;
+}
+
+
+/* Sub-menu (editor) */
+
+#sub-menu {
+	/*background: transparent url('../images/bg/submenu.jpg') repeat-x 0 0;*/
+	position: relative;
+	font: bold 12px Arial, Verdana, sans-serif;
+	color: #D17E0E;
+	float: left;
+	/*width: 818px;*/
+	height: 20px;
+	top: 0;
+	padding: 3px 3px 0 3px;
+    border: 1px solid #d6d6d6;
+    /*margin-bottom: 14px;*/
+    width:99%;
+    background-color: #f5f5f5;
+}
+
+#sub-menu a {
+	position: relative;
+	overflow: hidden;
+	font: bold 12px Arial, Verdana, sans-serif;
+	color: #D17E0E;
+	text-decoration: none;
+	padding: 0 0 0 5px;
+	
+	display: line;
+}
+
+#sub-menu a.selected,
+#sub-menu a:hover {
+	text-decoration: underline;
+}
+
+#tb-promocao-home{
+    margin-top:10px;
+}
+#tb-promocao-home td{
+    padding-bottom:30px;
+}
+#tb-promocao-home .lnk-nomeproduto{
+    font:bold 11px Tahoma;
+    text-decoration:none;
+    color:#4E5225;
+}
+
+#tb-promocao-home .lnk-nomeproduto:hover{
+    background:#EFF3E7;
+}
+#tb-promocao-home .imagem{
+    width:80px;
+    height:60px;
+    border:1px solid #F1F1F1;
+    padding:3px;
+    margin-bottom:5px;
+}
+
+#tb-promocao-home .imagem-indisponivelhome{
+    background: #FFF url('..//images/noimage_pq.gif') no-repeat center center;
+    width:80px;
+    height:60px;
+    border:1px solid #F1F1F1;
+    padding:3px;
+    margin-bottom:5px;
+}
+

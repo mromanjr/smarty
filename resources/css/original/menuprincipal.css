@@ -1,0 +1,55 @@
+/* Menu principal */
+
+#menu-principal {
+	position: absolute;
+	top: 62px;
+	right: 5px;
+}
+
+#menu-principal ul,
+#menu-principal ul li {
+	list-style-type: none;
+	
+	padding: 0;
+	margin: 0;
+}
+
+#menu-principal ul li {
+	font: normal 14px Tahoma, Verdana, Arial, serif;
+	color: #900;
+	
+	float: left;
+	margin: 0 3px 0 0;
+}
+
+#menu-principal ul li.separador {
+	background-color: #900;
+	
+	overflow: hidden;
+	width: 1px;
+	height: 22px;
+}
+
+#menu-principal ul li a {
+	font: bold 11px Tahoma, Verdana, Arial, serif;
+	color: #900;
+	text-decoration: none;
+	line-height: 20px;
+	
+	position: relative;
+	width: auto;
+	height: 22px;
+	
+	padding: 0 5px;
+	margin: 0;
+}
+
+#menu-principal ul li > a {
+	line-height: 21px;
+	display: block;	
+}
+
+#menu-principal ul li a:hover {
+	color: #FFF;
+	background-color: #C00;
+}

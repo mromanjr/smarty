@@ -1,0 +1,22 @@
+/* Estilos do site */
+
+/*******************************************************************************/
+@import url('yui/reset.css');
+@import url('yui/fonts.css');
+@import url('yui/base.css');
+
+@import url('layout.css');
+@import url('conteudo.css');
+
+@import url('recursostopo.css');
+@import url('menuprincipal.css');
+@import url('departamentos.css');
+
+@import url('camadas.css');
+@import url('avaliacoes.css');
+
+@import url('mensagens.css');
+@import url('util.css');
+@import url('anuncios.css');
+
+/*******************************************************************************/

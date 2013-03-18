@@ -1,0 +1,58 @@
+/* Folha de estilos para a Dialog */
+
+.dialog{
+    margin-left: 50%;
+    left: -200px;
+    width: 400px;
+    z-index: 300;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    top: 200px;
+    position: absolute;
+    background-color: #FFFFFF;
+    border: 1px solid #999;
+    height: auto;
+    font: 11px Tahoma,Verdana,Arial,serif;
+}
+
+.dialog-content{
+    margin: 10px 30px 30px 30px;
+}
+
+.dialog-topo{
+    -moz-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    background-color: #8E8E8E;
+    padding: 10px 0 10px 20px;
+    color: #fff;
+    font: bold 18px Tahoma,Verdana,Arial,serif;
+}
+
+.dialog-bottom{
+    -moz-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+    background-color: #8E8E8E;
+    padding: 20px 0 10px 20px;
+    color: #fff;
+    height: 17px;
+}
+
+.dialog-botao{
+    float:right; 
+    cursor:pointer; 
+    color:#5B5B5B; 
+    width:80px; 
+    height:20px; 
+    font-weight:bold; 
+    font-size: 11px; 
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding-top: 8px;
+    margin: -9px 15px 0px 0px;
+    text-align:center;
+    
+    background: -moz-linear-gradient(top, #fff, #f5f5f5) repeat-X;                                          /* Para Mozilla/Gecko (Firefox etc) */
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#F5F5F5)) repeat-X;          /* Para WebKit (Safari, Google Chrome etc) */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF, endColorstr=#F5F5F5)";      /* Para IE 8 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF, endColorstr=#F5F5F5);            /* Para IE 5.5 - 7 */
+}

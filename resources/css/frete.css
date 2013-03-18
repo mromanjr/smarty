@@ -1,0 +1,129 @@
+
+#box-frete{
+	margin-top: 9px;
+    color: #000;
+    height:auto;
+    width: 99%;
+	border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	-webkit-border-radius: 0 0 5px 5px;
+	background-color: #fff;
+	/*border:1px solid #DEEBE4;*/
+}
+
+.frete-img{
+	position: absolute;
+    margin: 10px 0 0 15px;
+}
+    
+.consulta-prazo{
+	color: darkred;
+    padding: 10px 0 0 70px;
+	font-weight: bold;
+	font-size:11px;
+}
+
+.digita-cep{
+    color: #414141;
+    float: left;
+    font-size: 10px;
+    margin: 7px 0 0 70px;
+}
+
+.bt-calcula-frete{
+    background-color: #f5f5f5;
+    float: left;
+    margin: 17px 0 15px 16px;
+    padding: 2px 3px;
+    border: 1px solid #d6d6d6;
+    color: #414141;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+
+select{
+    font-size: 11px !important;
+    color: #414141;
+    padding: 1px 0;
+}
+
+#calculoFrete{
+    font-size: 11px;
+    padding: 1px 0;
+}
+
+#frete-retorno{
+    background-color: #fafafa;
+    font-size: 11px;
+    margin-top: 5px;
+    padding: 5px 5px 10px 10px;
+    position: relative;
+	display:none;
+}
+
+/* ESTILOS P/ SIMULAÇÃO DE PAGAMENTO*/
+
+#box-pagamento{ 
+	margin-top: 9px;
+	width:99%; 
+	border:1px solid #DEEBE4; 
+	height:auto; 
+	font-size:11px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.pagamento-header{
+	background-color: #E5F4E7; 
+	padding:10px; 
+	color: #41674E; 
+	font-weight:bold;
+}
+
+
+/*
+#tabs{
+	margin: 20px 0 0 0;
+	padding:0;
+}
+
+#tabs li{
+	list-style:none !important; 
+	float:left;
+}
+
+#tabs li a{
+	
+	border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	background-color: #f5f5f5; 
+	padding: 10px;
+	color: #aaa;
+	font-weight: bold;
+	border-top: 1px solid #d6d6d6;
+	border-right: 1px solid #d6d6d6;
+	border-left: 1px solid #d6d6d6;
+}
+
+#tabs li a.selected{
+	
+	border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	background-color: #E5F4E7; 
+	padding: 10px;
+	color: #41674E;
+	font-weight: bold;
+	border-top: 1px solid #A2C9A7;
+	border-right: 1px solid #A2C9A7;
+	border-left: 1px solid #A2C9A7;
+}
+
+#tabs li a:hover {
+	cursor:pointer;
+}
+*/
+

@@ -1,0 +1,504 @@
+/* Folha de estilos para a página de produtos */
+
+#slideshow {
+	position: relative;
+	float: left;
+	left: 5px;
+	width: 320px;
+	height: auto;
+	
+	margin-top: 4px;
+}
+
+#info {
+	font: normal 12px Tahoma, Verdana, Arial, serif;
+	color: #000;
+	
+	position: relative;
+	overflow: hidden;
+	float: left;
+	width: 395px;
+	height: auto;
+	
+	margin: 4px 0px 0px 25px;
+}
+#avaliacao{
+    position: relative;
+    width: 200px;
+    height: 13px;
+    background: url('../images/icones/estrelas.png');
+}
+
+#content > #info {
+	width: 466px;
+	margin: 4px 0px 0px 14px;
+	left: 5px;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+#slideshow #foto-principal {
+	text-align: center;
+
+	position: relative;
+	overflow: hidden;
+	width: 326px;
+	height: 240px;
+	padding: 2px 0px;
+}
+
+#slideshow #foto-principal.imagem-indisponivel {
+	background: #FFF url('../images/noimage.gif') no-repeat center center;
+}
+
+#slideshow #thumbs {
+	position: relative;
+	width: 275px;
+	height: 66px;
+	
+	top: 0px;
+	left: 50%;
+	
+	margin: 5px 0px 0px -159px;
+}
+#slideshow #img-original{
+    border:4px solid #C6BAA5;
+}
+
+#thumbs a.foto {
+	text-align: center;
+	border: 1px solid #EEE;
+	
+	position: relative;
+	float: left;
+	width: 56px;
+	height: 45px;
+	
+	padding: 2px 0px;
+	margin: 6px 3px;
+}
+
+a.foto, a.foto-cores {
+	text-align: center;
+	border: 1px solid #EEE;
+	
+	position: relative;
+	float: left;
+	width: 85px;
+	height: 75px;
+	
+	padding: 2px 0px;
+	margin: 6px 3px;
+}
+
+.descricao-foto{
+    /*position: absolute;*/ 
+    margin:2px 0 0 0; 
+    width:81px; 
+    padding: 0 2px; 
+    background-color: #fcfcfc; 
+    /*border: 1px solid #d6d6d6;*/ 
+    font-size:10px; 
+    color:gray;
+    text-align: center;
+}
+
+#thumbs > a.foto {
+	overflow: hidden;
+}
+
+#thumbs a.foto:hover {
+	border: 1px solid #8B4774;
+}
+
+#thumbs a.foto:hover {
+	border: 1px solid #8B4774;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+#info h1.nome-produto {
+	font: bold 18px Arial,Helvetica,sans-serif;
+	color: #000;
+	text-align: left;
+	
+	margin: 0px 0px 12px 0px;
+}
+
+#info h1.nome-produto span.marca {
+	font-size: 15px;
+	color: #999;
+	
+	position: relative;
+	display: block;
+}
+#info h1.nome-produto span.item {
+	font-size: 12px;
+	color: #c0c0c0;
+
+	position: relative;
+	display: block;
+}
+
+#info h1.nome-produto span.ano {
+	font-weight: normal;
+	font-size: 18px;
+	color: #AAA;
+}
+
+.valores {
+	font: normal 12px Tahoma, Verdana, Arial, serif;
+	color: #777;
+	text-align: left;
+	line-height: 150%;
+	background-color: #F8F8F8;
+	border: 1px solid #F0F0F0;
+	
+	position: relative;
+	width: auto;
+	height: auto;
+	
+	padding: 8px 6px;
+	margin: 12px 0;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+    behavior:url(border-radius.htc); /*Para IE*/
+}
+
+span.valor-de {
+	color: #BBB;
+}
+
+span.valor-por {
+	color: #069;
+}
+
+span.valor-economize {
+	color: #7DA112;
+}
+
+span.valor-parcelas {
+	font-weight: bold ;
+	font-size: 11px;
+	color: chocolate;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+#mais-informacoes {
+	position: relative;
+	clear: both;
+	width: 99%;
+	height: auto;
+	left: 5px;
+    padding-top: 30px;
+}
+
+#mais-informacoes .info-ecommerce {
+	position: relative;
+	clear: both;
+	width: auto;
+	height: auto;
+}
+
+#mais-informacoes .info-ecommerce .opcao {
+	background: #FFF url('../images/bg/azul_pq.jpg') no-repeat top left;
+	
+	position: relative;
+	float: right;
+	width: 285px;
+	height: 125px;
+	
+	margin: 18px 0 10px 0;
+}
+
+#mais-informacoes > .info-ecommerce > .opcao {
+	width: 265px;
+	height: auto;
+	min-height: 85px;
+}
+
+#mais-informacoes .info-ecommerce .formas-pagto {
+	background: #FFF url('../images/bg/verde_pq.jpg') no-repeat top left;
+	
+	position: relative;
+	float: left;
+	width: 285px;
+	height: 125px;
+	
+	margin: 18px 0 10px 0;
+}
+
+#mais-informacoes > .info-ecommerce > .formas-pagto {
+	width: 265px;
+	height: auto;
+	min-height: 85px;
+}
+
+#mais-informacoes .detalhes-produto {
+	/*background: #FFF url('../images/bg/laranja.jpg') no-repeat top left;*/
+	background: url("../images/bg/detalhes.jpg") repeat-x scroll 0 12px transparent;
+	position: relative;
+	clear: both;
+	width: auto;
+	height: 125px;
+	
+	margin-top: 10px;
+}
+
+#mais-informacoes > .detalhes-produto {
+	height: auto;
+	min-height: 85px;
+}
+
+#mais-informacoes .relacionados {
+	background: url("../images/bg/detalhes.jpg") repeat-x scroll 0 12px transparent;
+    /*filter: alpha(opacity=50); 
+    opacity: 0.5;*/
+    background-position: 0 0;
+	position: relative;
+	clear: both;
+	width: auto;
+	height: 125px;
+	margin-top: 20px;
+}
+
+#mais-informacoes > .relacionados {
+	height: auto;
+	min-height: 85px;
+}
+
+.relacionados h2 {
+    font: bold 16px Tahoma, Verdana, Arial, serif;
+    margin: 0 0 0 10px;
+    padding-top: 7px;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+
+.opcao,
+.formas-pagto,
+.detalhes-produto {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #000;
+	
+	padding: 46px 10px 5px 10px;
+}
+
+.opcao h2,
+.formas-pagto h2,
+.detalhes-produto h2 {
+	font: bold 16px Tahoma, Verdana, Arial, serif;
+    padding-top:11px;
+	position: absolute;
+	width: auto;
+	height: auto;
+	
+	top: 8px;
+	left: 20px;
+	
+	margin: 0;
+}
+
+.opcao h2 span,
+.formas-pagto h2 span,
+.detalhes-produto h2 span,
+.relacionados h2 span {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #777;
+	
+	position: relative;
+	display: block;
+	width: auto;
+	height: auto;
+}
+
+.opcao h2				{ color: #555; }
+.formas-pagto h2		{ color: #555; }
+.relacionados h2		{ color: #555; }
+.detalhes-produto h2	{ color: #555; }
+
+/*-----------------------------------------------------------------------------*/
+
+.subtitulo {
+	border-bottom: 1px solid #DDD;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+
+.subtitulo span {
+	font: bold 12px Tahoma, Verdana, Arial, serif;
+	color: #CEA500;
+	background-color: #FFF;
+	
+	position: relative;
+	bottom: -5px;
+	left: 10px;
+	
+	padding: 0 3px;
+}
+
+.detalhes {
+	font: normal 12px Tahoma, Verdana, Arial, serif;
+	color: #000;
+	line-height: 150%;
+	margin: 6px 18px;
+    text-align: justify;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.relac {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #888;
+	
+	position: relative;
+	clear: both;
+	width: 410px;
+	height: auto;
+	
+	margin: 0px 6px 6px 0px;
+}
+
+.relac div.imagem,
+.relac div.imagem-indisponivel {
+	text-align: center;
+	border: 1px solid #EEE;
+	
+	position: relative;
+	float: left;
+	width: 80px;
+	height: 60px;
+	
+	top: 0px;
+	left: 0px;
+	
+	padding: 2px 0px;
+	margin: 0px 6px 6px 0px;
+}
+
+.relac div.imagem-indisponivel {
+	background: transparent url('../images/noimage_pq.gif') no-repeat center center;
+}
+
+.relac div.imagem img,
+.relac div.imagem-indisponivel img {
+	margin: 0px 2px;
+}
+
+.relac div.imagem a,
+.relac div.imagem-indisponivel a {
+	position: relative;
+	/*display: block;*/
+	width: 76px;
+	height: 56px;
+}
+
+.relac span.valor-de,
+.relac span.valor-por,
+.relac span.valor-economize,
+.relac span.valor-parcelas {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+}
+
+.relac span.valor-por {
+	color: #069;
+}
+
+.relac span.valor-parcelas {
+	font-size: 12px;
+	color: #7DA112;
+}
+
+.relac .bt-comprar {
+	position: absolute;
+	top: 16px;
+	right: -110px;
+}
+
+.preco-de{
+    width:100%;
+    color: #B0AFAF;
+    text-decoration: line-through;
+    float:none;
+}
+
+.label-por{
+    width:100%;
+    color: #8B4774;
+    font-size: 11px;
+    float:none;
+}
+
+.preco-por{
+    float:none;
+    color: darkorange;
+    font-size: 29px;
+    width:100%;
+    font-family: Arial,Helvetica,sans-serif;
+    margin-left: -2px;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.desc-condicoes {
+    font-size: 12px;
+}
+
+.desc-condicoes span {
+    font-weight: bold;
+    color: #a0a0a0;
+}
+
+.cor-foto a{
+    text-align: center;
+    border: 1px solid #EEE;
+    position: relative;
+    float: left;
+    width: 60px;
+    height: 45px;
+    padding: 2px 0px;
+    margin: 6px 3px;
+}
+
+.cores, 
+.tamanhos{
+    width: 420px;
+    height: auto;
+    position: relative;
+    margin-top: 10px;
+    float: left;
+}
+
+
+.tamanho-foto {
+    float: left;
+    margin: 5px;
+    background-color: #F0F0F0;
+    height: 30px;
+    text-align: center;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    cursor:pointer;
+    padding: 0px 10px 0px 10px;
+}
+
+.tamanho-foto a {
+    color: #888;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+    top: 6px;
+}
+
+.indisponivel{
+    background: url('../images/icones/icox.png') no-repeat scroll right bottom transparent;
+}
+
+.bt-comprar{
+    height: 33px;
+    margin: 10px 0 20px 0;
+    width: 403px;
+}

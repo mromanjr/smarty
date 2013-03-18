@@ -1,0 +1,310 @@
+/* 
+    Document   : rackcerto
+    Created on : 27/03/2012, 08:29:34
+    Author     : rodolfo
+*/
+
+.categoria{
+    width: 22%;
+    height: 150px;
+    border: 1px solid #d6d6d6;
+    float: left;
+    margin: 15px 1%;
+}
+
+.categoria:hover{
+    border: 1px solid #BE6E07;
+    cursor: pointer;
+}
+
+.categoria .desc{
+    height: 21px;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding-top: 9px;
+    color: #888;
+}
+
+.categoria .image{
+    position: relative; 
+    margin-left: 50%; 
+    left: -100px; 
+    margin-top:40px;
+}
+
+.etapa{
+    border-bottom: 3px solid #D9E7F2;
+    color: #888888;
+    font-size: 16px;
+    width: 95%;
+    margin: 20px 0 0 10px;
+    height: 25px;
+}
+
+.etapa .desc{
+    margin: 3px 0 0 40px;
+    position: absolute;
+}
+
+.etapa .number{
+    background-color: #D9E7F2;
+    color: #888888;
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    height: 18px;
+    padding: 5px 10px;
+    width: 15px;
+    border-radius: 0 10px 0 0;
+    -moz-border-radius: 0 10px 0 0;
+}
+
+#selected, #suporte-selected{
+    background-color: #F5F5F5;
+    color: #6D6D6D;
+    height: 16px;
+    margin-left: 10px;
+    padding: 9px 20px;
+    width: 91%;
+    display: none;
+}
+
+.remover, .suporte-remover{
+    margin: 9px 10px 0 100%;
+    left: -120px;
+    color: #888;
+    cursor: pointer;
+    position: absolute;
+    display: none;
+}
+
+.info-veiculo{
+    padding: 20px 40px 20px 10px;
+    color: gray;
+}
+
+select{
+    color: gray;
+    font-size: 12px;
+}
+
+#info-selected{
+    background-color: #fff;
+    width: 300px;
+    height: auto;
+    float: left;
+    display: none;
+}
+
+.selected-title{
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 4px 10px 2px 10px;
+    font-weight: bold;
+}
+
+#select-modelo, #select-veiculo, #select-ano{
+    display: none;
+    margin-left: 325px;
+}
+
+#select-marca{
+    margin-left: 40px;
+    display: none;
+}
+
+#selected-marca, #selected-modelo, #selected-veiculo, #selected-ano{
+    display: none;
+} 
+
+#inner-marca, #inner-modelo, #inner-veiculo, #inner-ano{
+    padding: 5px 10px;
+}
+
+.desculpe {
+    background-color: #F9E8C2;
+    color: #BE6E07;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 230px;
+    padding: 7px 0;
+    text-align: center;
+    border-bottom: 1px solid #F9E8C2;
+}
+
+ .descricao, .descricao-2{
+    margin: 15px 0 0 40px;
+    position: absolute;
+    /*display: none;*/
+}
+
+#pergunta-teto, #clique-aqui, #clique-aquatico, #clique-bagageiro{
+    display: none;
+}
+
+#suporte-bicicletas, #rackcerto, #equipamentos-aquaticos, #bagageiros{
+    display: none;
+}
+
+.opcao{
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #D6D6D6;
+    font-weight: bold;
+    padding: 5px 20px;
+    width: 95%;
+    margin-bottom: 10px;
+}
+
+.sugestao-menor{
+    height:30px; 
+    font-size:12px; 
+    border-bottom: 1px solid #d6d6d6; 
+    padding: 10px 0 25px 0; 
+    margin-left:270px; 
+    width:370px;
+}
+
+ul li{
+    list-style: none !important;
+}
+
+.total-sugestao{
+    float:left; 
+    margin: 10px 0 0 0; 
+    font-size: 12px;
+    color: #000;
+}
+
+.bt-comprar{
+    cursor: pointer;
+    float: left;
+    height: 45px;
+    margin: 23px 0 20px 30px;
+    width: 135px;
+}
+
+.produto-title{
+    color: #06558C;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15px 0 20px 30px;
+    position: absolute;
+}
+
+.whatIsRack{
+    padding: 10px 20px; 
+    position:absolute; 
+    margin: 20px 0 0 180px; 
+    border: 1px solid #f5f5f5; 
+    width:500px; 
+    text-align: justify; 
+    font-size:11px; 
+    line-height:150%;
+    display: none;
+}
+
+#inner-selecao{
+    padding: 20px 40px 20px 10px;
+    color: gray;
+}
+
+#inner-selecao td{
+    padding: 5px 10px;
+    border-bottom: 1px solid #d6d6d6;
+    border-top: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
+}
+
+#inner-selecao th{
+    
+    border: 1px solid #f5f5f5;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 5px 10px;
+    background-color: #f5f5f5;
+    font-weight: bold;
+    font-size: 11px;
+    text-align: left;
+}
+
+.nova-selecao{
+    float:left; 
+    margin:88px 0 0 20px; 
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.indique-amigos{
+    float:left; 
+    cursor:pointer;
+}
+
+.indique-text{
+    float:left; 
+    margin:6px 0 0 5px;
+}
+
+.indique-text:hover{
+    text-decoration: underline;
+}
+
+/* ESTILOS PARA A PÁGINA DE COMPARAÇÃO DE RACKS */
+
+.especificacoes{
+    margin-top:20px;
+    width: 97%;
+    border-top: 1px solid #d6d6d6;
+    border-left: 1px solid #d6d6d6;
+    border-right: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.especificacoes .normal th, .especificacoes .normal td{
+    background-color: #fff;
+    height: 150px;
+    vertical-align: top;
+    padding: 10px 0 0 0;
+}
+
+.especificacoes .rodape th, .especificacoes .rodape td{
+    background-color: #fff;
+    vertical-align: top;
+    padding: 15px 0 15px 0;
+    border: 0;
+}
+
+.especificacoes th{
+    width: 150px;
+    border-bottom: 1px solid #d6d6d6;
+    background-color: #818181;
+    padding:5px 10px;
+    color: #fff;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.especificacoes td{
+    width: 50px;
+    border-bottom: 1px solid #d6d6d6;
+    background-color: #f5f5f5;
+    padding:5px;
+    height: 25px;
+}
+
+.especificacoes select{
+    color: #000;
+    border: 1px solid #C7C7C7;
+    font-size: 11px;
+    margin: 0 auto;
+}
+
+.comparando-title{
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #D6D6D6;
+    color: #545454;
+    font-size: 14px;
+    padding: 10px 15px;
+    width: 94%;
+    font-weight: bold;
+}
+
+

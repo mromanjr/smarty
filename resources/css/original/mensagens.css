@@ -1,0 +1,96 @@
+/* Folha de estilos para mensagens personalizadas */
+
+.icon {
+	position: relative;
+	width: auto;
+	height: auto;
+	
+	top: 2px;
+	
+	padding: 0;
+	margin: 0 2px;
+}
+
+.success,
+.success-simple,
+.warning,
+.warning-simple,
+.error,
+.error-simple {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #666;
+	text-align: left;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	
+	position: relative;
+	display: block;
+	width: auto;
+	height: auto;
+}
+
+.success,
+.success-simple {
+	background-image: url('../images/icones/accept.gif');
+}
+
+.warning,
+.warning-simple	{
+	background-image: url('../images/icones/error.gif');
+}
+
+.error,
+.error-simple {
+	background-image: url('../images/icones/delete.gif');
+}
+
+.success-simple,
+.warning-simple,
+.error-simple {
+	background-position: 1px 0;
+	
+	padding: 2px 5px 2px 20px;
+	margin: 2px 0;
+}
+
+.success,
+.warning,
+.error {
+	background-position: 4px 3px;
+	
+	padding: 4px 5px 4px 24px;
+	margin: 2px 0 10px 0;
+}
+
+.success {
+	background-color: #E7FFCC;
+	border-top: 1px solid #529900;
+	border-bottom: 1px solid #529900;
+}
+
+.warning {
+	background-color: #FFFAD6;
+	border-top: 1px solid #FFD324;
+	border-bottom: 1px solid #FFD324;
+}
+
+.error {
+	background-color: #FFE8E8;
+	border-top: 1px solid #C00;
+	border-bottom: 1px solid #C00;
+}
+
+.success ul,
+.warning ul,
+.error ul {
+	margin: 4px 28px;
+}
+
+.success ul li,
+.warning ul li,
+.error ul li {
+	line-height: 13px;
+	
+	padding: 0;
+	margin: 0;
+}

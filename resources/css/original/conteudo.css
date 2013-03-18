@@ -1,0 +1,141 @@
+/* Folha de estilos do site */
+
+#content {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #000;
+}
+
+#content h1 {
+	font: bold 18px Tahoma, Verdana, Arial, serif;
+	color: #904842;
+	text-align: left;
+	
+	margin-top: 4px;
+}
+
+#content h1 span.nota {
+	font: normal 11px Arial;
+	color: #999;
+	
+	display: block;
+}
+
+#content h1 span.sub {
+	font: normal 16px Tahoma, Verdana, Arial, serif;
+	color: #999;
+	
+	display: inline;
+}
+
+#content .mensagem {
+	font: bold 11px Tahoma, Verdana, Arial, serif;
+	color: #000;
+	text-align: center;
+}
+
+/* --------------------------------------------------------------------------- */
+
+a.std,
+a.std2,
+a.std3 {
+	font: normal 11px Tahoma, Verdana, Arial, serif;
+	color: #069;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a.std:hover {
+	color: #7DA112;
+	background-color: #F0F7E8;
+}
+
+a.std2:hover,
+a.std3:hover {
+	text-decoration: underline;
+}
+
+a.std3 {
+	font-size: 12px !important;
+}
+
+a.especial-1 {
+	font: bold 12px Tahoma, Verdana, Arial, serif !important;
+	color: #069;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a.especial-1:hover {
+	color: #7DA112;
+	background-color: #F0F7E8;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* Breadcrumbs */
+
+#breadcrumb {
+	font: normal 9px Verdana, serif;
+	color: #999;
+	border-bottom: 1px solid #DDD;
+	
+	position: relative;
+	width: auto;
+	height: auto;
+	
+	padding: 1px 0;
+}
+
+#breadcrumb a {
+	font: normal 9px Verdana, serif;
+	color: #999;
+	text-decoration: none;
+}
+
+#breadcrumb a:hover {
+	color: #73342D;
+}
+
+#breadcrumb a.voltar {
+	font: bold 11px Tahoma, Verdana, Arial, serif;
+	color: #73342D !important;
+	
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#breadcrumb a.voltar:hover {
+	color: #C00 !important;
+}
+
+#breadcrumb span {
+	font-weight: bold;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.site-seguro {
+	text-align: center;
+	
+	position: relative;
+	width: 220px;
+	height: auto;
+	
+	top: 0;
+	left: 50%;
+	
+	margin: 0 0 10px -110px;
+}
+
+.site-seguro span {
+	font: normal 10px Verdana, serif;
+	color: #666;
+	text-align: center;
+	
+	display: block;
+	margin-bottom:2px;
+}
+
+/*-----------------------------------------------------------------------------*/
+ 
