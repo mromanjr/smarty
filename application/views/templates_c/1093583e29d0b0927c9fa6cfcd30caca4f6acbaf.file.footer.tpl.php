@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2013-03-18 17:26:32
+<?php /* Smarty version Smarty 3.1.4, created on 2013-03-18 20:07:48
          compiled from "application/views/templates/footer.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1064151473f7c493cd4-70912098%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:6021514774147406b4-09603001%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,15 +11,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1064151473f7c493cd4-70912098',
+  'nocache_hash' => '6021514774147406b4-09603001',
   'function' => 
   array (
   ),
-  'version' => 'Smarty 3.1.4',
-  'unifunc' => 'content_51473f7c49814',
   'has_nocache_code' => false,
+  'version' => 'Smarty 3.1.4',
+  'unifunc' => 'content_514774147ab34',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51473f7c49814')) {function content_51473f7c49814($_smarty_tpl) {?><!--FIM CENTRO-->
+<?php if ($_valid && !is_callable('content_514774147ab34')) {function content_514774147ab34($_smarty_tpl) {?><!--FIM CENTRO-->
      
      <div id="mninstit">
     <div style='margin-left:60px' id="institucional"><div class="titulomn">Empresa</div><div><ul><li><a href="http://www.webracks.com.br/institucional/sobre-a-webracks/1/1">Sobre a Webracks</a></li><li><a href="http://www.webracks.com.br/institucional/onde-estamos/1/2">Onde estamos</a></li><li onClick="window.open('http://www.webracks.com.br/certificado/','certificado','width=750, height=650');";><a href="#">Segurança</a></li><li><a href="http://webracks.proxy.com.br/contato/">Entre em Contato</a></li></ul></div></div><div  id="institucional"><div class="titulomn">Políticas de Venda</div><div><ul><li><a href="http://www.webracks.com.br/institucional/como-comprar/2/5">Como Comprar</a></li><li><a href="http://www.webracks.com.br/institucional/troca-e-devolucoes/2/6">Trocas e Devoluções</a></li></ul></div></div>

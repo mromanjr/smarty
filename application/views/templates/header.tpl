@@ -121,3 +121,133 @@
         {/literal}
     </head>
 <body>
+    
+    <div id="container"> 
+    <!--INÍCIO CONTAINER-->	
+    <!--[if lte IE 7]>
+        <div style='background-color:#FFFEE0;font-size:12px;text-align:center;margin-bottom:5px'>
+        <b>Esta versão do navegador está desatualizada.</b><br />
+        Para navegar neste site com maior segurança, recomendamos utilizar o
+        <a target="_blank" style="color:blue" href="http://br.mozdev.org/firefox/download/">Mozilla Firefox</a> ou
+        <a target="_blank" style="color:blue" href="https://www.google.com/chrome?hl=pt-br">Google Chrome</a>.
+        <br /></div>
+    <![endif]-->
+    {literal}
+    <script type="text/javascript" charset="ISO-8859-1" >
+        $(document).ready(function(){
+            $('#_q').focus(function(){
+               if($('#_q').val() == 'Digite sua pesquisa aqui'){
+                   $('#_q').val('');
+                   $('#_q').css({'font-weight':'bold','color':'black'});
+               }
+            });                
+
+            $('#q').blur(function(){
+               if($('#_q').val() == ''){
+                   $('#_q').val('Digite sua pesquisa aqui');
+               }
+            });
+
+            $('#_q').click(function(){
+                $('#_q').select();
+                $('#_q').css({'font-weight':'bold','color':'black'});
+            });
+
+        });
+
+        function resumoCarrinho(condicao){
+            if(condicao){
+                $('#resumoCarrinho').css({'display':'block'});
+            }else{
+                $('#resumoCarrinho').css({'display':'none'});
+            }
+        }
+
+        function menuTipos(indice, condicao){
+            if(condicao){
+                //$('#menu-hover-'+indice).slideDown();
+                $('#menu-hover-'+indice).show();
+            }else{
+                //$('#menu-hover-'+indice).slideUp();
+                $('#menu-hover-'+indice).hide();
+            }
+        }
+    </script>
+    {/literal}
+    <!--INÍCIO TOPO-->
+    <div id="header">
+        <div id="topo">
+            <div id="clientes">
+                <ul>
+                    <li>{anchor(base_url()|cat:'institucional/sobre-a-webracks','Empresa')}</li>
+                    <li>{anchor(base_url()|cat:'contato','Contato')}</li>
+                    <li>{anchor(base_url()|cat: 'minhascompras','Meus Pedidos')}</li>
+                    <li>{anchor(base_url()|cat: 'clientes','Cadastro')}</li>
+                </ul>
+            </div>
+            <div id="logo">
+                {anchor(base_url(),img('resources/images/topo/logo.jpg'))}        
+            </div>
+
+            <div id="telefone">
+                Vendas <b>(11) 4491-3051</b>
+            </div>
+            <div id="saudacao">
+                Olá visitante! {anchor(base_url()|cat:'clientes','Identifique-se aqui')}
+            </div>           
+            
+            <form id="pesquisa" name="frmSearch" method="get" action="http://www.webracks.com.br/produtos/pesquisa.php">
+                <input style="font-weight:bold" type="text" name="_q" id="_q" size="10" maxlength="255" value="Digite sua pesquisa aqui" title="Pesquise..." />
+                <input type="submit" style="display:none;"/>
+                <a href="http://www.webracks.com.br/produtos/pesquisa.php" id="bt-pesquisa" class="bt-pesquisa" onclick="$('#pesquisa').submit();return false;"></a>
+            </form>
+
+            <div id="ofertas">
+                <a style="width:79px;height:82px;" href="http://www.webracks.com.br/promocoes/">
+                    <img src="http://www.webracks.com.br/resources/images/topo/ofertas.jpg"></img>
+                </a>
+            </div>        
+
+            <div class="carrinho">
+                <div class='carrinho-hover' onMouseOver="resumoCarrinho(1)" onMouseOut="resumoCarrinho(0)">
+                    <a href="http://www.webracks.com.br/carrinho/" id="lnk-top-carrinho"></a>
+                    <a id="carrinho" id="lnk-top-carrinho" href="http://www.webracks.com.br/carrinho/">Carrinho</a>
+                    <font style="position: absolute;font-size:12px;margin-top:32px;color:#333;right:120px;">2 Itens</font>
+                </div>
+            </div>        
+        </div><!--FIM TOPO-->
+    </div><!--FIM header-->
+    
+        
+    <!-- HOVER CARRINHO -->
+
+    <div id="resumoCarrinho" onMouseOver="resumoCarrinho(1)" onMouseOut="resumoCarrinho(0)">
+        <ul style='height:50px; font-size:12px; border-bottom: 1px solid #aaa; padding-top: 5px'>
+            <li>
+                <div style='float:left; margin-right:10px'>
+                    <img src="http://www.webracks.com.br/php/classes/imagem/img6.php?_a=000567001.jpg" alt="" title=""/>
+                </div>                
+                <div style='color:#555; font-size:11px; position:absolute; padding:0 10px 0 70px'>Colchão Inflável Infanto Juvenil  - 6355 - Mor</div>
+                <div style='float:right; margin:30px 5px 0 0; font-weight: bold; color:#777'>R$ 42,00</div>
+            </li>
+        </ul>
+        <ul style='height:50px; font-size:12px; border-bottom: 1px solid #aaa; padding-top: 5px'>
+            <li>
+                <div style='float:left; margin-right:10px'> 
+                    <img src="http://www.webracks.com.br/php/classes/imagem/img6.php?_a=000113007.jpg" alt="" title=""/> 
+                </div>
+                <div style='color:#555; font-size:11px; position:absolute; padding:0 10px 0 70px'>Rack Completo Jetbag - Teto Plano 107269 - Jetbag</div>
+                <div style='float:right; margin:30px 5px 0 0; font-weight: bold; color:#777'>R$ 369,00</div>
+            </li>
+        </ul>
+        
+        <div class='sub-total' >Sub Total: R$ 411,00 </div>
+        
+        <div style='margin:10px 0 0 70px'>
+            <a href='http://www.webracks.com.br/endereco/' >
+                <img src=' http://www.webracks.com.br/resources/images/botoes/finalizar_compra.jpg' />
+            </a>
+        </div> 
+    </div>
+    
+    <!-- HOVER CARRINHO FIM -->        

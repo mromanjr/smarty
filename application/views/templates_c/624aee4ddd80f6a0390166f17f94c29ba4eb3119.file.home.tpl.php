@@ -1,162 +1,26 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2013-03-18 19:27:41
+<?php /* Smarty version Smarty 3.1.4, created on 2013-03-18 20:11:58
          compiled from "application/views/templates/home.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1487551473f7c339756-62569325%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:311955147741a055319-24511750%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '624aee4ddd80f6a0390166f17f94c29ba4eb3119' => 
     array (
       0 => 'application/views/templates/home.tpl',
-      1 => 1363634852,
+      1 => 1363637518,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1487551473f7c339756-62569325',
+  'nocache_hash' => '311955147741a055319-24511750',
   'function' => 
   array (
   ),
   'version' => 'Smarty 3.1.4',
-  'unifunc' => 'content_51473f7c3917f',
+  'unifunc' => 'content_5147741a4f1f4',
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51473f7c3917f')) {function content_51473f7c3917f($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('title'=>"Example Smarty Page",'name'=>($_smarty_tpl->tpl_vars['Name']->value)), 0);?>
+<?php if ($_valid && !is_callable('content_5147741a4f1f4')) {function content_5147741a4f1f4($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('title'=>"Example Smarty Page",'name'=>($_smarty_tpl->tpl_vars['Name']->value)), 0);?>
 
-<div id="container"> 
-    <!--INÍCIO CONTAINER-->	
-    <!--[if lte IE 7]>
-        <div style='background-color:#FFFEE0;font-size:12px;text-align:center;margin-bottom:5px'>
-        <b>Esta versão do navegador está desatualizada.</b><br />
-        Para navegar neste site com maior segurança, recomendamos utilizar o
-        <a target="_blank" style="color:blue" href="http://br.mozdev.org/firefox/download/">Mozilla Firefox</a> ou
-        <a target="_blank" style="color:blue" href="https://www.google.com/chrome?hl=pt-br">Google Chrome</a>.
-        <br /></div>
-    <![endif]-->
-    
-    <script type="text/javascript" charset="ISO-8859-1" >
-        $(document).ready(function(){
-            $('#_q').focus(function(){
-               if($('#_q').val() == 'Digite sua pesquisa aqui'){
-                   $('#_q').val('');
-                   $('#_q').css({'font-weight':'bold','color':'black'});
-               }
-            });
-
-            $('#q').blur(function(){
-               if($('#_q').val() == ''){
-                   $('#_q').val('Digite sua pesquisa aqui');
-               }
-            });
-
-            $('#_q').click(function(){
-                $('#_q').select();
-                $('#_q').css({'font-weight':'bold','color':'black'});
-            });
-
-        });
-
-        function resumoCarrinho(condicao){
-            if(condicao){
-                $('#resumoCarrinho').css({'display':'block'});
-            }else{
-                $('#resumoCarrinho').css({'display':'none'});
-            }
-        }
-
-        function menuTipos(indice, condicao){
-            if(condicao){
-                //$('#menu-hover-'+indice).slideDown();
-                $('#menu-hover-'+indice).show();
-            }else{
-                //$('#menu-hover-'+indice).slideUp();
-                $('#menu-hover-'+indice).hide();
-            }
-        }
-    </script>
-    
-    <!--INÍCIO TOPO-->
-    <div id="header">
-        <div id="topo">
-            <div id="clientes">
-                <ul>
-                    <li><?php echo anchor((base_url()).('institucional/sobre-a-webracks'),'Empresa');?>
-</li>
-                    <li><?php echo anchor((base_url()).('contato'),'Contato');?>
-</li>
-                    <li><?php echo anchor((base_url()).('minhascompras'),'Meus Pedidos');?>
-</li>
-                    <li><?php echo anchor((base_url()).('clientes'),'Cadastro');?>
-</li>
-                </ul>
-            </div>
-            <div id="logo">
-                <?php echo anchor(base_url(),img('resources/images/topo/logo.jpg'));?>
-        
-            </div>
-
-            <div id="telefone">
-                Vendas <b>(11) 4491-3051</b>
-            </div>
-            <div id="saudacao">
-                Olá visitante! <?php echo anchor((base_url()).('clientes'),'Identifique-se aqui');?>
-
-            </div>           
-            
-            <form id="pesquisa" name="frmSearch" method="get" action="http://www.webracks.com.br/produtos/pesquisa.php">
-                <input style="font-weight:bold" type="text" name="_q" id="_q" size="10" maxlength="255" value="Digite sua pesquisa aqui" title="Pesquise..." />
-                <input type="submit" style="display:none;"/>
-                <a href="http://www.webracks.com.br/produtos/pesquisa.php" id="bt-pesquisa" class="bt-pesquisa" onclick="$('#pesquisa').submit();return false;"></a>
-            </form>
-
-            <div id="ofertas">
-                <a style="width:79px;height:82px;" href="http://www.webracks.com.br/promocoes/">
-                    <img src="http://www.webracks.com.br/resources/images/topo/ofertas.jpg"></img>
-                </a>
-            </div>        
-
-            <div class="carrinho">
-                <div class='carrinho-hover' onMouseOver="resumoCarrinho(1)" onMouseOut="resumoCarrinho(0)">
-                    <a href="http://www.webracks.com.br/carrinho/" id="lnk-top-carrinho"></a>
-                    <a id="carrinho" id="lnk-top-carrinho" href="http://www.webracks.com.br/carrinho/">Carrinho</a>
-                    <font style="position: absolute;font-size:12px;margin-top:32px;color:#333;right:120px;">2 Itens</font>
-                </div>
-            </div>        
-        </div><!--FIM TOPO-->
-    </div><!--FIM header-->
-    
-        
-    <!-- HOVER CARRINHO -->
-
-    <div id="resumoCarrinho" onMouseOver="resumoCarrinho(1)" onMouseOut="resumoCarrinho(0)">
-        <ul style='height:50px; font-size:12px; border-bottom: 1px solid #aaa; padding-top: 5px'>
-            <li>
-                <div style='float:left; margin-right:10px'>
-                    <img src="http://www.webracks.com.br/php/classes/imagem/img6.php?_a=000567001.jpg" alt="" title=""/>
-                </div>                
-                <div style='color:#555; font-size:11px; position:absolute; padding:0 10px 0 70px'>Colchão Inflável Infanto Juvenil  - 6355 - Mor</div>
-                <div style='float:right; margin:30px 5px 0 0; font-weight: bold; color:#777'>R$ 42,00</div>
-            </li>
-        </ul>
-        <ul style='height:50px; font-size:12px; border-bottom: 1px solid #aaa; padding-top: 5px'>
-            <li>
-                <div style='float:left; margin-right:10px'> 
-                    <img src="http://www.webracks.com.br/php/classes/imagem/img6.php?_a=000113007.jpg" alt="" title=""/> 
-                </div>
-                <div style='color:#555; font-size:11px; position:absolute; padding:0 10px 0 70px'>Rack Completo Jetbag - Teto Plano 107269 - Jetbag</div>
-                <div style='float:right; margin:30px 5px 0 0; font-weight: bold; color:#777'>R$ 369,00</div>
-            </li>
-        </ul>
-        
-        <div class='sub-total' >Sub Total: R$ 411,00 </div>
-        
-        <div style='margin:10px 0 0 70px'>
-            <a href='http://www.webracks.com.br/endereco/' >
-                <img src=' http://www.webracks.com.br/resources/images/botoes/finalizar_compra.jpg' />
-            </a>
-        </div> 
-    </div>
-    
-    <!-- HOVER CARRINHO FIM -->        
-        
     
     <div id="depto_topo">
         <ul>
@@ -165,13 +29,54 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     <a href='http://www.webracks.com.br/racks-bagageiros/1/'>Racks & Bagageiros</a>
                 </div>
                 <div onMouseOver='menuTipos(1,1);' onMouseOut='menuTipos(1,0);' class='menu-hover' id='menu-hover-1'>
-                    <img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'>                    </img>
+                    <img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'></img>
                     <a style='margin-left:15px' href='http://www.webracks.com.br/bagageiros-de-teto/1/6/'>Bagageiros de Teto </a>
                     <br/>
+                    
                     <img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'></img>
-                    <a style='margin-left:15px' href='http://www.webracks.com.br/suporte-para-bicicletas/1/1/'>Suporte Para Bicicletas </a><br/><img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'></img><a style='margin-left:15px' href='http://www.webracks.com.br/suportes-para-equip-aquaticos/0/7/'>Suportes Para Equip. Aquáticos </a><br/><img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'></img><a style='margin-left:15px' href='http://www.webracks.com.br/pecas-para-reposicao/1/8/'>Peças Para Reposição </a><br/><img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'></img><a style='margin-left:15px' href='http://www.webracks.com.br/rack-para-seu-carro/1/5/'>Rack Para Seu Carro </a><br/><img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'></img><a style='margin-left:15px' href='http://www.webracks.com.br/acessorios-para-racks-bagageiros-e-suportes/1/17/'>Acessórios Para Racks, Bagageiros e Suportes </a><br/></div></li><li ><div class='menu-evento' onMouseOver='menuTipos(2,1);' onMouseOut='menuTipos(2,0);'>
-                                <a href='http://www.webracks.com.br/viagens-transportes/2/'>Viagens & Transportes</a>
-                            </div><div onMouseOver='menuTipos(2,1);' onMouseOut='menuTipos(2,0);' class='menu-hover' id='menu-hover-2'><img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'></img><a style='margin-left:15px' href='http://www.webracks.com.br/carrinhos-para-bebes/3/18/'>Carrinhos Para Bebes </a><br/><img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'></img><a style='margin-left:15px' href='http://www.webracks.com.br/organizadores/2/24/'>Organizadores </a><br/><img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'></img><a style='margin-left:15px' href='http://www.webracks.com.br/mochilas/2/15/'>Mochilas </a><br/></div></li><li ><div class='menu-evento' onMouseOver='menuTipos(3,1);' onMouseOut='menuTipos(3,0);'>
+                    <a style='margin-left:15px' href='http://www.webracks.com.br/suporte-para-bicicletas/1/1/'>Suporte Para Bicicletas </a>
+                    <br/>
+                    <img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'>
+                    </img>
+                    <a style='margin-left:15px' href='http://www.webracks.com.br/suportes-para-equip-aquaticos/0/7/'>Suportes Para Equip. Aquáticos</a>
+                    <br/>
+                    <img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'>
+                    </img>
+                    <a style='margin-left:15px' href='http://www.webracks.com.br/pecas-para-reposicao/1/8/'>Peças Para Reposição </a>
+                    <br/>
+                    <img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'>
+                    </img>
+                    <a style='margin-left:15px' href='http://www.webracks.com.br/rack-para-seu-carro/1/5/'>Rack Para Seu Carro </a>
+                    <br/>
+                    <img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'>
+                    </img>
+                    <a style='margin-left:15px' href='http://www.webracks.com.br/acessorios-para-racks-bagageiros-e-suportes/1/17/'>Acessórios Para Racks, Bagageiros e Suportes </a>
+                    <br/>
+                </div>
+            </li>
+            
+            <li>
+                <div class='menu-evento' onMouseOver='menuTipos(2,1);' onMouseOut='menuTipos(2,0);'>
+                    <a href='http://www.webracks.com.br/viagens-transportes/2/'>Viagens & Transportes</a>
+                </div>
+                
+                <div onMouseOver='menuTipos(2,1);' onMouseOut='menuTipos(2,0);' class='menu-hover' id='menu-hover-2'>
+                    <img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'>
+                    </img>
+                    <a style='margin-left:15px' href='http://www.webracks.com.br/carrinhos-para-bebes/3/18/'>Carrinhos Para Bebes </a>
+                    <br/>
+                    <img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'>
+                    </img>
+                    <a style='margin-left:15px' href='http://www.webracks.com.br/organizadores/2/24/'>Organizadores </a>
+                    <br/>
+                    <img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'>
+                    </img>
+                    <a style='margin-left:15px' href='http://www.webracks.com.br/mochilas/2/15/'>Mochilas </a>
+                    <br/>
+                </div>
+            </li>
+            
+            <li><div class='menu-evento' onMouseOver='menuTipos(3,1);' onMouseOut='menuTipos(3,0);'>
                                 <a href='http://www.webracks.com.br/esporte-lazer/3/'>Esporte & Lazer</a>
                             </div><div onMouseOver='menuTipos(3,1);' onMouseOut='menuTipos(3,0);' class='menu-hover' id='menu-hover-3'><img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'></img><a style='margin-left:15px' href='http://www.webracks.com.br/carrinhos-para-bebes/3/18/'>Carrinhos Para Bebes </a><br/></div></li><li ><div class='menu-evento' onMouseOver='menuTipos(4,1);' onMouseOut='menuTipos(4,0);'>
                                 <a href='http://www.webracks.com.br/relogios-monitores/4/'>Relógios & Monitores</a>

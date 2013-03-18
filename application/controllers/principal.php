@@ -6,4 +6,12 @@ class Principal extends CI_Controller {
         $this->load->helper('form');
         $this->smarty->view('home.tpl');
     }
+    
+    public function conteudo()
+    {
+        $this->load->model('conteudo_model');
+        $resultado = $this->conteudo_model->FillConteudo();        
+        $this->smarty->assign("pagina","contato");
+        $this->smarty->view("conteudo.tpl");
+    }
 }
