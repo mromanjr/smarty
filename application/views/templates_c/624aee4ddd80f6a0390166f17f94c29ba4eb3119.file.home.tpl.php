@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2013-03-18 18:35:46
+<?php /* Smarty version Smarty 3.1.4, created on 2013-03-18 19:27:41
          compiled from "application/views/templates/home.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1487551473f7c339756-62569325%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '624aee4ddd80f6a0390166f17f94c29ba4eb3119' => 
     array (
       0 => 'application/views/templates/home.tpl',
-      1 => 1363631375,
+      1 => 1363634852,
       2 => 'file',
     ),
   ),
@@ -99,8 +99,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <div id="saudacao">
                 Olá visitante! <?php echo anchor((base_url()).('clientes'),'Identifique-se aqui');?>
 
-            </div>
-
+            </div>           
+            
             <form id="pesquisa" name="frmSearch" method="get" action="http://www.webracks.com.br/produtos/pesquisa.php">
                 <input style="font-weight:bold" type="text" name="_q" id="_q" size="10" maxlength="255" value="Digite sua pesquisa aqui" title="Pesquise..." />
                 <input type="submit" style="display:none;"/>
@@ -160,9 +160,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     
     <div id="depto_topo">
         <ul>
-            <li ><div class='menu-evento' onMouseOver='menuTipos(1,1);' onMouseOut='menuTipos(1,0);'>
-                                <a href='http://www.webracks.com.br/racks-bagageiros/1/'>Racks & Bagageiros</a>
-                            </div><div onMouseOver='menuTipos(1,1);' onMouseOut='menuTipos(1,0);' class='menu-hover' id='menu-hover-1'><img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'></img><a style='margin-left:15px' href='http://www.webracks.com.br/bagageiros-de-teto/1/6/'>Bagageiros de Teto </a><br/><img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'></img><a style='margin-left:15px' href='http://www.webracks.com.br/suporte-para-bicicletas/1/1/'>Suporte Para Bicicletas </a><br/><img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'></img><a style='margin-left:15px' href='http://www.webracks.com.br/suportes-para-equip-aquaticos/0/7/'>Suportes Para Equip. Aquáticos </a><br/><img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'></img><a style='margin-left:15px' href='http://www.webracks.com.br/pecas-para-reposicao/1/8/'>Peças Para Reposição </a><br/><img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'></img><a style='margin-left:15px' href='http://www.webracks.com.br/rack-para-seu-carro/1/5/'>Rack Para Seu Carro </a><br/><img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'></img><a style='margin-left:15px' href='http://www.webracks.com.br/acessorios-para-racks-bagageiros-e-suportes/1/17/'>Acessórios Para Racks, Bagageiros e Suportes </a><br/></div></li><li ><div class='menu-evento' onMouseOver='menuTipos(2,1);' onMouseOut='menuTipos(2,0);'>
+            <li>
+                <div class='menu-evento' onMouseOver='menuTipos(1,1);' onMouseOut='menuTipos(1,0);'>
+                    <a href='http://www.webracks.com.br/racks-bagageiros/1/'>Racks & Bagageiros</a>
+                </div>
+                <div onMouseOver='menuTipos(1,1);' onMouseOut='menuTipos(1,0);' class='menu-hover' id='menu-hover-1'>
+                    <img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'>                    </img>
+                    <a style='margin-left:15px' href='http://www.webracks.com.br/bagageiros-de-teto/1/6/'>Bagageiros de Teto </a>
+                    <br/>
+                    <img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'></img>
+                    <a style='margin-left:15px' href='http://www.webracks.com.br/suporte-para-bicicletas/1/1/'>Suporte Para Bicicletas </a><br/><img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'></img><a style='margin-left:15px' href='http://www.webracks.com.br/suportes-para-equip-aquaticos/0/7/'>Suportes Para Equip. Aquáticos </a><br/><img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'></img><a style='margin-left:15px' href='http://www.webracks.com.br/pecas-para-reposicao/1/8/'>Peças Para Reposição </a><br/><img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'></img><a style='margin-left:15px' href='http://www.webracks.com.br/rack-para-seu-carro/1/5/'>Rack Para Seu Carro </a><br/><img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'></img><a style='margin-left:15px' href='http://www.webracks.com.br/acessorios-para-racks-bagageiros-e-suportes/1/17/'>Acessórios Para Racks, Bagageiros e Suportes </a><br/></div></li><li ><div class='menu-evento' onMouseOver='menuTipos(2,1);' onMouseOut='menuTipos(2,0);'>
                                 <a href='http://www.webracks.com.br/viagens-transportes/2/'>Viagens & Transportes</a>
                             </div><div onMouseOver='menuTipos(2,1);' onMouseOut='menuTipos(2,0);' class='menu-hover' id='menu-hover-2'><img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'></img><a style='margin-left:15px' href='http://www.webracks.com.br/carrinhos-para-bebes/3/18/'>Carrinhos Para Bebes </a><br/><img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'></img><a style='margin-left:15px' href='http://www.webracks.com.br/organizadores/2/24/'>Organizadores </a><br/><img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='http://www.webracks.com.br/resources/images/icones/bullet3.png'></img><a style='margin-left:15px' href='http://www.webracks.com.br/mochilas/2/15/'>Mochilas </a><br/></div></li><li ><div class='menu-evento' onMouseOver='menuTipos(3,1);' onMouseOut='menuTipos(3,0);'>
                                 <a href='http://www.webracks.com.br/esporte-lazer/3/'>Esporte & Lazer</a>
@@ -182,11 +189,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     
     
     
-    <div class='slider'><div id='coin-slider'><a href='http://www.webracks.com.br/combo/1' target='_top'>
-                        <img src=http://www.webracks.com.br/banner.php?_s=65 /><span></span>
-                      </a><a href='http://www.webracks.com.br/combo/24' target='_top'>
-                        <img src=http://www.webracks.com.br/banner.php?_s=67 /><span></span>
-                      </a><a href='http://www.webracks.com.br/combo/9' target='_top'>
+    <div class='slider'>
+        <div id='coin-slider'>
+            <a href='http://www.webracks.com.br/combo/1' target='_top'>
+                <img src=http://www.webracks.com.br/banner.php?_s=65 />
+                <span></span>
+            </a>
+            <a href='http://www.webracks.com.br/combo/24' target='_top'>
+                 <img src=http://www.webracks.com.br/banner.php?_s=67 />
+                 <span></span>
+            </a>
+                <a href='http://www.webracks.com.br/combo/9' target='_top'>
                         <img src=http://www.webracks.com.br/banner.php?_s=68 /><span></span>
                       </a></div></div>
     <div id="center"> <!--INÍCIO CENTRO-->
