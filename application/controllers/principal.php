@@ -52,14 +52,12 @@ class Principal extends CI_Controller {
     
     // <editor-fold defaultstate="collapsed" desc="Navegação"> 
     public function index()
-    {
-        $this->load->library('Commons/Sitemap');
-        
-        //$this->PesquisarConteudos(1);
-        //$this->smarty->assign("departamentos",$this->GetDepartamento());
-        //$this->smarty->assign("codcolecao",$this->GetCodColecao());
-        //$this->load->helper('form');
-        //$this->smarty->view('home.tpl');
+    {   
+        $this->PesquisarConteudos(1);
+        $this->smarty->assign("departamentos",$this->GetDepartamento());
+        $this->smarty->assign("codcolecao",$this->GetCodColecao());
+        $this->load->helper('form');
+        $this->smarty->view('home.tpl');
     }
 
 
