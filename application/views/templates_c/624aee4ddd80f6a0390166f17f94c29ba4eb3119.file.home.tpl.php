@@ -1,39 +1,51 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2013-03-19 12:41:42
+<?php /* Smarty version Smarty 3.1.4, created on 2013-03-19 18:56:10
          compiled from "application/views/templates/home.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:311955147741a055319-24511750%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:165035148aeb4f0ae62-64597610%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '624aee4ddd80f6a0390166f17f94c29ba4eb3119' => 
     array (
       0 => 'application/views/templates/home.tpl',
-      1 => 1363696542,
+      1 => 1363717920,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '311955147741a055319-24511750',
+  'nocache_hash' => '165035148aeb4f0ae62-64597610',
   'function' => 
   array (
   ),
   'version' => 'Smarty 3.1.4',
-  'unifunc' => 'content_5147741a4f1f4',
+  'unifunc' => 'content_5148aeb5337ba',
+  'variables' => 
+  array (
+    'slider' => 0,
+    'rs' => 0,
+  ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5147741a4f1f4')) {function content_5147741a4f1f4($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('title'=>"Example Smarty Page",'name'=>($_smarty_tpl->tpl_vars['Name']->value)), 0);?>
+<?php if ($_valid && !is_callable('content_5148aeb5337ba')) {function content_5148aeb5337ba($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('title'=>"Example Smarty Page",'name'=>($_smarty_tpl->tpl_vars['Name']->value)), 0);?>
         
     <div class='slider'>
-        <div id='coin-slider'>
-            <a href='http://www.webracks.com.br/combo/1' target='_top'>
+        <div id='coin-slider'>            
+            
+            <?php  $_smarty_tpl->tpl_vars['rs'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['rs']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['slider']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['rs']->key => $_smarty_tpl->tpl_vars['rs']->value){
+$_smarty_tpl->tpl_vars['rs']->_loop = true;
+?>
+                
+            <a href='<?php echo $_smarty_tpl->tpl_vars['rs']->value->url;?>
+' target='<?php echo $_smarty_tpl->tpl_vars['rs']->value->target;?>
+'>
                 <img src=http://www.webracks.com.br/banner.php?_s=65 />
                 <span></span>
             </a>
-            <a href='http://www.webracks.com.br/combo/24' target='_top'>
-                 <img src=http://www.webracks.com.br/banner.php?_s=67 />
-                 <span></span>
-            </a>
-                <a href='http://www.webracks.com.br/combo/9' target='_top'>
-                        <img src=http://www.webracks.com.br/banner.php?_s=68 /><span></span>
-                      </a></div></div>
+                
+            <?php } ?>            
+            
+        </div>
+    </div>
     <div id="center"> <!--INÍCIO CENTRO-->
         
 <script type="text/javascript">

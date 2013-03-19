@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Principal extends CI_Controller {    
-    
+class Principal extends CI_Controller 
+{   
     // <editor-fold defaultstate="collapsed" desc="Construtores">
     public function __construct() 
     {
@@ -52,11 +52,16 @@ class Principal extends CI_Controller {
     
     // <editor-fold defaultstate="collapsed" desc="Navegação"> 
     public function index()
-    {   
+    {           
+        $this->load->model("produtos_model");
+        $res = $this->produtos_model->FillSlider();
+        
+        if ($res != FALSE) {
+            $this->smarty->assign("slider",$res);
+        }
         $this->PesquisarConteudos(1);
         $this->smarty->assign("departamentos",$this->GetDepartamento());
-        $this->smarty->assign("codcolecao",$this->GetCodColecao());
-        $this->load->helper('form');
+        $this->smarty->assign("codcolecao",$this->GetCodColecao());        
         $this->smarty->view('home.tpl');
     }
 

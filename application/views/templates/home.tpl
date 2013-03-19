@@ -1,17 +1,18 @@
 {include file="header.tpl" title="Example Smarty Page" name="$Name"}        
     <div class='slider'>
-        <div id='coin-slider'>
-            <a href='http://www.webracks.com.br/combo/1' target='_top'>
+        <div id='coin-slider'>            
+            
+            {foreach from = $slider item = rs}
+                
+            <a href='{$rs->url}' target='{$rs->target}'>
                 <img src=http://www.webracks.com.br/banner.php?_s=65 />
                 <span></span>
             </a>
-            <a href='http://www.webracks.com.br/combo/24' target='_top'>
-                 <img src=http://www.webracks.com.br/banner.php?_s=67 />
-                 <span></span>
-            </a>
-                <a href='http://www.webracks.com.br/combo/9' target='_top'>
-                        <img src=http://www.webracks.com.br/banner.php?_s=68 /><span></span>
-                      </a></div></div>
+                
+            {/foreach}            
+            
+        </div>
+    </div>
     <div id="center"> <!--INÍCIO CENTRO-->
         
 <script type="text/javascript">
