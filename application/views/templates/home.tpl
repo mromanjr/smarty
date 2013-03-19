@@ -1,4 +1,4 @@
-{include file="header.tpl" title="Example Smarty Page" name="$Name"}        
+{include file="header.tpl" title="Webracks" name="$Name"}        
     <div class='slider'>
         <div id='coin-slider'>            
             

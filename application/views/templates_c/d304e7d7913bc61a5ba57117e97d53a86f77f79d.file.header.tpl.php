@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2013-03-19 18:30:13
+<?php /* Smarty version Smarty 3.1.4, created on 2013-03-19 19:13:14
          compiled from "application/views/templates/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:258285148aeb53d5118-05601689%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd304e7d7913bc61a5ba57117e97d53a86f77f79d' => 
     array (
       0 => 'application/views/templates/header.tpl',
-      1 => 1363695233,
+      1 => 1363720392,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty 3.1.4',
   'unifunc' => 'content_5148aeb57481b',
+  'variables' => 
+  array (
+    'title' => 0,
+  ),
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5148aeb57481b')) {function content_5148aeb57481b($_smarty_tpl) {?><?php echo doctype();?>
 
@@ -26,7 +30,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
         <meta http-equiv="Pragma" content="no-cache" />
         <meta name="google-site-verification" content="pJJdEo6K8bKiryYfRJBZgtYwZ6y1_3mF1CetIWrBfCA" />
-        <title>:.Webracks.:</title>
+        <title><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
+</title>
         <?php echo link_tag('resources/css/estilos.css');?>
 
         <?php echo link_tag('resources/css/listagem.css');?>

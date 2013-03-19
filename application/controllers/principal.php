@@ -56,7 +56,8 @@ class Principal extends CI_Controller
         $this->load->model("produtos_model");
         $res = $this->produtos_model->FillSlider();
         
-        if ($res != FALSE) {
+        if ($res != FALSE) 
+        {
             $this->smarty->assign("slider",$res);
         }
         $this->PesquisarConteudos(1);

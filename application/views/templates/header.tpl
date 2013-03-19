@@ -4,7 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
         <meta http-equiv="Pragma" content="no-cache" />
         <meta name="google-site-verification" content="pJJdEo6K8bKiryYfRJBZgtYwZ6y1_3mF1CetIWrBfCA" />
-        <title>:.Webracks.:</title>
+        <title>{$title}</title>
         {link_tag('resources/css/estilos.css')}
         {link_tag('resources/css/listagem.css')}
         {link_tag('resources/javascript/lib/coin-slider/coin-slider-styles.css')}
