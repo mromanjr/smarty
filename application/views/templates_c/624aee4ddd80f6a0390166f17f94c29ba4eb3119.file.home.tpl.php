@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2013-03-19 19:14:17
+<?php /* Smarty version Smarty 3.1.4, created on 2013-03-20 13:44:15
          compiled from "application/views/templates/home.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:165035148aeb4f0ae62-64597610%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '624aee4ddd80f6a0390166f17f94c29ba4eb3119' => 
     array (
       0 => 'application/views/templates/home.tpl',
-      1 => 1363720441,
+      1 => 1363787021,
       2 => 'file',
     ),
   ),
@@ -24,7 +24,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5148aeb5337ba')) {function content_5148aeb5337ba($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('title'=>"Webracks",'name'=>($_smarty_tpl->tpl_vars['Name']->value)), 0);?>
+<?php if ($_valid && !is_callable('content_5148aeb5337ba')) {function content_5148aeb5337ba($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('title'=>"Webracks"), 0);?>
         
     <div class='slider'>
         <div id='coin-slider'>            
@@ -38,8 +38,11 @@ $_smarty_tpl->tpl_vars['rs']->_loop = true;
             <a href='<?php echo $_smarty_tpl->tpl_vars['rs']->value->url;?>
 ' target='<?php echo $_smarty_tpl->tpl_vars['rs']->value->target;?>
 '>
-                <img src=http://www.webracks.com.br/banner.php?_s=65 />
-                <span></span>
+                <img src='<?php echo base_url();?>
+principal/banner/slider/<?php echo $_smarty_tpl->tpl_vars['rs']->value->codbanner;?>
+'/>
+                <span><?php echo $_smarty_tpl->tpl_vars['rs']->value->descricao;?>
+</span>
             </a>
                 
             <?php } ?>            
@@ -48,81 +51,86 @@ $_smarty_tpl->tpl_vars['rs']->_loop = true;
     </div>
     <div id="center"> <!--INÍCIO CENTRO-->
         
-<script type="text/javascript">
-    function ValidaEmail(){
-        
-        if($('#nome').val() == "")
-            alert('Informe um nome!');
-        else if($('#email').val() == "")
-            alert('Informe um E-mail!');
-        else{
-            var obj = eval("document.frmNews.email");
-            var txt = obj.value;
-            if ((txt.length != 0) && ((txt.indexOf("@") < 1) || (txt.indexOf('.') < 7))){
-                alert('Digite um e-mail válido');
-                obj.focus();
-            }else{
-                document.frmNews.submit();
+    <script type="text/javascript">
+        function ValidaEmail(){
+
+            if($('#nome').val() == "")
+                alert('Informe um nome!');
+            else if($('#email').val() == "")
+                alert('Informe um E-mail!');
+            else{
+                var obj = eval("document.frmNews.email");
+                var txt = obj.value;
+                if ((txt.length != 0) && ((txt.indexOf("@") < 1) || (txt.indexOf('.') < 7))){
+                    alert('Digite um e-mail válido');
+                    obj.focus();
+                }else{
+                    document.frmNews.submit();
+                }
             }
         }
-    }
-</script>
+    </script>
 
-<div id="sb-left">
-	
+    <div id="sb-left">	
     <!-- DEPARTAMENTOS -->
-    <div id="departamentos">
-	  <ul>
-			  </ul>
+        <div id="departamentos">
+            <ul>
+            </ul>
 	</div>
     
-
-    
-
-    
     <!-- PREÇOS -->
-    <div id="filtro_preco">
-        <div class="titulo">Preços</div></td>
-        <a href="http://www.webracks.com.br/preco/30-49/"><div class="n">R$ 30,00 a R$ 49,00</div></a>
-        <a href="http://www.webracks.com.br/preco/50-99/"><div class="n">R$ 50,00 a R$ 99,00</div></a>
-        <a href="http://www.webracks.com.br/preco/100-149/"><div class="n">R$ 100,00 a R$ 149,00</div></a>
-        <a href="http://www.webracks.com.br/preco/150-199/"><div class="n">R$ 150,00 a R$ 199,00</div></a>
-        <a href="http://www.webracks.com.br/preco/200-299/"><div class="n">R$ 200,00 a R$ 299,00</div></a>
-        <a href="http://www.webracks.com.br/preco/acima-300/"><div class="n">Acima de R$ 300,00</div></a>
-    </div>
+        <div id="filtro_preco">
+            <div class="titulo">Preços</div></td>
+            <a href="<?php echo base_url();?>
+preco/30-49/"><div class="n">R$ 30,00 a R$ 49,00</div></a>
+            <a href="<?php echo base_url();?>
+preco/50-99/"><div class="n">R$ 50,00 a R$ 99,00</div></a>
+            <a href="<?php echo base_url();?>
+preco/100-149/"><div class="n">R$ 100,00 a R$ 149,00</div></a>
+            <a href="<?php echo base_url();?>
+preco/150-199/"><div class="n">R$ 150,00 a R$ 199,00</div></a>
+            <a href="<?php echo base_url();?>
+preco/200-299/"><div class="n">R$ 200,00 a R$ 299,00</div></a>
+            <a href="<?php echo base_url();?>
+preco/acima-300/"><div class="n">Acima de R$ 300,00</div></a>
+        </div>
     
-    <div class="preco-slider">
-        
-        <label for="amount" style="color:gray;">Arraste para selecionar:</label>
-        <input class="slider-input" type="text" id="amount" style="border:0; color:#1F5AB2; font-weight:bold; margin:5px 0 2px 0" />
-        
-        <div style="margin:0px 10px 0px 5px" id="slider-range"></div>
-    </div>
+        <div class="preco-slider">        
+            <label for="amount" style="color:gray;">Arraste para selecionar:</label>
+            <input class="slider-input" type="text" id="amount" style="border:0; color:#1F5AB2; font-weight:bold; margin:5px 0 2px 0" />        
+            <div style="margin:0px 10px 0px 5px" id="slider-range"></div>
+        </div>
 
-    <div id="news">
-        <form action="" method="POST" name="frmNews">
-        <label class="labelnews"> Cadastre seu e-mail e receba</label>
-         <label class="labelnews" style="margin-left:40px;"><b>novidades!</b></label>
-         <br/><span class="labelnews"> &nbsp Nome:</span>
-         <input class="lnews" type="text" name="nome" id="nome">
-         <br/><span class="labelnews"> &nbsp E-mail:</span>
-         <input class="lnews" type="text" name="email" id="email" />
-        <input type="button" onclick="ValidaEmail();" name="bt-enviar" id="bt-newsenviar" value="Enviar" class="buttonnews" />
-        </form>
+        <div id="news">
+            <form action="" method="POST" name="frmNews">
+                <label class="labelnews"> Cadastre seu e-mail e receba</label>
+                <label class="labelnews" style="margin-left:40px;"><b>novidades!</b></label>
+                <br/><span class="labelnews"> &nbsp Nome:</span>
+                <input class="lnews" type="text" name="nome" id="nome">
+                <br/><span class="labelnews"> &nbsp E-mail:</span>
+                <input class="lnews" type="text" name="email" id="email" />
+                <input type="button" onclick="ValidaEmail();" name="bt-enviar" id="bt-newsenviar" value="Enviar" class="buttonnews" />
+            </form>
+        </div>    
+        
+        <br />
+        <br />
+    
+        <div id="informativo" align="center">
+            <a href=http://www.webracks.com.br/rack-para-seu-carro/rack-completo/rack-completo-para-pick-up-bedrider-longlife/67/ target=_top><img style='margin-top:10px' src=http://www.webracks.com.br/banner.php?_c=41 alt=imagem title=LongLife BedRide></a><a href=http://www.webracks.com.br/tendas-e-barracas/4-pessoas/barraca-para-4-pessoas-luna-mor-3514-mor/146/ target=_top><img style='margin-top:10px' src=http://www.webracks.com.br/banner.php?_c=42 alt=imagem title=Barraca Mor 4 Pessoas></a><a href=http://www.webracks.com.br/suporte-para-bicicletas/para-tampa-traseira/suporte-para-2-bicicletas-9001-cyel/579/ target=_top><img style='margin-top:10px' src=http://www.webracks.com.br/banner.php?_c=45 alt=imagem title=Cyel 9001></a><a href=http://www.webracks.com.br/monitores-cardiacos/acessorios/transmissor-t31-coded-polar/423/ target=_top>
+                <img style='margin-top:10px' src=http://www.webracks.com.br/banner.php?_c=48 alt=imagem title=Transmissor T13 Coded>
+            </a>
+        </div>
+
     </div>
     
-        
-    <br />
-    <br />
-	<div id="informativo" align="center">
-      <a href=http://www.webracks.com.br/rack-para-seu-carro/rack-completo/rack-completo-para-pick-up-bedrider-longlife/67/ target=_top><img style='margin-top:10px' src=http://www.webracks.com.br/banner.php?_c=41 alt=imagem title=LongLife BedRide></a><a href=http://www.webracks.com.br/tendas-e-barracas/4-pessoas/barraca-para-4-pessoas-luna-mor-3514-mor/146/ target=_top><img style='margin-top:10px' src=http://www.webracks.com.br/banner.php?_c=42 alt=imagem title=Barraca Mor 4 Pessoas></a><a href=http://www.webracks.com.br/suporte-para-bicicletas/para-tampa-traseira/suporte-para-2-bicicletas-9001-cyel/579/ target=_top><img style='margin-top:10px' src=http://www.webracks.com.br/banner.php?_c=45 alt=imagem title=Cyel 9001></a><a href=http://www.webracks.com.br/monitores-cardiacos/acessorios/transmissor-t31-coded-polar/423/ target=_top><img style='margin-top:10px' src=http://www.webracks.com.br/banner.php?_c=48 alt=imagem title=Transmissor T13 Coded></a></div>
-
-</div>
-        <div id="right">
-<div class="anuncios">
-      <a href=http://www.webracks.com.br/colchoes-inflaveis/king-size/colchao-inflavel-king-size-mor-9073-mor/143/ target=_top><img src=http://www.webracks.com.br/banner.php?_c=40 alt=imagem title=Colchão Mor King></a><a href=http://www.webracks.com.br/suportes-para-equip-aquaticos/para-pranchas-de-surf-e-standup/suporte-para-2-pranchas-de-surf-thule-double-decker-809-thule/110/ target=_top><img src=http://www.webracks.com.br/banner.php?_c=50 alt=imagem title=Thule Double Decker></a><a href=http://www.webracks.com.br/acessorios-camping-praia/entretenimento/frisbee-aloha-3660-mor/904/ target=_top><img src=http://www.webracks.com.br/banner.php?_c=46 alt=imagem title=Frisbee Mor></a><a href=http://www.webracks.com.br/acessorios-camping-praia/entretenimento/frescobol-aloha-3659-mor/903/ target=_top><img src=http://www.webracks.com.br/banner.php?_c=47 alt=imagem title=Frescobol Mor></a><a href=http://www.webracks.com.br/produtos/pesquisa.php?_q=capa+celular target=_top><img src=http://www.webracks.com.br/banner.php?_c=49 alt=imagem title=Capa Celular></a><a href=http://www.webracks.com.br/colchoes-inflaveis/infanto-juvenil/colchao-inflavel-infanto-juvenil-6355-mor/905/ target=_top><img src=http://www.webracks.com.br/banner.php?_c=51 alt=imagem title=Colchao Inflavel Infantil></a><a href=http://www.webracks.com.br/mesas-e-cadeiras/infantil/cadeira-dobravel-infantil-ursinho-2090-mor/910/ target=_top><img src=http://www.webracks.com.br/banner.php?_c=52 alt=imagem title=Cadeira Mor Ursinho></a>  </div>
-    
-</div>
+    <div id="right">
+        <div class="anuncios">
+            <a href=http://www.webracks.com.br/colchoes-inflaveis/king-size/colchao-inflavel-king-size-mor-9073-mor/143/ target=_top>
+                <img src=http://www.webracks.com.br/banner.php?_c=40 alt=imagem title=Colchão Mor King></a><a href=http://www.webracks.com.br/suportes-para-equip-aquaticos/para-pranchas-de-surf-e-standup/suporte-para-2-pranchas-de-surf-thule-double-decker-809-thule/110/ target=_top><img src=http://www.webracks.com.br/banner.php?_c=50 alt=imagem title=Thule Double Decker></a><a href=http://www.webracks.com.br/acessorios-camping-praia/entretenimento/frisbee-aloha-3660-mor/904/ target=_top><img src=http://www.webracks.com.br/banner.php?_c=46 alt=imagem title=Frisbee Mor></a><a href=http://www.webracks.com.br/acessorios-camping-praia/entretenimento/frescobol-aloha-3659-mor/903/ target=_top><img src=http://www.webracks.com.br/banner.php?_c=47 alt=imagem title=Frescobol Mor></a><a href=http://www.webracks.com.br/produtos/pesquisa.php?_q=capa+celular target=_top><img src=http://www.webracks.com.br/banner.php?_c=49 alt=imagem title=Capa Celular></a><a href=http://www.webracks.com.br/colchoes-inflaveis/infanto-juvenil/colchao-inflavel-infanto-juvenil-6355-mor/905/ target=_top><img src=http://www.webracks.com.br/banner.php?_c=51 alt=imagem title=Colchao Inflavel Infantil></a><a href=http://www.webracks.com.br/mesas-e-cadeiras/infantil/cadeira-dobravel-infantil-ursinho-2090-mor/910/ target=_top><img src=http://www.webracks.com.br/banner.php?_c=52 alt=imagem title=Cadeira Mor Ursinho>
+            </a> 
+        </div>    
+    </div>
 	
         <div id="informativo" align="center">
         <a href=http://www.webracks.com.br/rackcerto/ target=_top><img src=http://www.webracks.com.br/banner.php?_c=32 alt=imagem title=Rack Para Seu Carro></a>        </div>

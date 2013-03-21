@@ -41,6 +41,8 @@
 $route['default_controller'] = "principal";
 $route['404_override'] = '';
 
+$route['institucional/(:any)'] = 'principal/institucional/$1';
+
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
