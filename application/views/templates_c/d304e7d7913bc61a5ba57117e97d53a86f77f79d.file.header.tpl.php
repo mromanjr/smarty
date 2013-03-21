@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2013-03-21 20:05:18
+<?php /* Smarty version Smarty 3.1.4, created on 2013-03-21 20:50:37
          compiled from "application/views/templates/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:258285148aeb53d5118-05601689%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd304e7d7913bc61a5ba57117e97d53a86f77f79d' => 
     array (
       0 => 'application/views/templates/header.tpl',
-      1 => 1363896317,
+      1 => 1363899024,
       2 => 'file',
     ),
   ),
@@ -22,6 +22,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'title' => 0,
     'logo' => 0,
     'menu' => 0,
+    'i' => 0,
     'rs' => 0,
   ),
   'has_nocache_code' => false,
@@ -302,19 +303,21 @@ preco/"+ui.values[0]+"-"+ui.values[1]+"/";
     <div id="depto_topo">
         <ul>
             <?php  $_smarty_tpl->tpl_vars['rs'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['rs']->_loop = false;
+ $_smarty_tpl->tpl_vars['i'] = new Smarty_Variable;
  $_from = $_smarty_tpl->tpl_vars['menu']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['rs']->key => $_smarty_tpl->tpl_vars['rs']->value){
 $_smarty_tpl->tpl_vars['rs']->_loop = true;
+ $_smarty_tpl->tpl_vars['i']->value = $_smarty_tpl->tpl_vars['rs']->key;
 ?>
-            <li>
-                
-                    <div class='menu-evento' onMouseOver='menuTipos(1,1);' onMouseOut='menuTipos(1,0);'>
+            <li>                
+                    <div class='menu-evento' onMouseOver='menuTipos(<?php echo $_smarty_tpl->tpl_vars['i']->value;?>
+,1);' onMouseOut='menuTipos(<?php echo $_smarty_tpl->tpl_vars['i']->value;?>
+,0);'>
                         <a href='http://www.webracks.com.br/racks-bagageiros/1/'>
                             <?php echo $_smarty_tpl->tpl_vars['rs']->value->departamento;?>
 
-                    </a>
-                    </div>
-                
+                        </a>
+                    </div>               
                 
             </li>
             <?php } ?>

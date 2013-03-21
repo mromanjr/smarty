@@ -257,15 +257,13 @@
     <!-- Departamentos -->
     <div id="depto_topo">
         <ul>
-            {foreach from = $menu item = rs}
-            <li>
-                
-                    <div class='menu-evento' onMouseOver='menuTipos(1,1);' onMouseOut='menuTipos(1,0);'>
+            {foreach from = $menu key = i item = rs}
+            <li>                
+                    <div class='menu-evento' onMouseOver='menuTipos({$i},1);' onMouseOut='menuTipos({$i},0);'>
                         <a href='http://www.webracks.com.br/racks-bagageiros/1/'>
                             {$rs->departamento}
                         </a>
-                    </div>
-                
+                    </div>               
                 
             </li>
             {/foreach}
