@@ -1,7 +1,7 @@
-{include file="header.tpl" title="Example Smarty Page" name="$Name"}
+{include file="header.tpl" title="Teste Smarty Page"}
 	{$pagina}
         <br>        <br>
         <br>
         <br>
 
-{include file="footer.tpl" title="Example Smarty Page" name="$Name"}
+{include file="footer.tpl"}

@@ -1,7 +1,8 @@
+{"<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n"}
 {doctype()}
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta http-equiv="Pragma" content="no-cache" />
         <meta name="google-site-verification" content="pJJdEo6K8bKiryYfRJBZgtYwZ6y1_3mF1CetIWrBfCA" />
         <title>{$title}</title>
@@ -9,7 +10,7 @@
         {link_tag('resources/css/listagem.css')}
         {link_tag('resources/javascript/lib/coin-slider/coin-slider-styles.css')}
         {link_tag('resources/javascript/lib/jq-ui/css/ui-lightness/jquery-ui-1.8.16.custom.css')}        
-        <meta name="keywords" content="racks,bagageiros,bagageiro,bagageiro teto,suporte, bicicleta, bicicleta infantil,bicicletas,mountain bike, prancha surf, suporte caiaque,suporte equipamentos aqu�ticos, rack carro, monitores card�acos, monitor cardiaco, rel�gio monitor card�aco"/>
+        <meta name="keywords" content="racks,bagageiros,bagageiro,bagageiro teto,suporte, bicicleta, bicicleta infantil,bicicletas,mountain bike, prancha surf, suporte caiaque,suporte equipamentos aquÃ¡ticos, rack carro, monitores cardÃ­acos, monitor cardiaco, relÃ³gio monitor cardÃ­aco"/>
         <script type="text/javascript" charset="ISO-8859-1" src="{base_url()}resources/javascript/lib/jquery.js"></script>
         <script type="text/javascript" charset="ISO-8859-1" src="{base_url()}resources/javascript/lib/coin-slider/coin-slider.min.js"></script>
         <script type="text/javascript" src="{base_url()}resources/javascript/lib/jq-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
@@ -125,11 +126,11 @@
 <body>
     
     <div id="container"> 
-    <!--IN�CIO CONTAINER-->	
+    <!--INÃCIO CONTAINER-->	
     <!--[if lte IE 7]>
         <div style='background-color:#FFFEE0;font-size:12px;text-align:center;margin-bottom:5px'>
-        <b>Esta vers�o do navegador est� desatualizada.</b><br />
-        Para navegar neste site com maior seguran�a, recomendamos utilizar o
+        <b>Esta versÃ£o do navegador estÃ¡ desatualizada.</b><br />
+        Para navegar neste site com maior seguranÃ§a, recomendamos utilizar o
         <a target="_blank" style="color:blue" href="http://br.mozdev.org/firefox/download/">Mozilla Firefox</a> ou
         <a target="_blank" style="color:blue" href="https://www.google.com/chrome?hl=pt-br">Google Chrome</a>.
         <br /></div>
@@ -176,7 +177,7 @@
         }
     </script>
     {/literal}
-    <!--IN�CIO TOPO-->
+    <!--INÃCIO TOPO-->
     <div id="header">
         <div id="topo">
             <div id="clientes">
@@ -195,7 +196,7 @@
                 Vendas <b>(11) 4491-3051</b>
             </div>
             <div id="saudacao">
-                Ol� visitante! {anchor(base_url()|cat:'clientes','Identifique-se aqui')}
+                OlÃ¡ visitante! {anchor(base_url()|cat:'clientes','Identifique-se aqui')}
             </div>           
             
             <form id="pesquisa" name="frmSearch" method="get" action="http://www.webracks.com.br/produtos/pesquisa.php">
@@ -229,7 +230,7 @@
                 <div style='float:left; margin-right:10px'>
                     <img src="http://www.webracks.com.br/php/classes/imagem/img6.php?_a=000567001.jpg" alt="" title=""/>
                 </div>                
-                <div style='color:#555; font-size:11px; position:absolute; padding:0 10px 0 70px'>Colch�o Infl�vel Infanto Juvenil  - 6355 - Mor</div>
+                <div style='color:#555; font-size:11px; position:absolute; padding:0 10px 0 70px'>ColchÃ£o InflÃ¡vel Infanto Juvenil  - 6355 - Mor</div>
                 <div style='float:right; margin:30px 5px 0 0; font-weight: bold; color:#777'>R$ 42,00</div>
             </li>
         </ul>
@@ -260,11 +261,25 @@
             {foreach from = $menu key = i item = rs}
             <li>                
                     <div class='menu-evento' onMouseOver='menuTipos({$i},1);' onMouseOut='menuTipos({$i},0);'>
-                        <a href='http://www.webracks.com.br/racks-bagageiros/1/'>
+                        <a href='{base_url()|cat: UrlAmigavelReplace($rs->departamento)|cat:"/"|cat: $rs->codcolecao}'>
                             {$rs->departamento}
                         </a>
-                    </div>               
-                
+                    </div>     
+                        
+                    <div class='menu-hover' onMouseOver='menuTipos({$i},1);' onMouseOut='menuTipos({$i},0);' id="menu-hover-{$i}">
+                    
+                        {foreach from = $ItensMenu key = iItens item = itens}
+                            {foreach from = $itens item = Item}
+                                {if $Item->codcolecao == $rs->codcolecao}
+                            <img style='position:absolute; padding:6px 0 0 2px; width:auto;' src='{base_url()}resources/images/icones/bullet3.png'></img>
+                            <a href="{base_url()|cat: UrlAmigavelReplace($Item->tipoproduto)|cat:"/"|cat:$Item->codcolecao|cat:"/"|cat:$Item->codtipoproduto}" style='margin-left:15px'>
+                                   {$Item->tipoproduto}
+                            </a>
+                            <br>
+                                {/if}
+                            {/foreach}
+                         {/foreach}                    
+                    </div>
             </li>
             {/foreach}
             

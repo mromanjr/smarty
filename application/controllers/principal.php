@@ -1,11 +1,11 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Principal extends CI_Controller 
+class Principal extends MY_BaseControler
 {   
     // <editor-fold defaultstate="collapsed" desc="Construtores">
     public function __construct() 
-    {
-        parent:: __construct();
+    {        
+        parent::__construct();
         $this->load->model('conteudo_model');        
         $this->load->model('produtos_model');
         
@@ -16,65 +16,35 @@ class Principal extends CI_Controller
         );           
         
         $this->smarty->assign('logo',$logo);
-    }
-    // </editor-fold>
-    
-    // <editor-fold defaultstate="collapsed" desc="Propriedades">
-    private $departamento = array();
-    private $codcolecao = array();
-    
-    private function SetDepartamentos($pDepartamento,$pKey)
-    {   
-        $this->departamento[$pKey] = $pDepartamento;        
-    }
-    
-    private function SetCodColecao($pCodColecao,$pKey)
-    {
-        $this->codcolecao[$pKey] = $pCodColecao;
-    }
-    
-    private function GetDepartamento($key = NULL)
-    {   
-        if(isset($key))
-        {
-            return $this->departamento[$key];
-        }
-        else
-        {
-            return $this->departamento;
-        }        
-    }
-    
-    private function GetCodColecao($key = null)
-    {
-        if (isset($key))
-        {
-            return $this->codcolecao[$key];
-        }
-        else
-        {
-            return $this->codcolecao;
-        }
         
+        $menu = parent::GetMenu();
+        $ItensMenu = parent::GetItensMenu();
+        if(empty($menu) && empty($ItensMenu))
+        {
+            $res = $this->conteudo_model->GetDepartamentos();
+            $ItensMenu = array();
+            $I = 0;
+            foreach ($res as $row)
+            {
+                $ItensMenu[$I] = $this->conteudo_model->GetItensDepartamento($row->codcolecao,true);
+                $I++;
+            }        
+
+            $this->SetMenu($res);
+            $this->SetItensMenu($ItensMenu);
+
+            $this->smarty->assign("menu",  $this->GetMenu());
+            $this->smarty->assign("ItensMenu",  $this->GetItensMenu());
+        }
+        else {
+            die("aa");
+        } 
     }
     // </editor-fold>
     
     // <editor-fold defaultstate="collapsed" desc="Métodos"> 
     public function index()
     {   
-        $res = $this->conteudo_model->GetDepartamentos();
-        $ItensMenu = array();
-        $I = 0;
-        foreach ($res as $row)
-        {
-            $ItensMenu[$I] = $this->conteudo_model->GetItensDepartamento($row->codcolecao,true);
-            $I++;
-        }
-        
-        $this->smarty->assign("menu",$res);
-        $this->smarty->assign("ItensMenu",$ItensMenu);
-        
-        
         $this->load->model("produtos_model");
         $res = $this->conteudo_model->GetSlider();
         
@@ -88,7 +58,12 @@ class Principal extends CI_Controller
 
 
     public function institucional()
-    {
+    {   
+        $menu = parent::GetMenu();
+        $itensMenu = parent::GetItensMenu();
+        
+        $this->smarty->assign("menu",$menu);
+        $this->smarty->assign("ItensMenu",$itensMenu);        
         
         
         $this->smarty->assign("pagina", "contato");
