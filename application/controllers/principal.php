@@ -1,71 +1,40 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Principal extends MY_BaseControler
+class Principal extends CI_Controller
 {   
     // <editor-fold defaultstate="collapsed" desc="Construtores">
     public function __construct() 
-    {        
+    {   
         parent::__construct();
-        $this->load->model('conteudo_model');        
-        $this->load->model('produtos_model');
+        session_start();
         
+        $this->load->model('conteudo');                          
         $logo = array
         (
             "src" => base_url() . 'resources/images/topo/logo.jpg',
             "style" => 'margin-top:1px; margin-left:1px;'
-        );           
-        
+        );                   
         $this->smarty->assign('logo',$logo);
-        
-        $menu = parent::GetMenu();
-        $ItensMenu = parent::GetItensMenu();
-        if(empty($menu) && empty($ItensMenu))
-        {
-            $res = $this->conteudo_model->GetDepartamentos();
-            $ItensMenu = array();
-            $I = 0;
-            foreach ($res as $row)
-            {
-                $ItensMenu[$I] = $this->conteudo_model->GetItensDepartamento($row->codcolecao,true);
-                $I++;
-            }        
-
-            $this->SetMenu($res);
-            $this->SetItensMenu($ItensMenu);
-
-            $this->smarty->assign("menu",  $this->GetMenu());
-            $this->smarty->assign("ItensMenu",  $this->GetItensMenu());
-        }
-        else {
-            die("aa");
-        } 
     }
+    
     // </editor-fold>
     
-    // <editor-fold defaultstate="collapsed" desc="Métodos"> 
+    // <editor-fold defaultstate="collapsed" desc="Requisições"> 
     public function index()
-    {   
-        $this->load->model("produtos_model");
-        $res = $this->conteudo_model->GetSlider();
-        
-        if ($res != FALSE) 
-        {
-            $this->smarty->assign("slider",$res);
-        }        
-        
+    {           
+        $menu = unserialize($this->SerializeMenu());        
+        $this->smarty->assign("menu",$menu->GetMenu());
+        $this->smarty->assign("ItensMenu",$menu->GetItensMenu());
+        $this->GetSlider();             
         $this->smarty->view('home.tpl');
     }
-
-
+    
     public function institucional()
     {   
-        $menu = parent::GetMenu();
-        $itensMenu = parent::GetItensMenu();
-        
-        $this->smarty->assign("menu",$menu);
-        $this->smarty->assign("ItensMenu",$itensMenu);        
-        
-        
+        $menu = unserialize($this->SerializeMenu());        
+        $this->smarty->assign("menu",$menu->GetMenu());
+        $this->smarty->assign("ItensMenu",$menu->GetItensMenu());
+        $this->GetSlider();
         $this->smarty->assign("pagina", "contato");
         $this->smarty->view("conteudo.tpl");
     }
@@ -74,14 +43,14 @@ class Principal extends MY_BaseControler
     {        
         if ($area == "slider") 
         {
-            $res = $this->conteudo_model->GetSlider($cod);
+            $res = $this->conteudo->GetSlider($cod);
             $caminho = base_url() . "uploads/" . $res[0]->banner;        
             header ("Content-Type: image");
             readfile($caminho);
         }
         else
         {
-            $res = $this->conteudo_model->GetInformativos($cod);
+            $res = $this->conteudo->GetInformativos($cod);
             if ($res != false) 
             {
                 $caminho = base_url() . "uploads/" . $res[0]->banner;        
@@ -97,23 +66,38 @@ class Principal extends MY_BaseControler
     }
     // </editor-fold>
     
-    // <editor-fold defaultstate="collapsed" desc="Pesquisas">
-    private function PesquisarConteudos($Flag)
+    // <editor-fold defaultstate="collapsed" desc="Métodos">
+    private function SerializeMenu()   
     {
-        switch($Flag)
+        if (!isset($_SESSION['menu']))
         {
-            case 1:
+            $res = $this->conteudo->GetDepartamentos();
+            $ItensMenu = array();
+            $I = 0;
+            foreach ($res as $row)
             {
-                $resultado = $this->conteudo_model->GetDepartamentos();        
-                
-                foreach($resultado as $key => $row)
-                {
-                    $this->SetDepartamentos($row->departamento,$key);
-                    $this->SetCodColecao($row->codcolecao,$key);
-                }
-            }
+                $ItensMenu[$I] = $this->conteudo->GetItensDepartamento($row->codcolecao,true);
+                $I++;
+            }     
+            $this->conteudo->SetMenu($res);
+            $this->conteudo->SetItensMenu($ItensMenu);            
+            
+            $_SESSION['menu'] = serialize($this->conteudo);
+            return $_SESSION['menu'];
+        }
+        else
+        {            
+            return $_SESSION['menu'];
         }        
     }
-
+    
+    private function GetSlider()
+    {
+        $res = $this->conteudo->GetSlider();        
+        if ($res != FALSE) 
+        {
+            $this->smarty->assign("slider",$res);
+        }    
+    }
 // </editor-fold>
 }

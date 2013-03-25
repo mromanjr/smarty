@@ -93,35 +93,61 @@
         <div id="informativo" align="center">
         <a href=http://www.webracks.com.br/rackcerto/ target=_top><img src=http://www.webracks.com.br/banner.php?_c=32 alt=imagem title=Rack Para Seu Carro></a>        </div>
         
-<div id="main"><!--INÍCIO ÁREA CENTRAL-->
-    
-        <br/>
-    
-		  <div id="listagem-h">
-		      <div style='width:33%; float:left; min-width: 200px' >
-		      <div class='item' style='margin-left:50%; left:-115px; position:relative;'>
-		        
-		        <div class="imagem"><div  class="etiquetinha"></div><a href="http://www.webracks.com.br/acessorios-camping-praia/piscinas-e-boias/piscina-1000-l-1002-mor/85/" title="Ver detalhes de &quot;Piscina 1000 L - 1002 - Mor&quot;"  > <img src="http://www.webracks.com.br/php/classes/imagem/img5.php?_a=000085001.jpg" alt="Ver detalhes de &quot;Piscina 1000 L - 1002 - Mor&quot;" title="Ver detalhes de &quot;Piscina 1000 L - 1002 - Mor&quot;"/></a></div>
+    <div id="main">
+        <!--INÍCIO ÁREA CENTRAL-->    
+        <br/>    
+	<div id="listagem-h">
+            <div style='width:33%; float:left; min-width: 200px' >
+                <div class='item' style='margin-left:50%; left:-115px; position:relative;'>		
+                    <div class="imagem">
+                        <div  class="etiquetinha">
+                        </div>
+                        <a href="http://www.webracks.com.br/acessorios-camping-praia/piscinas-e-boias/piscina-1000-l-1002-mor/85/" title="Ver detalhes de &quot;Piscina 1000 L - 1002 - Mor&quot;"  > <img src="http://www.webracks.com.br/php/classes/imagem/img5.php?_a=000085001.jpg" alt="Ver detalhes de &quot;Piscina 1000 L - 1002 - Mor&quot;" title="Ver detalhes de &quot;Piscina 1000 L - 1002 - Mor&quot;"/></a></div>
 		        <div class="info">
-		          <a href="http://www.webracks.com.br/acessorios-camping-praia/piscinas-e-boias/piscina-1000-l-1002-mor/85/" title="Ver detalhes de &quot;Piscina 1000 L - 1002 - Mor&quot;"  class="std" > <b>Piscina 1000 L - 1002 - Mor</b></a><br />
-		          Por: <span class="valor-por"><b>R$ 94,04</b><span style="color:#000"> à vista no boleto </span></span>
+                            <a href="http://www.webracks.com.br/acessorios-camping-praia/piscinas-e-boias/piscina-1000-l-1002-mor/85/" title="Ver detalhes de &quot;Piscina 1000 L - 1002 - Mor&quot;"  class="std" > 
+                                <b>Piscina 1000 L - 1002 - Mor</b>
+                            </a>
+                            <br />
+                            Por: 
+                            <span class="valor-por">
+                                <b>R$ 94,04</b>
+                                <span style="color:#000"> à vista no boleto </span>
+                            </span>
 		           <br /> 
-		          <span class="valor-parcelas">ou <b>6 X de R$ 16,50</b><span style="color:#000"> sem juros no cartão</span></span>
+                           <span class="valor-parcelas">
+                            ou 
+                            <b>6 X de R$ 16,50</b>
+                            <span style="color:#000"> sem juros no cartão</span>
+                          </span>
 		        </div>
+                    
 		        <div class="prontaentrega" title="Pronta Entrega"></div>
-		        <a href="http://www.webracks.com.br/acessorios-camping-praia/piscinas-e-boias/piscina-1000-l-1002-mor/85/" title="Ver detalhes de &quot;Piscina 1000 L - 1002 - Mor&quot;"  class="mais-detalhes" > </a>
-		      </div>
-		      </div>
-		      <div style='width:33%; float:left; min-width: 200px' >
-		      <div class='item' style='margin-left:50%; left:-115px; position:relative;'>
+		        <a href="http://www.webracks.com.br/acessorios-camping-praia/piscinas-e-boias/piscina-1000-l-1002-mor/85/" title="Ver detalhes de &quot;Piscina 1000 L - 1002 - Mor&quot;"  class="mais-detalhes" ></a>
+                </div>
+            </div>
+            
+            <div style='width:33%; float:left; min-width: 200px' >
+                <div class='item' style='margin-left:50%; left:-115px; position:relative;'>		        
+                    <div class="imagem">
+                        <div  class="etiquetinha"></div>
+                        <a href="http://www.webracks.com.br/rack-para-seu-carro/rack-completo/rack-completo-de-aluminio-longlife-sport-ajet-longlife/496/" title="Ver detalhes de &quot;Rack Completo de Aluminio Longlife Sport - AJet - Longlife&quot;"  >
+                            <img src="http://www.webracks.com.br/php/classes/imagem/img5.php?_a=000451001.jpg" alt="Produzidos em alumínio os Racks Sport da Longlife são os melhores produzidos no Brasil. Possui uma instalação simples, um design aerodinâmico, com sistema de fixação em Aço Inox.   " title=""/>
+                        </a>
+                    </div>
 		        
-		        <div class="imagem"><div  class="etiquetinha"></div><a href="http://www.webracks.com.br/rack-para-seu-carro/rack-completo/rack-completo-de-aluminio-longlife-sport-ajet-longlife/496/" title="Ver detalhes de &quot;Rack Completo de Aluminio Longlife Sport - AJet - Longlife&quot;"  > <img src="http://www.webracks.com.br/php/classes/imagem/img5.php?_a=000451001.jpg" alt="Produzidos em alumínio os Racks Sport da Longlife são os melhores produzidos no Brasil. Possui uma instalação simples, um design aerodinâmico, com sistema de fixação em Aço Inox.   " title="Produzidos em alumínio os Racks Sport da Longlife são os melhores produzidos no Brasil. Possui uma instalação simples, um design aerodinâmico, com sistema de fixação em Aço Inox.   "/></a></div>
-		        <div class="info">
-		          <a href="http://www.webracks.com.br/rack-para-seu-carro/rack-completo/rack-completo-de-aluminio-longlife-sport-ajet-longlife/496/" title="Ver detalhes de &quot;Rack Completo de Aluminio Longlife Sport - AJet - Longlife&quot;"  class="std" > <b>Rack Completo de Aluminio Longlife Sport - AJet - Longlife</b></a><br />
-		          Por: <span class="valor-por"><b>R$ 294,50</b><span style="color:#000"> à vista no boleto </span></span>
-		           <br /> 
-		          <span class="valor-parcelas">ou <b>6 X de R$ 51,67</b><span style="color:#000"> sem juros no cartão</span></span>
-		        </div>
+                    <div class="info">
+                        <a href="http://www.webracks.com.br/rack-para-seu-carro/rack-completo/rack-completo-de-aluminio-longlife-sport-ajet-longlife/496/" title="Ver detalhes de &quot;Rack Completo de Aluminio Longlife Sport - AJet - Longlife&quot;"  class="std" > <b>Rack Completo de Aluminio Longlife Sport - AJet - Longlife</b>
+                        </a>
+                        <br />
+		        Por:
+                        <span class="valor-por"><b>R$ 294,50</b>
+                            <span style="color:#000"> à vista no boleto </span>
+                        </span>
+                        <br /> 
+                        <span class="valor-parcelas">ou <b>6 X de R$ 51,67</b>
+                            <span style="color:#000"> sem juros no cartão</span>
+                        </span>
+                    </div>
 		        <div class="prontaentrega" title="Pronta Entrega"></div>
 		        <a href="http://www.webracks.com.br/rack-para-seu-carro/rack-completo/rack-completo-de-aluminio-longlife-sport-ajet-longlife/496/" title="Ver detalhes de &quot;Rack Completo de Aluminio Longlife Sport - AJet - Longlife&quot;"  class="mais-detalhes" > </a>
 		      </div>

@@ -1,12 +1,36 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-class Conteudo_Model extends CI_Model
+class Conteudo extends CI_Model
 {
     // <editor-fold defaultstate="collapsed" desc="Construtores">
-    public function __construct()     {
+    public function __construct(){
         parent::__construct();
     }
     // </editor-fold>
     
+    // <editor-fold defaultstate="collapsed" desc="Propriedades">
+    private $menu;
+    private $itensMenu;
+    public function SetMenu($pMenu)     
+    {
+        $this->menu = $pMenu;
+    }
+
+    public function SetItensMenu($pCodColecao)     
+    {
+        $this->itensMenu = $pCodColecao;
+    }
+
+    public function GetMenu()     
+    {
+        return $this->menu;
+    }
+
+    public function GetItensMenu()     
+    {
+        return $this->itensMenu;
+    }
+    // </editor-fold>
+        
     // <editor-fold defaultstate="collapsed" desc="Pesquisa">
     public function GetConteudo()     
     {
