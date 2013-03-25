@@ -12,8 +12,8 @@ class Produtos extends CI_Controller
     
     // <editor-fold defaultstate="collapsed" desc="Métodos"> 
     public function index()
-    {           
-       
+    {
+        
     }
     // </editor-fold>
 }
